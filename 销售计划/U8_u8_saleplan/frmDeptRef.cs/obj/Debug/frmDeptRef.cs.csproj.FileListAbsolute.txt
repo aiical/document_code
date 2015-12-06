@@ -1,0 +1,11 @@
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.Form1.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.exe.licenses
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\bin\Debug\frmDeptRef.cs.exe
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\bin\Debug\frmDeptRef.cs.pdb
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.exe
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.pdb
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.Form2.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\frmDeptRef.cs\obj\Debug\frmDeptRef.cs.Form3.resources
