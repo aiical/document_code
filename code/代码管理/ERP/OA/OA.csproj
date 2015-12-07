@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C25DF32C-99D4-4A90-8208-7A3CA26F8983}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OA</RootNamespace>
+    <AssemblyName>OA</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.LocalizationCHS, Version=7.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\JXC\bin\Debug\DevExpress.LocalizationCHS.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraCharts.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v7.2.UI, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v7.2.Core, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\JXC\bin\Debug\DevExpress.XtraReports.v7.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v7.2.Core, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEditOAFile.cs">
+    </Compile>
+    <Compile Include="frmEditOAFile.Designer.cs">
+      <DependentUpon>frmEditOAFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditOANotice.cs">
+    </Compile>
+    <Compile Include="frmEditOANotice.Designer.cs">
+      <DependentUpon>frmEditOANotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditOATask.cs">
+    </Compile>
+    <Compile Include="frmEditOATask.Designer.cs">
+      <DependentUpon>frmEditOATask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditOATaskInfo.cs">
+    </Compile>
+    <Compile Include="frmEditOATaskInfo.Designer.cs">
+      <DependentUpon>frmEditOATaskInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOAFileList.cs">
+    </Compile>
+    <Compile Include="frmOAFileList.Designer.cs">
+      <DependentUpon>frmOAFileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOANoticeList.cs">
+    </Compile>
+    <Compile Include="frmOANoticeList.Designer.cs">
+      <DependentUpon>frmOANoticeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOATaskAnnex.cs">
+    </Compile>
+    <Compile Include="frmOATaskAnnex.designer.cs">
+      <DependentUpon>frmOATaskAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOATaskInfoList.cs">
+    </Compile>
+    <Compile Include="frmOATaskInfoList.Designer.cs">
+      <DependentUpon>frmOATaskInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOATaskList.cs">
+    </Compile>
+    <Compile Include="frmOATaskList.Designer.cs">
+      <DependentUpon>frmOATaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOAWakeUp.cs">
+    </Compile>
+    <Compile Include="frmOAWakeUp.Designer.cs">
+      <DependentUpon>frmOAWakeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOnLineUser.cs">
+    </Compile>
+    <Compile Include="frmOnLineUser.Designer.cs">
+      <DependentUpon>frmOnLineUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewList.cs">
+    </Compile>
+    <Compile Include="frmViewList.Designer.cs">
+      <DependentUpon>frmViewList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonData\CommonData.csproj">
+      <Project>{42954806-AAB9-4838-96D4-4A3FFEF4F965}</Project>
+      <Name>CommonData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3C2E4A70-5001-4E8E-819F-F6B2829778B4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEditOAFile.resx">
+      <DependentUpon>frmEditOAFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditOANotice.resx">
+      <DependentUpon>frmEditOANotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditOATask.resx">
+      <DependentUpon>frmEditOATask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditOATaskInfo.resx">
+      <DependentUpon>frmEditOATaskInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOAFileList.resx">
+      <DependentUpon>frmOAFileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOANoticeList.resx">
+      <DependentUpon>frmOANoticeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOATaskAnnex.resx">
+      <DependentUpon>frmOATaskAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOATaskInfoList.resx">
+      <DependentUpon>frmOATaskInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOATaskList.resx">
+      <DependentUpon>frmOATaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOAWakeUp.resx">
+      <DependentUpon>frmOAWakeUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOnLineUser.resx">
+      <DependentUpon>frmOnLineUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewList.resx">
+      <DependentUpon>frmViewList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcTitle.Image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNew.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEdit.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDel.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPrint.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPreview.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExport.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnClose.Glyph.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

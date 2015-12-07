@@ -1,0 +1,16 @@
+﻿Microsoft Visual Studio Solution File, Format Version 9.00
+# SharpDevelop 2.0.0.1710
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone", "Phone.csproj", "{D4DB4F3D-F07D-4F79-8088-AE4EA8E24EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4DB4F3D-F07D-4F79-8088-AE4EA8E24EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DB4F3D-F07D-4F79-8088-AE4EA8E24EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DB4F3D-F07D-4F79-8088-AE4EA8E24EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DB4F3D-F07D-4F79-8088-AE4EA8E24EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

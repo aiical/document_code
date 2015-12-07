@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.Portal.UAPFacade</name>
+    </assembly>
+    <members>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetMenuParas">
+            <summary>
+            获取菜单参数
+            </summary>
+            <returns>单据编号或者列表的ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetMenuType">
+            <summary>
+            获取菜单类型
+            </summary>
+            <returns>菜单的类型</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetVoucherID">
+            <summary>
+            获取菜单的ID
+            </summary>
+            <returns>单据的ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetVoucherOpration">
+            <summary>
+            返回单据操作
+            </summary>
+            <returns>操作字符</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetClassName">
+            <summary>
+            返回类名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetDllPath">
+            <summary>
+            返回dll路径名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetMenuID">
+            <summary>
+            获取菜单ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetProduct">
+            <summary>
+            获取子产品ID
+            </summary>
+            <returns>子产品ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetCaption">
+            <summary>
+            获取标题
+            </summary>
+            <returns>标题名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.UAPNetFormInput.GetListHelper">
+            <summary>
+            返回列表的助手类
+            </summary>
+            <param name="element">uapiput对象</param>
+            <returns>列表的助手类</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.VoucherAction.#ctor(System.Boolean,System.Boolean,System.String,UFIDA.U8.Portal.Framework.Actions.IActionDelegate,UFIDA.U8.Portal.UAPFacade.VoucherActionType,System.Int32,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">活动ID</param>
+            <param name="dele">活动对应的代理</param>
+        </member>
+        <member name="P:UFIDA.U8.Portal.UAPFacade.VoucherAction.IsSystem">
+            <summary>
+            是否系统按纽
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.Portal.UAPFacade.VoucherAction.IsControlRight">
+            <summary>
+            是否有权限限制
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.Portal.UAPFacade.VoucherAction.AuthID">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.Portal.UAPFacade.VoucherAction.Index">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.VoucherUserControl.editPart_PageCloseRequest(System.Object,UFIDA.U8.Portal.Proxy.editors.EditorCloseRequestEventArgs)">
+            <summary>
+            单据关闭事件
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.VoucherUserControl.Approve(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            审批信息
+            </summary>
+            <param name="paras"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.ToolBarManager.CreateToolBar(System.Object,UFIDA.U8.UAP.UI.Runtime.Controller.ToolBarEventArgs)">
+            <summary>
+            创建toolbar对象
+            </summary>
+            <param name="sender">发起者</param>
+            <param name="args">toolbar参数</param>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.ToolBarManager.CreateActions(UFIDA.U8.Portal.Proxy.Actions.NetAction,System.Xml.XmlNode,UFIDA.U8.Portal.UAPFacade.VoucherActionDelegate)">
+            <summary>
+            创建toolbar button对象
+            </summary>
+            <param name="action">button对象</param>
+            <param name="node">节点</param>
+            <param name="mainbarDelegate">代理</param>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.ToolBarManager.logic_eventVoucherStateChanged(System.Object,UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs)">
+            <summary>
+            单据状态处理函数
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.ToolBarManager.GetVoucherNo(System.String,System.String)">
+            <summary>
+            读取单据的ID
+            </summary>
+            <param name="action">操作 包括上一条 下一条 首条、末条</param>
+            <param name="voucherid">当前单据的ID</param>
+            <returns>单据的ID</returns>
+        </member>
+        <member name="T:UFIDA.U8.Portal.UAPFacade.IUserControl">
+            <summary>
+            用户自定义控件
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.IUserControl.CloseEvent">
+            <summary>
+            关闭事件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.IUserControl.CreateToolbar(U8Login.clsLogin)">
+            <summary>
+            创建toolbar对象
+            </summary>
+            <returns>返回对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.Portal.UAPFacade.IUserControl.CreateControl(U8Login.clsLogin,System.String,System.String)">
+            <summary>
+            创建UserControl对象
+            </summary>
+            <param name="login">u8Login对象</param>
+            <param name="MenuID">菜单ID</param>
+            <param name="Paramters">菜单自定义参数</param>
+            <returns>显示的usercontrol</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--库存出库单-->
+<ufinterface>
+  <header>
+    <id display="U8.AA.EAI.XML.RsXml.ReceiveSendTypeXmlRs.0003" iswhere="" type="" description="收发记录主表ID">ID</id>
+    <receiveflag display="U8.AA.EAI.XML.RsXml.ReceiveSendTypeXmlRs.0003" iswhere="" type="" description="收发标志">bRdFlag</receiveflag>
+    <vouchtype display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0001" iswhere="Y" type="text" description="单据类型">cVouchType</vouchtype>
+    <businesstype display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0001" iswhere="Y" type="text" description="业务类型">cBusType</businesstype>
+    <source display="U8.AA.EAI.XML.RsXml.PurchaseInvoiceXmlRs.0001" iswhere="Y" type="text" description="单据来源">cSource</source>
+    <businesscode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0001" iswhere="Y" type="text" description="对应业务单号">cBusCode</businesscode>
+    <warehousecode display="U8.AA.EAI.XML.RsXml.PositionXmlRs.0002" iswhere="Y" type="text" description="仓库编码">cWhCode</warehousecode>
+    <date display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0003" iswhere="Y" type="date" description="单据日期">dDate</date>
+    <code display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0002" iswhere="Y" type="text" description="单据号">cCode</code>
+    <receivecode display="U8.AA.EAI.XML.RsXml.ReceiveSendTypeXmlRs.0001" iswhere="Y" type="text" description="收发类别编码">cRdCode</receivecode>
+    <departmentcode display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0008" iswhere="Y" type="text" description="部门编码">cDepCode</departmentcode>
+    <personcode display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0009" iswhere="Y" type="text" description="职员编码">cPersonCode</personcode>
+    <purchasetypecode display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0002" iswhere="Y" type="text" description="采购类型编码">cPTCode</purchasetypecode>
+    <saletypecode display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0003" iswhere="Y" type="text" description="销售类型编码">cSTCode</saletypecode>
+    <customercode display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0004" iswhere="Y" type="text" description="客户编码">cCusCode</customercode>
+    <vendorcode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0002" iswhere="Y" type="text" description="供应商编码">cVenCode</vendorcode>
+    <ordercode display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0013" iswhere="Y" type="text" description="订单号">cOrderCode</ordercode>
+    <quantity display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0003" iswhere="" type="" description="产量">iMQuantity</quantity>
+    <arrivecode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0004" iswhere="Y" type="text" description="到货单号">cARVCode</arrivecode>
+    <billcode display="U8.AA.EAI.XML.RsXml.PurchaseInvoiceXmlRs.0003" iswhere="Y" type="integer" description="发票号">cBillCode</billcode>
+    <consignmentcode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0005" iswhere="Y" type="integer" description="发货单号">cDLCode</consignmentcode>
+    <arrivedate display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0006" iswhere="" type="" description="到货日期">dARVDate</arrivedate>
+    <checkcode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0007" iswhere="Y" type="text" description="检验单号">cChkCode</checkcode>
+    <checkdate display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0008" iswhere="" type="" description="检验日期">dChkDate</checkdate>
+    <checkperson display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0009" iswhere="" type="" description="检验员">cChkPerson</checkperson>
+    <templatenumber display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0010" iswhere="" type="" description="模版号">VT_ID</templatenumber>
+    <serial display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0011" iswhere="" type="" description="生产批号">cProBatch</serial>
+    <handler display="U8.AA.EAI.XML.RsXml.CapitalVouchersXmlRs.0007" type="text" description="经手人">cHandler</handler>
+    <memory display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0010" iswhere="" type="" description="备注">cMemo</memory>
+    <maker display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0008" type="text" description="制单人">cMaker</maker>
+    <chandler display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0003" iswhere="Y" type="text" description="审核人">chandler</chandler>
+    <define1 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0013" iswhere="Y" type="text" description="自定义字段1">cDefine1</define1>
+    <define2 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0014" iswhere="Y" type="text" description="自定义字段2">cDefine2</define2>
+    <define3 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0015" iswhere="Y" type="text" description="自定义字段3">cDefine3</define3>
+    <define4 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0016" iswhere="Y" type="date" description="自定义字段4">cDefine4</define4>
+    <define5 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0017" iswhere="Y" type="integer" description="自定义字段5">cDefine5</define5>
+    <define6 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0018" iswhere="Y" type="date" description="自定义字段6">cDefine6</define6>
+    <define7 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0019" iswhere="Y" type="float" description="自定义字段7">cDefine7</define7>
+    <define8 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0020" iswhere="Y" type="text" description="自定义字段8">cDefine8</define8>
+    <define9 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0021" iswhere="Y" type="text" description="自定义字段9">cDefine9</define9>
+    <define10 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0022" iswhere="Y" type="text" description="自定义字段10">cDefine10</define10>
+    <define11 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0023" iswhere="Y" type="text" description="自定义字段11">cDefine11</define11>
+    <define12 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0024" iswhere="Y" type="text" description="自定义字段12">cDefine12</define12>
+    <define13 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0025" iswhere="Y" type="text" description="自定义字段13">cDefine13</define13>
+    <define14 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0026" iswhere="Y" type="text" description="自定义字段14">cDefine14</define14>
+    <define15 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0027" iswhere="Y" type="integer" description="自定义字段15">cDefine15</define15>
+    <define16 display="U8.AA.EAI.XML.RsXml.ArrivedGoodsXmlRs.0028" iswhere="Y" type="float" description="自定义字段16">cDefine16</define16>
+    <auditdate display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0012" iswhere="" type="" description="审核日期">dVeriDate</auditdate>
+    <!--此次增加 by tianxl 2004-05-08-->
+    <taxrate display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0007" iswhere="" type="float" description="税率">iTaxRate</taxrate>
+    <exchname display="U8.AA.EAI.XML.RsXml.NEW1.AcceptPayXmlRs.0002" iswhere="" type="text" description="币种">cExch_Name</exchname>
+    <exchrate display="U8.AA.EAI.XML.RsXml.NEW1.AcceptPayXmlRs.0003" iswhere="" type="float" description="汇率">iExchRate</exchrate>
+    <!--此次增加 by tianxl 2005-09-28-->
+    <contact display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0014" iswhere="" type="text" description="联系人">ccusperson</contact>
+    <phone display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0015" iswhere="" type="text" description="电话">ccusphone</phone>
+    <mobile display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0018" iswhere="" type="text" description="手机">ccushand</mobile>
+    <address display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="客户地址">ccusaddress</address>
+    <conphone display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="客户联系人电话">contactphone</conphone>
+    <conmobile display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="客户联系手机">contactmobile</conmobile>
+    <deliverunit display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="收货单位">cdeliverunit</deliverunit>
+    <contactname display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="收货单位联系人">ccontactname</contactname>
+    <officephone display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="收货单位联系人电话">cofficephone</officephone>
+    <mobilephone display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="收货单位联系人手机">cmobilephone</mobilephone>
+    <psnophone display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="业务员电话">cpsnophone</psnophone>
+    <psnmobilephone display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="业务员手机">cpsnmobilephone</psnmobilephone>
+    <shipaddress display="U8.AA.EAI.XML.RsXml.CustomerXmlRs.0006" iswhere="" type="text" description="发货地址">cshipaddress</shipaddress>
+    <iscomplement display="" iswhere="" type="" description="补料标识">biscomplement</iscomplement>
+  </header>
+  <body>
+    <id display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0013" description="收发记录主表关联项">ID</id>
+    <barcode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0014" description="条形码">cBarCode</barcode>
+    <inventorycode display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0011" description="存货编码">cInvCode</inventorycode>
+    <free1 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0033" description="自由项1">cFree1</free1>
+    <free2 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0034" description="自由项2">cFree2</free2>
+    <free3 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0054" description="自由项3">cFree3</free3>
+    <free4 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0055" description="自由项4">cFree4</free4>
+    <free5 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0056" description="自由项5">cFree5</free5>
+    <free6 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0057" description="自由项6">cFree6</free6>
+    <free7 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0058" description="自由项7">cFree7</free7>
+    <free8 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0059" description="自由项8">cFree8</free8>
+    <free9 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0060" description="自由项9">cFree9</free9>
+    <free10 display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0061" description="自由项10">cFree10</free10>
+    <shouldquantity display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0015" description="应收（发）数量">iNQuantity</shouldquantity>
+    <shouldnumber display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0016" description="应收（发）件数">iNNum</shouldnumber>
+    <quantity display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0017" description="数量（主记量数量）">iQuantity</quantity>
+    <cmassunitname display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0049" description="主计量单位名称">cinvm_unit</cmassunitname>
+    <assitantunit display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0050" description="辅记量单位">cAssUnit</assitantunit>
+    <assitantunitname display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0051" description="辅计量单位名称">cinva_unit</assitantunitname>
+    <irate display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0012" description="换算率">iinvexchrate</irate>
+    <number display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0019" description="件数">iNum</number>
+    <price display="U8.AA.EAI.XML.RsXml.MaterialXmlRs.0004" description="单价">iUnitCost</price>
+    <cost display="U8.AA.EAI.XML.RsXml.BankAccountXmlRs.0005" description="金额">iPrice</cost>
+    <plancost display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0020" description="计划价售价">iPUnitCost</plancost>
+    <planprice display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0021" description="计划金额或售价金额">iPPrice</planprice>
+    <serial display="U8.AA.EAI.XML.RsXml.MaterialXmlRs.0003" description="批号">cBatch</serial>
+    <makedate display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0022" description="生产日期">dMadeDate</makedate>
+    <validdate display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0023" description="失效日期">dVDate</validdate>
+    <transitionid display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0024" description="调拨单子表ID号">iTrIds</transitionid>
+    <subbillcode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0025" description="发票子表ID号">iSBsID</subbillcode>
+    <subpurchaseid display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0026" description="采购订单子表ID号">iPOsID</subpurchaseid>
+    <position display="U8.AA.EAI.XML.RsXml.NEW1.StoreInOutXmlRs.0001" description="货位">cPosition</position>
+    <itemclasscode display="U8.AA.EAI.XML.RsXml.OughtReceivePayXmlRs.0005" description="项目大类编码">cItem_class</itemclasscode>
+    <itemclassname display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0027" description="项目大类名称">cItemCName</itemclassname>
+    <itemcode display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0011" description="项目编码">cItemCode</itemcode>
+    <itemname display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0012" description="项目名称">cName</itemname>
+    <define22 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0028" description="表体自定义项22">cDefine22</define22>
+    <define23 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0029" description="表体自定义项23">cDefine23</define23>
+    <define24 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0030" description="表体自定义项24">cDefine24</define24>
+    <define25 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0031" description="表体自定义项25">cDefine25</define25>
+    <define26 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0032" description="表体自定义项26">cDefine26</define26>
+    <define27 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0033" description="表体自定义项27">cDefine27</define27>
+    <define28 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0034" description="表体自定义项28">cDefine28</define28>
+    <define29 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0035" description="表体自定义项29">cDefine29</define29>
+    <define30 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0036" description="表体自定义项30">cDefine30</define30>
+    <define31 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0037" description="表体自定义项31">cDefine31</define31>
+    <define32 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0038" description="表体自定义项32">cDefine32</define32>
+    <define33 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0039" description="表体自定义项33">cDefine33</define33>
+    <define34 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0040" description="表体自定义项34">cDefine34</define34>
+    <define35 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0041" description="表体自定义项35">cDefine35</define35>
+    <define36 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0042" description="表体自定义项36">cDefine36</define36>
+    <define37 display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0043" description="表体自定义项37">cDefine37</define37>
+    <subconsignmentid display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0044" description="发货单子表ID">iDLsID</subconsignmentid>
+    <delegateconsignmentid display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0045" description="委托代销发货单子表">iEnsID</delegateconsignmentid>
+    <subproducingid display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0046" description="生产订单子表ID">iMPoIds</subproducingid>
+    <subcheckid display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0047" description="检验单子表ID">iCheckIds</subcheckid>
+    <!--此次增加-->
+    <cRejectCode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0048" description="不良品处理单号">cRejectCode</cRejectCode>
+    <iRejectIds display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0049" description="不良品处理单ID">iRejectIds</iRejectIds>
+    <cCheckPersonCode display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0009" description="检验员">cCheckPersonCode</cCheckPersonCode>
+    <dCheckDate display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0008" description="检验日期">dCheckDate</dCheckDate>
+    <cCheckCode diaplay="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0007">cCheckCode</cCheckCode>
+    <iMassDate diaplay="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0050">iMassDate</iMassDate>
+    <!--此次增加 by tianxl 2004-05-08-->
+    <ioritaxcost display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0051" description="原币含税单价">iOriTaxCost</ioritaxcost>
+    <ioricost display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0052" description="原币单价">iOriCost</ioricost>
+    <iorimoney display="U8.AA.EAI.XML.RsXml.AcceptPayXmlRs.0018" description="原币金额">iOriMoney</iorimoney>
+    <ioritaxprice display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0053" description="原币税额">iOriTaxPrice</ioritaxprice>
+    <iorisum display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0054" description="原币价税合计">iOriSum</iorisum>
+    <taxrate display="U8.AA.EAI.XML.RsXml.ConsignmentXmlRs.0007" description="税率">iTaxRate</taxrate>
+    <taxprice display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0055" description="本币税额">iTaxPrice</taxprice>
+    <isum display="U8.AA.EAI.XML.RsXml.StoreInOutXmlRs.0056" description="本币价税合计">iSum</isum>
+    <massunit display="U8.AA.EAI.XML.RsXml.InventoryXmlRs.0115" description="保质期单位">cMassUnit</massunit>
+    <vmivencode display="" description="代管商编码">cvmivencode</vmivencode>
+    <whpersoncode display="" description="库管员编码">cwhpersoncode</whpersoncode>
+    <whpersonname display="" description="库管员">cwhpersonname</whpersonname>
+  </body>
+</ufinterface>

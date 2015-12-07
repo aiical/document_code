@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <PortName>COM3</PortName>
+  <BaudRate>460800</BaudRate>
+  <CID>
+    <item>AT+VCID=1</item>
+    <item>AT#CID=1</item>
+  </CID>
+</settings>

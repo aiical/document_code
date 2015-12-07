@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--库存调拨单-->
+<ufinterface>
+  <header>
+    <btransflag display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0002" iswhere="" type="" description="是否传递">btransflag</btransflag>
+    <accounter display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0001" iswhere="Y" type="text" description="记账人">caccounter</accounter>
+    <idepcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0004" iswhere="Y" type="text" description="转入部门编码">cidepcode</idepcode>
+    <odepcode display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0002" iswhere="Y" type="text" description="转出部门编码">codepcode</odepcode>
+    <irdcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0005" iswhere="Y" type="text" description="入库类别编码">cirdcode</irdcode>
+    <ordcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0006" iswhere="Y" type="text" description="出库类别编码">cordcode</ordcode>
+    <iwhcode display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0003" iswhere="Y" type="text" description="转入仓库编码">ciwhcode</iwhcode>
+    <owhcode display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0004" iswhere="Y" type="text" description="转出仓库编码">cowhcode</owhcode>
+    <personcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0008" iswhere="Y" type="text" description="业务员编码">cpersoncode</personcode>
+    <pspcode display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0002" iswhere="Y" type="text" description="父项产品编码">cpspcode</pspcode>
+    <tvcode display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0003" iswhere="Y" type="text" description="调拨单据号">ctvcode</tvcode>
+    <mpocode display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0004" iswhere="Y" type="text" description="生产订单编号">cmpocode</mpocode>
+    <id display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0005" iswhere="" type="" description="调拨单主表标识">id</id>
+    <proorderid display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0006" iswhere="" type="" description="生产订单主表标识">iproorderid</proorderid>
+    <quantity display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0007" iswhere="Y" type="text" description="产量">iquantity</quantity>
+    <vtid display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0012" iswhere="" type="" description="单据模板号">vt_id</vtid>
+    <date display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0013" iswhere="Y" type="date" description="单据日期">dtvdate</date>
+    <memory display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0015" iswhere="" type="" description="备注">ctvmemo</memory>
+    <auditperson display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0003" iswhere="Y" type="text" description="审核人">cverifyperson</auditperson>
+    <auditdate display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0007" iswhere="" type="" description="审核日期">dverifydate</auditdate>
+    <maker display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0016" iswhere="Y" type="text" description="制单人">cmaker</maker>
+    <define1 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0019" iswhere="Y" type="text" description="自定义字段1">cdefine1</define1>
+    <define2 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0020" iswhere="Y" type="text" description="自定义字段2">cdefine2</define2>
+    <define3 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0021" iswhere="Y" type="text" description="自定义字段3">cdefine3</define3>
+    <define4 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0022" iswhere="Y" type="date" description="自定义字段4">cdefine4</define4>
+    <define5 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0023" iswhere="Y" type="integer" description="自定义字段5">cdefine5</define5>
+    <define6 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0024" iswhere="Y" type="date" description="自定义字段6">cdefine6</define6>
+    <define7 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0025" iswhere="Y" type="float" description="自定义字段7">cdefine7</define7>
+    <define8 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0026" iswhere="Y" type="text" description="自定义字段8">cdefine8</define8>
+    <define9 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0027" iswhere="Y" type="text" description="自定义字段9">cdefine9</define9>
+    <define10 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0028" iswhere="Y" type="text" description="自定义字段10">cdefine10</define10>
+    <define11 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0029" iswhere="Y" type="text" description="自定义字段11">cdefine11</define11>
+    <define12 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0030" iswhere="Y" type="text" description="自定义字段12">cdefine12</define12>
+    <define13 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0031" iswhere="Y" type="text" description="自定义字段13">cdefine13</define13>
+    <define14 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0032" iswhere="Y" type="text" description="自定义字段14">cdefine14</define14>
+    <define15 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0033" iswhere="Y" type="integer" description="自定义字段15">cdefine15</define15>
+    <define16 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0034" iswhere="Y" type="float" description="自定义字段16">cdefine16</define16>
+    <free1 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0037" description="自由项1">cfree1</free1>
+    <free2 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0038" description="自由项2">cfree2</free2>
+    <free3 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0039" description="自由项3">cfree3</free3>
+    <free4 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0040" description="自由项4">cfree4</free4>
+    <free5 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0041" description="自由项5">cfree5</free5>
+    <free6 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0042" description="自由项6">cfree6</free6>
+    <free7 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0043" description="自由项7">cfree7</free7>
+    <free8 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0044" description="自由项8">cfree8</free8>
+    <free9 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0045" description="自由项9">cfree9</free9>
+    <free10 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0046" description="自由项10">cfree10</free10>
+    <ordertype display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0008" description="订单类型">cordertype</ordertype>
+    <transappcode display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0009" description="调拨申请单号">ctranrequestcode</transappcode>
+    <version display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0010" description="BOM版本号">cversion</version>
+    <bomid display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0011" description="BOM标识号">bomid</bomid>
+    <csource display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0046" description="自由项10">csource</csource>
+    <itransflag display="" description="调拨方向">itransflag</itransflag>	
+  </header>
+  <body>
+    <id display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0005" description="调拨单主表标识">id</id>
+    <barcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0035" description="条形码">cbarcode</barcode>
+    <inventorycode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0036" description="存货编码">cinvcode</inventorycode>
+    <free1 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0037" description="自由项1">cfree1</free1>
+    <free2 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0038" description="自由项2">cfree2</free2>
+    <free3 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0039" description="自由项3">cfree3</free3>
+    <free4 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0040" description="自由项4">cfree4</free4>
+    <free5 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0041" description="自由项5">cfree5</free5>
+    <free6 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0042" description="自由项6">cfree6</free6>
+    <free7 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0043" description="自由项7">cfree7</free7>
+    <free8 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0044" description="自由项8">cfree8</free8>
+    <free9 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0045" description="自由项9">cfree9</free9>
+    <free10 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0046" description="自由项10">cfree10</free10>
+    <quantity display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0011" description="数量（主记量数量）">itvquantity</quantity>
+    <cmassunitname display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0049" description="主计量单位名称">cinvm_unit</cmassunitname>
+    <assitantunit display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0050" description="辅记量单位">cassunit</assitantunit>
+    <assitantunitname display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0051" description="辅计量单位名称">cinva_unit</assitantunitname>
+    <irate display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0012" description="换算率">iinvexchrate</irate>
+    <number display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0013" description="件数">itvnum</number>
+    <actualcost display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0012" description="实际价格">itvacost</actualcost>
+    <actualprice display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0064" description="实际金额">itvaprice</actualprice>
+    <plancost display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0019" description="计划价售价">itvpcost</plancost>
+    <price display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0062" description="计划金额或售价金额">itvpprice</price>
+    <define22 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0066" description="表体自定义项22">cdefine22</define22>
+    <define23 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0067" description="表体自定义项23">cdefine23</define23>
+    <define24 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0068" description="表体自定义项24">cdefine24</define24>
+    <define25 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0069" description="表体自定义项25">cdefine25</define25>
+    <define26 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0070" description="表体自定义项26">cdefine26</define26>
+    <define27 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0071" description="表体自定义项27">cdefine27</define27>
+    <define28 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0072" description="表体自定义项28">cdefine28</define28>
+    <define29 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0073" description="表体自定义项29">cdefine29</define29>
+    <define30 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0074" description="表体自定义项30">cdefine30</define30>
+    <define31 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0075" description="表体自定义项31">cdefine31</define31>
+    <define32 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0076" description="表体自定义项32">cdefine32</define32>
+    <define33 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0077" description="表体自定义项33">cdefine33</define33>
+    <define34 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0078" description="表体自定义项34">cdefine34</define34>
+    <define35 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0079" description="表体自定义项35">cdefine35</define35>
+    <define36 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0080" description="表体自定义项36">cdefine36</define36>
+    <define37 display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0081" description="表体自定义项37">cdefine37</define37>
+    <subconsignmentid display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0022" description="调拨单子表ID">autoid</subconsignmentid>
+    <bvencode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0083" description="供应商编码">cbvencode</bvencode>
+    <invouchcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0084" description="对应入库单号">cinvouchcode</invouchcode>
+    <imassdate diaplay="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0085">imassdate</imassdate>
+    <serial display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0087" description="批号">ctvbatch</serial>
+    <makedate display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0088" description="生产日期">dmadedate</makedate>
+    <validdate display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0089" description="失效日期">ddisdate</validdate>
+    <massunit display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0086" description="保质期单位">cmassunit</massunit>
+    <tvcode display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0013" description="调拨单号">ctvcode</tvcode>
+    <salecost display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0020" description="零售单价">fsalecost</salecost>
+    <saleprice display="U8.AA.EAI.XML.RsXml.NEW1.TransAppVouchXmlRs.0021" description="零售金额">fsaleprice</saleprice>
+    <mpoids display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0014" description="生产订单子表ID号">impoids</mpoids>
+    <rdsid display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0090" description="收发记录子表标识">rdsid</rdsid>
+    <itemclasscode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0091" description="项目大类编码">citem_class</itemclasscode>
+    <itemclassname display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0092" description="项目大类名称">citemcname</itemclassname>
+    <itemcode display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0093" description="项目编码">citemcode</itemcode>
+    <itemname display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0094" description="项目名称">cname</itemname>
+    <transappids display="U8.AA.EAI.XML.RsXml.NEW1.TransVouchXmlRs.0015" description="调拨申请单子表ID">itrids</transappids>
+    <sodid display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0096" description="销售订单子表ID">issodid</sodid>
+    <saletype display="U8.AA.EAI.XML.RsXml.NEW1.CheckVouchXmlRs.0097" description="销售类型">issotype</saletype>
+    <vmivencode display="" description="代管商编码">cvmivencode</vmivencode>
+    <inposcode display="" description="调入货位">cinposcode</inposcode>
+    <outposcode display="" description="调出货位">coutposcode</outposcode>
+  </body>
+</ufinterface>

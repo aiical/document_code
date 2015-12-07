@@ -1,0 +1,27 @@
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\bin\Debug\AutoEntity.exe
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\bin\Debug\AutoEntity.pdb
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.Properties.Resources.resources
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.exe
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.pdb
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.AutoEntity.resources
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\bin\Debug\AutoEntity.exe.config
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\AutoEntity\AutoEntity\bin\Debug\AutoEntity.exe.config
+E:\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.exe
+E:\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.pdb
+E:\AutoEntity\AutoEntity\bin\Debug\AutoEntity.exe
+E:\AutoEntity\AutoEntity\bin\Debug\AutoEntity.pdb
+E:\AutoEntity\AutoEntity\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.AutoEntity.resources
+E:\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.Properties.Resources.resources
+E:\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+E:\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\AutoEntity\AutoEntity\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\AutoEntity\AutoEntity\bin\Debug\AutoEntity.exe.config
+C:\Documents and Settings\Administrator\桌面\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.exe
+C:\Documents and Settings\Administrator\桌面\AutoEntity\AutoEntity\obj\x86\Debug\AutoEntity.pdb

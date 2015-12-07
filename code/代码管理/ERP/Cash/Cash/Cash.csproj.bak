@@ -1,0 +1,195 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72B221DC-5D51-486C-9F24-06E6646841FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cash</RootNamespace>
+    <AssemblyName>Cash</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BaseClass\bin\Debug\BaseClass.dll</HintPath>
+    </Reference>
+    <Reference Include="CenterLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Remoting\DataLib\bin\Debug\CenterLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\bin\Debug\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DataLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DataLib\bin\Debug\DataLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="myControl, Version=1.0.3113.21695, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\myControl\bin\Debug\myControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBankList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankList.Designer.cs">
+      <DependentUpon>frmBankList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCashCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashCheckOut.Designer.cs">
+      <DependentUpon>frmCashCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCashList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashList.Designer.cs">
+      <DependentUpon>frmCashList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBank.Designer.cs">
+      <DependentUpon>frmEditBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCash.Designer.cs">
+      <DependentUpon>frmEditCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIniBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIniBank.Designer.cs">
+      <DependentUpon>frmIniBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIniCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIniCash.Designer.cs">
+      <DependentUpon>frmIniCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBankList.resx">
+      <DependentUpon>frmBankList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCashCheckOut.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCashCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCashList.resx">
+      <DependentUpon>frmCashList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditBank.resx">
+      <DependentUpon>frmEditBank.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCash.resx">
+      <DependentUpon>frmEditCash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIniBank.resx">
+      <DependentUpon>frmIniBank.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIniCash.resx">
+      <DependentUpon>frmIniCash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2802,00%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2804,12%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2849,38%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2802,11%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2800,04%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2803,05%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\097.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%2806,00%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Finance\Finance.csproj">
+      <Project>{4BE20BBF-D81A-42C4-9BC2-E0C206ACE8D1}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

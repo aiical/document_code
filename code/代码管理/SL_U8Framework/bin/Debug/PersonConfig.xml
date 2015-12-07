@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ROOT>
+  <Control FormName="" ControlName="" ColumnName="" Tag="" Lable="" DataField="" Width="" Visible="" TextAlign="" />
+  <Control FormName="FrmSL_t_BanXing:单据修改" ControlName="dbGrid_Detail" DataSoure="" ColumnName="CU8cAlias" Tag="0" Lable="U8cAlias" DataField="U8cAlias" Width="100" Visible="True" TextAlign="NotSet" />
+  <Control FormName="FrmSL_t_BanXing:单据修改" ControlName="dbGrid_Detail" DataSoure="" ColumnName="CU8cValue" Tag="1" Lable="U8cValue" DataField="U8cValue" Width="100" Visible="True" TextAlign="NotSet" />
+  <Control FormName="FrmSL_t_BanXing:单据修改" ControlName="dbGrid_Detail" DataSoure="" ColumnName="CNewBx" Tag="2" Lable="NewBx" DataField="NewBx" Width="100" Visible="True" TextAlign="NotSet" />
+</ROOT>

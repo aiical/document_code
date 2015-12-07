@@ -1,0 +1,10 @@
+bin\Debug\Settings.xml
+bin\Debug\Phone.dll.config
+bin\Debug\Phone.dll
+bin\Debug\Phone.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Phone.Form1.resources
+obj\Debug\Phone.Properties.Resources.resources
+obj\Debug\Phone.csproj.GenerateResource.Cache
+obj\Debug\Phone.dll
+obj\Debug\Phone.pdb

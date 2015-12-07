@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL_U8Framework", "SL_U8Framework.csproj", "{8E437A0E-6ACB-477C-B26E-905725DD92BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E437A0E-6ACB-477C-B26E-905725DD92BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E437A0E-6ACB-477C-B26E-905725DD92BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E437A0E-6ACB-477C-B26E-905725DD92BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E437A0E-6ACB-477C-B26E-905725DD92BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

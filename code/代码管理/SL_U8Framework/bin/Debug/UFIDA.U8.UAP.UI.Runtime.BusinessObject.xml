@@ -1,0 +1,1118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.UI.Runtime.BusinessObject</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ColAuth">
+            <summary>
+            U8的字段权限控制
+            用户可以指定的权限值：R（ead）查询 W（rite）录入 N（o）无权限
+                    "R"表示只有只读权限 "R%"表示有读权限
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ColAuth.#ctor(System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="busObjectID">业务对象ID</param>
+            <param name="userId">用户ID</param>
+            <param name="strConn">数据库联接字符串(VB)</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ColAuth.GetAuthString(System.String)">
+            <summary>
+            根据权限类型获取权限字段
+            </summary>
+            <returns>权限字段</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ColAuth.GetReadOnlyCols">
+            <summary>
+            返回拥有只读权限的字段
+            </summary>
+            <returns>字段集合</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ColAuth.GetHideCols">
+            <summary>
+            返回用户不可见的字段集合
+            </summary>
+            <returns>字段集合</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.RowAuth">
+            <summary>
+            记录级权限的数据验证
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.RowAuth.#ctor(UFIDA.U8.UAP.Common.LoginInfo,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="login">登陆对象</param>
+            <param name="CardNum">单据编号</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.RowAuth.CheckRowAuth(System.Data.DataSet,UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType,System.String@)">
+            <summary>
+            检查用户是否对数据拥有写权限
+            </summary>
+            <param name="ds">数据对象</param>
+            <param name="authType">权限</param>
+            <param name="errorMsg">错误信息</param>
+            <returns>检查结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.RowAuth.GetRowAuthString(UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType,System.String)">
+            <summary>
+            获取行记录级权限字符串
+            </summary>
+            <param name="authType">权限类型</param>
+            <param name="busObID">权限对象</param>
+            <returns>返回过滤sql</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.FuntionAuth">
+            <summary>
+            功能权限
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.FuntionAuth.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.FuntionAuth.IsHavePriviliage(System.Boolean,System.String,U8Login.clsLogin)">
+            <summary>
+            是否有权限
+            </summary>
+            <param name="IsControl"></param>
+            <param name="AuthID"></param>
+            <param name="u8Login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.FuntionAuth.IsHaveNewPrivileage(U8Login.clsLogin,System.String)">
+            <summary>
+            是否有新增权限
+            </summary>
+            <param name="u8Login"></param>
+            <param name="toolbar"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.UniqueRule">
+            <summary>
+            验证表内唯一约束
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.UniqueRule.Priority">
+            <summary>
+            优先级别
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ValidateDataRule">
+            <summary>
+            验证保存数据是否合法
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ValidateDataRule.Priority">
+            <summary>
+            优先级别
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService">
+            <summary>
+            单据持久化操作
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.IDataService.RuleID">
+            <summary>
+            单据转化规则
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.login">
+            <summary>
+            u8登录对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.loginInfo">
+            <summary>
+            u8数据库联接对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.metaData">
+            <summary>
+            单据元数据对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.xmlDoc">
+            <summary>
+            单据结构元数据描述
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.listTableName">
+            <summary>
+            单据的物理表集合
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.htFunctions">
+            <summary>
+            数据引擎函数描述
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.IsRunInitDataQuery">
+            <summary>
+            是否执行过InitDataQuery函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetLastVoucherID">
+            <summary>
+            获取最后录入的一张单据的ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.InitDataQuery">
+            <summary>
+            初始化数据
+            </summary>        
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetVoucherPrimaryKey">
+            <summary>
+            返回单据的主键
+            </summary>
+            <returns>主键字段</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetTables">
+            <summary>
+            得到物理表的列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetFuntions(System.Collections.Generic.List{System.String})">
+            <summary>
+            返回数据引擎函数描述
+            </summary>
+            <param name="tables">所有物理表</param>
+            <returns>物理表描述</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetTableData(UFIDA.U8.UAP.UI.Runtime.BusinessObject.QueryStruct,System.String)">
+            <summary>
+            执行查询
+            </summary>
+            <param name="queryStruct">查询对象</param>
+            <param name="wherePart">查询结构</param>
+            <returns>数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetTableData(UFIDA.U8.UAP.UI.Runtime.BusinessObject.QueryStruct,System.String,System.String,System.String)">
+            <summary>
+            执行查询
+            </summary>
+            <param name="queryStruct"></param>
+            <param name="SelectPart"></param>
+            <param name="OrderbyPart"></param>
+            <param name="wherePart"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetLastVoucherIDWherePart">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.IsCatelogRef(System.String)">
+            <summary>
+            返回是否是分类控制权限的档案
+            </summary>
+            <param name="busboid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.GetCateLogRefStr(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="busboid"></param>
+            <param name="authstr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.ParseResults(System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="xmlResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.IsControlRowAuthInDAE">
+            <summary>
+            是否在数据引擎中控制记录级权限
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.CardNum">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.PrimaryKey">
+            <summary>
+            单据主键
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.IsBorn">
+            <summary>
+            是否生单标志
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.RuleID">
+            <summary>
+            规则ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.LoginInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.BaseDataService.MetaData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.htMetaData">
+            <summary>
+            哈希表，单据元数据的缓存对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.login">
+            <summary>
+            登陆对象
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.CreateMetaData(System.String,UFIDA.U8.UAP.Common.LoginInfo)">
+            <summary>
+            创建单据元数据对象
+            </summary>
+            <param name="cardNum">单据编号</param>
+            <param name="loginInfo">登陆对象</param>
+            <returns>元数据对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.ClearMetaData">
+            <summary>
+            清楚元数据对象
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.ClearMetaData(System.String)">
+            <summary>
+            清除缓存的元数据信息
+            </summary>
+            <param name="cardNum">单据编号</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.ReadMetaData(System.String)">
+            <summary>
+            读取单据元数据结构
+            </summary>
+            <param name="cardNum">单据编号</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.ReadServerSecondDev(System.String)">
+            <summary>
+            读取服务端二次开发的元数据
+            </summary>
+            <param name="cardNum">单据编号</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetAssembly(System.Byte[])">
+            <summary>
+            二进制流文件生成Assembly对象
+            </summary>
+            <param name="buffer">二进制流</param>
+            <returns>Assembly对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetVoucherParas(System.String)">
+            <summary>
+            获取单据参数对象
+            </summary>
+            <param name="cardNum">单据编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetLayoutData">
+            <summary>
+            获取显示结构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetLayoutUICustomXml">
+            <summary>
+            返回用户定制的UIXML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetLayoutIndex(System.String)">
+            <summary>
+            根据layoutname获取layoutxml的序号
+            </summary>
+            <param name="layoutID">layoutID</param>
+            <returns>序号</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetDirectoryInfo">
+            <summary>
+            获取显示元数据信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetDefaultPrintTemplateID(System.String,System.String)">
+            <summary>
+            获取单据默认打印模版
+            </summary>
+            <param name="cardNum">单据编号</param>
+            <param name="strConn">数据库联接串</param>
+            <returns>打印模版ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.SaveUserGridLayOut(System.String,System.String)">
+            <summary>
+            保存当前的视图
+            </summary>
+            <param name="gridID"></param>
+            <param name="gridLayoutXML"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetVoucherCreateDateItem">
+            <summary>
+            获取制单日期字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetVoucherCreatorItem">
+            <summary>
+            获取制单人字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetVoucherModifyDateItem">
+            <summary>
+            获取修改日期字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.IsControlRowAuth">
+            <summary>
+            是否控制行记录级权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetMetaData">
+            <summary>
+            获取元数据信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetTableStruct">
+            <summary>
+            返回单据元数据的结构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetModelData">
+            <summary>
+            获取物理表的结构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetChildrendsTable(System.String)">
+            <summary>
+            返回一个表的子表名称
+            </summary>
+            <param name="tableName">表名称</param>
+            <returns>子表名称列表</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetMainEntityID">
+            <summary>
+            返回主实体ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.GetTableName(System.String)">
+            <summary>
+            获取物理表的名称
+            </summary>
+            <param name="ColName">列名称</param>
+            <returns>物理表名称</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.ServerSecondDev">
+            <summary>
+            服务端二次开发信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaDataObject">
+            <summary>
+            元数据文件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMeta">
+            <summary>
+            单据元数据对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.CardNumber">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherlayoutHelper">
+            <summary>
+            布局对象
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData">
+            <summary>
+            包含物理表数据（通过Voucher对象来描述）
+            Toolbar数据通过方法GetRebarXml来获取
+            值更新事件XML描述和DLL通过属性ScriptXml和ValueChangeEvtAssembly
+            数据引擎数据通过BoDesc来获取
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.rebarXml">
+            <summary>
+            Toolbar的描述信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.#ctor(System.String,System.String,System.String,System.String,System.Reflection.Assembly,System.String,UFIDA.U8.UAP.Common.LoginInfo,UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper)">
+            <summary>
+            创建voucher对象元数据
+            </summary>
+            <param name="cardNum"></param>
+            <param name="boid"></param>
+            <param name="bodesc"></param>
+            <param name="metaxml"></param>
+            <param name="valuechangeevtassembly"></param>
+            <param name="scriptxml"></param>
+            <param name="loginInfo"></param>
+            <param name="layoutHelper"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.GetRebarXml(System.Xml.XmlDocument)">
+            <summary>
+            获取toolbar对象
+            </summary>
+            <param name="xmlMeta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.AppendToolbar(System.Xml.XmlDocument)">
+            <summary>
+            创建视图选择的toolbar和生单的toolbar按钮
+            </summary>
+            <param name="xmlDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.CreateVoucherMakerToolBar(System.Xml.XmlDocument)">
+            <summary>
+            建立升单的toolbar
+            </summary>
+            <param name="xmlDoc"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.CreateChildNode(System.Xml.XmlDocument,System.Xml.XmlNode,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+             创建下拉的toolbutton
+            </summary>
+            <param name="xmlDoc">元数据</param>
+            <param name="buttonKey">buttonkey</param>
+            <param name="buttonName">button显示名</param>
+            <param name="index">序号</param>
+            <param name="group">组号</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.ConvertToolbarXml(System.Xml.XmlDocument)">
+            <summary>
+            将具有父子关系的toolbar转换为control认识的格式
+            </summary>
+            <param name="xmlDoc"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.GetVoucherRules(System.Collections.Hashtable)">
+            <summary>
+            获取生单的规则
+            </summary>
+            <param name="htTable">规则ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.SynchronizationMetaData(System.Xml.XmlDocument,UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData)">
+            <summary>
+            
+            </summary>
+            <param name="xmlDoc"></param>
+            <param name="layout"></param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.BoID">
+            <summary>
+            业务对象ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.BoDesc">
+            <summary>
+            数据引擎的结构描述
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.MetaXml">
+            <summary>
+            元数据文件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.ValueChangeEvtAssembly">
+            <summary>
+            值更新事件对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.ScriptXml">
+            <summary>
+            值更新事件执行描述
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData.VoucherMetaData.XmlDoc">
+            <summary>
+            元数据
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            创建voucher布局元数据
+            </summary>
+            <param name="layoutid"></param>
+            <param name="layoutname"></param>
+            <param name="layoutxml"></param>
+            <param name="uicustomcml"></param>
+            <param name="isdefualtlayout"></param>
+            <param name="index"></param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.LayOutID">
+            <summary>
+            视图的ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.LayOutName">
+            <summary>
+            布局名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.LayoutXml">
+            <summary>
+            视图的显示样式
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.UICustomXml">
+            <summary>
+            用户定制XML
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.IsDefaultLayout">
+            <summary>
+            是否默认布局
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutData.Index">
+            <summary>
+            顺序号
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.#ctor(System.String,UFIDA.U8.UAP.Common.LoginInfo)">
+            <summary>
+            单据布局助手
+            </summary>
+            <param name="cardNum"></param>
+            <param name="loginInfo"></param>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.loginInfo">
+            <summary>
+            登陆对象
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.GetLayoutData(System.String)">
+            <summary>
+            查询layout数据
+            </summary>
+            <param name="layOutId">布局ID</param>
+            <returns>布局信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.GetVoucherLayoutData">
+            <summary>
+            读取单据布局信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.GetVoucherLayoutData(System.String)">
+            <summary>
+            读取单据布局信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.GetGridLayoutData(System.String,System.String)">
+            <summary>
+            读取实体数据信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.GetGridLayoutData">
+            <summary>
+            读取实体数据信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.SaveUserGridLayOut(System.String,System.String)">
+            <summary>
+            保存当前的视图
+            </summary>
+            <param name="gridID"></param>
+            <param name="gridLayoutXML"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.UpdateUserGridLayout(System.String,System.String)">
+            <summary>
+            更新用户GridLayout信息
+            </summary>
+            <param name="gridID">GridID</param>
+            <param name="gridLayoutXML">Layout元数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.InsertUserGridLayout(System.String,System.String)">
+            <summary>
+            新建用户GridLayout信息
+            </summary>
+            <param name="gridID">GridID</param>
+            <param name="gridLayoutXML">Layout元数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.DeleteUserGridLayout(System.String)">
+            <summary>
+            删除用户的GridLayout数据
+            </summary>
+            <param name="gridID">GridLayout ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.ReadGridLayout(System.String)">
+            <summary>
+            读取GridLayout数据
+            </summary>
+            <param name="gridID">GridLayout ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.PreSaveVoucher(System.String)">
+            <summary>
+            予处理LayoutXML数据，使他能在反序列化后能正常使用
+            </summary>
+            <param name="layoutXML">元数据</param>
+            <returns>处理后的元数据</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.CardNum">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.VoucherLayoutDataList">
+            <summary>
+            单据布局信息数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherLayoutHelper.GridLayoutData">
+            <summary>
+            实体布局数据
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ListArchiveDataService">
+            <summary>
+            列表档案持久化处理类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ListArchiveDataService.GetData(System.String)">
+            <summary>
+            读取单据实体数据
+            </summary>
+            <param name="VoucherID">单据ID</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.ListArchiveDataService.GetDataStruct">
+            <summary>
+            读取单据的物理表结构
+            </summary>
+            <returns>结果</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService">
+            <summary>
+            树形档案持久化处理类
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.codeField">
+            <summary>
+            单据编号字段
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetData(System.String)">
+            <summary>
+            读取树形视图的数据，如果该节点是末级节点则读取该条记录
+            如果该节点为非末级节点则读取其子节点，
+            读取第一级节点则将voucherid 设置为""(空字符串)
+            </summary>
+            <param name="VoucherID">单据cardnumfield的值</param>
+            <returns>数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetData(System.String,System.String)">
+            <summary>
+            读取物理表的数据，如果该表为树形节点，则根据单据编号规则查询
+            如果该表为子表，则根据该子表的歪键来查询
+            </summary>
+            <param name="voucherTableName">物理表</param>
+            <param name="VoucherID">关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetDataTable(System.String,System.String)">
+            <summary>
+            读取物理表中的数据
+            </summary>
+            <param name="VoucherID">单据ID</param>
+            <param name="tablename">物理表</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetCodeRule">
+            <summary>
+            返回编号规则
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetNextLevel(System.String)">
+            <summary>
+            返回下级编号的长度
+            </summary>
+            <param name="voucherid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.IsNavagateTree(System.String)">
+            <summary>
+            是否是数形节点
+            </summary>
+            <param name="tableName">物理表</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetNextLevelID(System.String,System.Int32)">
+            <summary>
+            返回下级节点的查询条件
+            </summary>
+            <param name="voucherid"></param>
+            <param name="nextLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.NavigateArchiveDataService.GetCodeField">
+            <summary>
+            获取树形编号字段
+            </summary>
+            <returns>字段名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherDataService.GetData(System.String)">
+            <summary>
+            读取单据实体数据
+            </summary>
+            <param name="VoucherID">单据ID</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.VoucherDataService.GetDataStruct">
+            <summary>
+            读取单据的物理表结构
+            </summary>
+            <returns>结果</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.EnumRowState">
+            <summary>
+            单据的行状态，
+            存储服务根据此状态来处理单据的
+            数据，DataTable对应的字段为UAPRuntime_rowstate
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.EnumRowState.Unchanged">
+            <summary>
+            单据行没有改变
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.EnumRowState.Added">
+            <summary>
+            新增的行
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.EnumRowState.Deleted">
+            <summary>
+            删除的行
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.EnumRowState.Modified">
+            <summary>
+            该行被修改过
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher">
+            <summary>
+            单据对象，可以操作单据，查询一张单据数据
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.RowStateField">
+            <summary>
+            单据的行状态字段
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.#ctor(System.String,U8Login.clsLogin)">
+            <summary>
+            单据对象的构造函数
+            </summary>
+            <param name="cardNum">单据编号</param>
+            <param name="u8login">u8Vb登陆对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetLastVoucherID">
+            <summary>
+            获取最后录入的一张单据ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetData(System.String)">
+            <summary>
+            查询一张单据的数据
+            </summary>
+            <param name="voucherID">单据ID</param>
+            <returns>单据数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetData(System.String,System.String)">
+            <summary>
+            获取物力表数据
+            </summary>
+            <param name="tableName">物理表</param>
+            <param name="voucherID">ID</param>
+            <returns>数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.CopyData(System.String)">
+            <summary>
+            复制单据
+            </summary>
+            <param name="voucherID">单据的ID</param>
+            <returns>单据的数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.CopyData(System.Data.DataSet)">
+            <summary>
+            复制单据
+            </summary>
+            <param name="ds">单据</param>
+            <returns>单据的数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetHeadTableName">
+            <summary>
+            获取表头表的名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetBodyTableName">
+            <summary>
+            获取表体表的名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetDataStruct">
+            <summary>
+            读取单据的结构
+            </summary>
+            <returns>结构</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.IsFinalAudit(System.Data.DataSet)">
+            <summary>
+            是否终审
+            </summary>
+            <param name="ds">单据数据</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.IsFinalAudit(System.String)">
+            <summary>
+            是否终审
+            </summary>
+            <param name="voucherID">单据ID</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.Add(System.Data.DataSet)">
+            <summary>
+            新增一张单据到数据库
+            </summary>
+            <param name="ds">单据信息</param>
+            <returns>单据主键</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.Modify(System.Data.DataSet)">
+            <summary>
+            修改单据数据保存到数据库
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.Delete(System.Data.DataSet)">
+            <summary>
+            删除单据
+            </summary>
+            <param name="ds">单据信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.Approve(System.Data.DataSet)">
+            <summary>
+            审核单据
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.UnApprove(System.Data.DataSet)">
+            <summary>
+            弃审单据
+            </summary>
+            <param name="ds">单据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.GetReceipNo(System.Data.DataSet,UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum)">
+            <summary>
+            依据单据编号规则生成单据编号
+            </summary>
+            <param name="ds">单据数据</param>
+            <param name="VoucherState">单据状态</param>
+            <returns>单据编号</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.CreateLogin(U8Login.clsLogin)">
+            <summary>
+            登陆对象的创建
+            </summary>
+            <param name="u8login">u8登陆对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.SetChildrenFKeyValue(System.Data.DataSet,System.Collections.ArrayList,System.String,System.Object,System.Object)">
+            <summary>
+            修改子表的外键值
+            </summary>
+            <param name="ds"></param>
+            <param name="listTable"></param>
+            <param name="primarykey"></param>
+            <param name="newPkValue"></param>
+            <param name="oldPkValue"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.CheckDefaultColumns(System.Data.DataTable)">
+            <summary>
+            检查字段UAPRuntime_rowstate
+            </summary>
+            <param name="dt">物理表</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.MetaData">
+            <summary>
+            元数据对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.IsSupportAudit">
+            <summary>
+            是否支持审核
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.IsInWorkFlow">
+            <summary>
+            是否进入审批流
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.IsBorn">
+            <summary>
+            是否生单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Voucher.RuleID">
+            <summary>
+            单据转化规则
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.LogHelper">
+            <summary>
+            日志类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.LogHelper.WriteError(System.String,System.String,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="className"></param>
+            <param name="methodName"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.LogHelper.WriteError(System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.LogHelper.WriteWarn(System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.LogHelper.WriteInfo(System.Object)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.LogHelper.WriteDebug(System.Object)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType">
+            <summary>
+            行记录级权限控制
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType.None">
+            <summary>
+            无控制
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType.Read">
+            <summary>
+            读权限
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType.Write">
+            <summary>
+            写权限
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.BusinessObject.Comm.RowAuthType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.IsEnableWorkFlow">
+            <summary>
+            是否启用了工作流
+            </summary>
+            <returns>是否启用</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.Audit(System.Data.DataTable)">
+            <summary>
+            审核
+            </summary>
+            <param name="dt">单据头</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.UnAudit(System.Data.DataTable)">
+            <summary>
+            弃审
+            </summary>
+            <param name="dt">单据头</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.IsFinalAudit(System.Data.DataTable)">
+            <summary>
+            是否终审
+            </summary>
+            <param name="dt">DataTable</param>
+            <returns>是否终审</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.GetAuditInfo">
+            <summary>
+            获取
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.CreateLogin(U8Login.clsLogin)">
+            <summary>
+            登陆对象的创建
+            </summary>
+            <param name="u8login">u8登陆对象</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.BusinessObject.AuditService.IsSupportAudit">
+            <summary>
+            是否需要审批
+            </summary>
+        </member>
+    </members>
+</doc>

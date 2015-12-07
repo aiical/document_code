@@ -1,0 +1,379 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C2E4A70-5001-4E8E-819F-F6B2829778B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.2.UI, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.2.Core, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindClass.cs" />
+    <Compile Include="CHDevExpress.cs" />
+    <Compile Include="frmBarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarCode.Designer.cs">
+      <DependentUpon>frmBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseList.Designer.cs">
+      <DependentUpon>frmBaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillImport.designer.cs">
+      <DependentUpon>frmBillImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillList.Designer.cs">
+      <DependentUpon>frmBillList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBomStoreQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBomStoreQty.Designer.cs">
+      <DependentUpon>frmBomStoreQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDialog.Designer.cs">
+      <DependentUpon>frmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetStockPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetStockPrice.Designer.cs">
+      <DependentUpon>frmGetStockPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGraphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGraphi.Designer.cs">
+      <DependentUpon>frmGraphi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportFlag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportFlag.Designer.cs">
+      <DependentUpon>frmImportFlag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDIChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDIChild.Designer.cs">
+      <DependentUpon>frmMDIChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelItem.designer.cs">
+      <DependentUpon>frmSelItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetField.designer.cs">
+      <DependentUpon>frmSetField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetGrid.designer.cs">
+      <DependentUpon>frmSetGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQL.Designer.cs">
+      <DependentUpon>frmSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTypeEdit.designer.cs">
+      <DependentUpon>frmTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewFile.Designer.cs">
+      <DependentUpon>frmViewFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadDllForm.Designer.cs">
+      <DependentUpon>LoadDllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadLayout.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesign.Designer.cs">
+      <DependentUpon>UserDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraChinese.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonData\CommonData.csproj">
+      <Project>{42954806-AAB9-4838-96D4-4A3FFEF4F965}</Project>
+      <Name>CommonData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBarCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillImport.resx">
+      <DependentUpon>frmBillImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillList.resx">
+      <DependentUpon>frmBillList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBomStoreQty.resx">
+      <DependentUpon>frmBomStoreQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetStockPrice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGetStockPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGraphi.resx">
+      <DependentUpon>frmGraphi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportFlag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImportFlag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIChild.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMDIChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelItem.resx">
+      <DependentUpon>frmSelItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetField.resx">
+      <DependentUpon>frmSetField.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetGrid.resx">
+      <DependentUpon>frmSetGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTypeEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmViewFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDllForm.resx">
+      <DependentUpon>LoadDllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesign.resx">
+      <DependentUpon>UserDesign.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUnCutOff.Glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\btnAddRow.Glyph.png" />
+    <Content Include="Resources\btnCheck.Glyph.png" />
+    <Content Include="Resources\btnClose.Glyph.png" />
+    <Content Include="Resources\btnDel.Glyph.png" />
+    <Content Include="Resources\btnDelRow.Glyph.png" />
+    <Content Include="Resources\btnEdit.Glyph.png" />
+    <Content Include="Resources\btnExport.Glyph.png" />
+    <Content Include="Resources\btnNew.Glyph.png" />
+    <Content Include="Resources\btnPreview.Glyph.png" />
+    <Content Include="Resources\btnPrint.Glyph.png" />
+    <Content Include="Resources\btnPrint.Glyph1.png" />
+    <Content Include="Resources\btnSave.Glyph.png" />
+    <Content Include="Resources\btnUnCheck.Glyph.png" />
+    <Content Include="Resources\pcTitle.Image.bmp" />
+    <Content Include="Resources\pcTitle.Image1.bmp" />
+    <Content Include="Resources\picCheck.Image.jpg" />
+    <Content Include="Resources\picCutOff.Image.jpg" />
+    <Content Include="Resources\picFinish.Image.jpg" />
+    <Content Include="Resources\picInvalid.Image.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

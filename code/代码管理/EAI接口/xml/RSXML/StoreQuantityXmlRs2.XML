@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 采购类型 所有元素的全集,在在增加、编辑、删除、参照时，可以按具体情况来定节点元素，即除了必须的属性外,其他可以不写 但大小写必续和下面的相符-->
+<!--roottag:类型 billtype:系统用 docid:唯一编号 receiver:接收方 sender:发送方编码 proc:操作码 codeexchanged:编码是否已转换  exportneedexch导出时是否要根据对照表替换-->
+<ufinterface roottag="storequantity" billtype="" docid="" receiver="" sender="" proc="" codeexchanged="" exportneedexch="" version="2.0">
+  <common>
+    <code>cInvCode</code>
+    <now>XCL</now>
+    <asked>YQGL</asked>
+    <orderonroad>DDZT</orderonroad>
+    <arrivedgoods>DHDJ</arrivedgoods>
+    <production>SCDD</production>
+    <oemorder>WWDD</oemorder>
+    <moveonroad>DBZT</moveonroad>
+    <ordered>YDGL</ordered>
+    <consignment>DFHL</consignment>
+    <arrangedplan>BLJH</arrangedplan>
+    <translation>DBDF</translation>
+    <productioncon>SCWL</productioncon>
+    <oemcon>WWWL</oemcon>
+    <frozen>DJL</frozen>
+    <disqualification>BHGP</disqualification>
+    <useable>KYL</useable>
+    <safeline>iSafeNum</safeline>
+    <dispersion>DYAQL</dispersion>
+    <headline>iTopSum</headline>
+    <overtake>CCL</overtake>
+    <deadline>iLowSum</deadline>
+    <shortage>DQL</shortage>
+  </common>
+</ufinterface>
+<!--
+code			存货编码
+now			现存量
+asked			已请购量
+orderonroad		订单在途量
+arrivedgoods		到货待检量
+production		生产订单量
+oemorder		委外订单量
+moveonroad		调拨在途量
+ordered			已订购量
+consignment		待发货量
+arrangedplan		备料计划量
+translation		调拨待发量
+productioncon	生产未领量
+oemcon			委外未领量
+expect			预计库存量
+frozen			冻结量
+disqualification 	不合格品量
+useable			可用量
+safeline		安全库存量
+dispersion 		差量
+headline		最高库存量
+overtake		超储量
+deadline		最低库存量
+shortage		短缺量
+-->

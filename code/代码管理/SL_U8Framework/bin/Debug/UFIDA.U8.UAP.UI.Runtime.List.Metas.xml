@@ -1,0 +1,894 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.UI.Runtime.List.Metas</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta">
+            <summary>
+            数据源元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="type">数据访问实现类型</param>
+            <param name="allowChangeScript">是否允许动态改变脚本</param>
+            <param name="detailSetting">详细设置</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta.Serialize">
+            <summary>
+            序列化操作,将对象转化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化操作，从Xml节点中获取信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta.Type">
+            <summary>
+            获取或者设置数据访问接口类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta.DetailSetting">
+            <summary>
+            获取或者设置数据访问细节设置
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta">
+            <summary>
+            工具栏元素元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">Toolbar项ID</param>
+            <param name="text">Toolbar项文本</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">Toolbar项对应的ID</param>
+            <param name="text">Toolbar项显示文本</param>
+            <param name="image">Toolbar项显示图片名称</param>
+            <param name="description">Toolbar项描述信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.#ctor(System.String,System.String,System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">Toolbar项对应的ID</param>
+            <param name="text">Toolbar项显示文本</param>
+            <param name="image">Toolbar项显示图片名称</param>
+            <param name="description">Toolbar项描述信息</param>
+            <param name="eventType">事件类型</param>
+            <param name="childItems">子项目信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.#ctor(System.String,System.String,System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.UseInTypeEnum,System.String,UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">Toolbar项对应的ID</param>
+            <param name="text">Toolbar项显示文本</param>
+            <param name="image">Toolbar项显示图片名称</param>
+            <param name="shortKey">快捷键</param>
+            <param name="useInType">功能的展现位置</param>
+            <param name="description">Toolbar项描述信息</param>
+            <param name="eventType">事件类型</param>
+            <param name="childItems">子项目信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.SerializeExtensions">
+            <summary>
+            序列化扩展信息
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.DeserializeExtensions(System.Xml.XmlNode)">
+            <summary>
+            反序列化扩展属性
+            </summary>
+            <param name="pNode">父节点</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Index">
+            <summary>
+            工具栏按钮的位置
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Id">
+            <summary>
+            获取或者设置工具栏按钮对应的ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Text">
+            <summary>
+            获取或者设置工具栏按钮对应的文本
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Image">
+            <summary>
+            获取或者设置工具栏按钮对应的图片信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Description">
+            <summary>
+            获取或者设置按钮对应的描述信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.ChildItems">
+            <summary>
+            获取当前按钮对应的子按钮信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.EventType">
+            <summary>
+            获取或者设置当前Toolbar项对应的事件类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Extensions">
+            <summary>
+            获取Toolbar按钮的扩展信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.AuthID">
+            <summary>
+            获取或者设置该按钮对应的权限ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.Tag">
+            <summary>
+            获取或者设置当前按钮附带信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.ShortKey">
+            <summary>
+            获取或设置快捷键
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta.UseInType">
+            <summary>
+            获取或设置功能的展现位置
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta">
+            <summary>
+            列表显示元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta.#ctor(System.Boolean,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="showPagenationPanel">是否显示分页面板</param>
+            <param name="defaultPageSize">缺省分页大小</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta.Serialize">
+            <summary>
+            序列化操作,将对象转化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化操作，从Xml节点中获取信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta.ShowPagenationPanel">
+            <summary>
+            获取或者设置是否显示分页面板
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta.DefaultPageSize">
+            <summary>
+            获取或者设置缺省分页大小
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum">
+            <summary>
+            UI事件处理函数
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.COLUMNSET">
+            <summary>
+            设置显示列
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.FILTER">
+            <summary>
+            设置过滤信息
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.PRINT">
+            <summary>
+            打印事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.PREVIEW">
+            <summary>
+            打印预览事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.EXPORT">
+            <summary>
+            导出事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.CLICK">
+            <summary>
+            单击列表数据事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.DBCLICK">
+            <summary>
+            双击列表数据事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.VOUCHERSUM">
+            <summary>
+            单据汇总事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.REFRESH">
+            <summary>
+            刷新事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.VOUCHERCONVERT">
+            <summary>
+            升单事件
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.VOUCHERCOPY">
+            <summary>
+            单据拷贝
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.BATCHPRINT">
+            <summary>
+            单据拷贝
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum.CUSTOMBUTTONCLICK">
+            <summary>
+            自定义按钮相应事件
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil">
+            <summary>
+            列表元数据工具类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.CreateUFGeneralList(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            创建通用列表元数据
+            </summary>
+            <param name="listID">列表ID</param>
+            <param name="listName">列表名称</param>
+            <param name="projectNo">项目编号</param>
+            <param name="subNo">子产品编号</param>
+            <param name="filterSetID">过滤设置ID</param>
+            <param name="columnSetID">栏目设置ID</param>
+            <param name="supportVoucherSum">是否支持单据汇总处理</param>
+            <returns>列表元数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.CreateUFGeneralList(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            创建通用列表元数据
+            </summary>
+            <param name="listID">列表ID</param>
+            <param name="listName">列表名称</param>
+            <param name="projectNo">项目编号</param>
+            <param name="subNo">子产品编号</param>
+            <param name="filterSetID">过滤设置ID</param>
+            <param name="columnSetID">栏目设置ID</param>
+            <param name="supportVoucherSum">是否支持单据汇总处理</param>
+            <param name="needPaginate">是否需要分页处理</param>
+            <param name="defaultPageSize">默认分页个数</param>
+            <returns>列表元数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.CreateUFGeneralList(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Int32,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta[])">
+            <summary>
+            创建通用列表元数据
+            </summary>
+            <param name="listID">列表ID</param>
+            <param name="listName">列表名称</param>
+            <param name="projectNo">项目编号</param>
+            <param name="subNo">子产品编号</param>
+            <param name="filterSetID">过滤设置ID</param>
+            <param name="columnSetID">栏目设置ID</param>
+            <param name="supportVoucherSum">是否支持单据汇总处理</param>
+            <param name="needPaginate">是否需要分页处理</param>
+            <param name="defaultPageSize">默认分页个数</param>
+            <param name="toolbars">列表对应的Toolbar数组</param>
+            <returns>列表元数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetListToolbarInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta[])">
+            <summary>
+            设置通用列表Toolbar信息
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="toolbars">toolbar数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetUIEventHandlerInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.String)">
+            <summary>
+            设置UI事件处理响应类信息
+            </summary>
+            <param name="list">通用列表信息</param>
+            <param name="baseUIEventHandler">基础UI实现类</param>
+            <param name="customUIEventHandler">二次开发UI实现类</param>
+            <param name="pluginUIEventHandler">插件开发UI实现类</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetCustomeUIEventHandler(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String)">
+            <summary>
+            设置二次开发UI事件处理响应类信息
+            </summary>
+            <param name="list">通用列表信息</param>
+            <param name="customUIEventHandler">二次开发UI实现类</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEERQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String)">
+            <summary>
+            设置实体关系查询设置信息
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAESqlQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.Boolean)">
+            <summary>
+            设置BizDAE SQL脚本查询设置信息
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+            <param name="supportChangeScript">是否支持改变脚本</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAESqlQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            设置BizDAE SQL脚本查询设置信息
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+            <param name="supportChangeSelectPart">是否支持改变选择部分脚本</param>
+            <param name="supportChangeWherePart">是否支持改变条件部分脚本</param>
+            <param name="supportChangeOrderPart">是否支持改变排序部分脚本</param>
+            <param name="supportChangeGroupPart">是否支持改变分组部分脚本</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEProcedureQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.String)">
+            <summary>
+            设置BizDAE中存储过程查询设置(仅仅支持查询脚本转化为参数，其它不支持)
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+            <param name="whereToParameter">查询部分脚本转化为SQL参数名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEProcedureQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String)">
+            <summary>
+            设置BizDAE中存储过程查询设置(仅仅支持查询脚本转化为参数，其它不支持)
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+            <param name="whereToParameter">查询部分脚本转化为SQL参数名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEProcedureQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            设置BizDAE中存储过程查询设置
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+            <param name="selectToParameter">选择部分脚本转化为SQL参数名称</param>
+            <param name="whereToParameter">查询部分脚本转化为SQL参数名称</param>
+            <param name="orderToParameter">排序部分脚本转化为SQL参数名称</param>
+            <param name="groupToParameter">分组部分脚本转化为SQL参数名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetSqlQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            设置SQL脚本查询设置信息
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="selectScript">选择部分脚本</param>
+            <param name="fromScript">From部分脚本</param>
+            <param name="whereScript">条件部分脚本</param>
+            <param name="orderScript">排序部分脚本</param>
+            <param name="groupScript">分组部分脚本</param>
+            <param name="havingScript">分组条件部分脚本</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetSqlQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.Boolean,System.String,System.String,System.Boolean,System.String,System.Boolean,System.String,System.Boolean,System.String)">
+            <summary>
+            设置SQL脚本查询设置信息
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="selectScript">选择部分脚本</param>
+            <param name="fromScript">From部分脚本</param>
+            <param name="whereScript">条件部分脚本</param>
+            <param name="orderScript">排序部分脚本</param>
+            <param name="groupScript">分组部分脚本</param>
+            <param name="havingScript">分组条件部分脚本</param>
+            <param name="supportChangeSelectPart">是否支持改变选择部分脚本</param>
+            <param name="supportChangeWherePart">是否支持改变条件部分脚本</param>
+            <param name="supportChangeOrderPart">是否支持改变排序部分脚本</param>
+            <param name="supportChangeGroupPart">是否支持改变分组部分脚本</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetProcedureQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String)">
+            <summary>
+            设置存储过程查询设置(仅仅支持查询脚本转化为参数，其它不支持)
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="procedureName">存储过程名称</param>
+            <param name="whereToParameter">查询部分脚本转化为SQL参数名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetProcedureQueryInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            设置存储过程查询设置
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="procedureName">存储过程名称</param>
+            <param name="selectToParameter">选择部分脚本转化为SQL参数名称</param>
+            <param name="whereToParameter">查询部分脚本转化为SQL参数名称</param>
+            <param name="orderToParameter">排序部分脚本转化为SQL参数名称</param>
+            <param name="groupToParameter">分组部分脚本转化为SQL参数名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.Encode(System.String)">
+            <summary>
+            对文本进行Xml编码
+            </summary>
+            <param name="text">文本</param>
+            <returns>经过编码后的文本字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.Decode(System.String)">
+            <summary>
+            对Xml文本进行解码
+            </summary>
+            <param name="text">被Xml编码后的文本</param>
+            <returns>解码后的文本信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEFilterInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String,System.String)">
+            <summary>
+            设置BizDAE的过滤信息。
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="filterid">过滤ID</param>
+            <param name="defaultFilterStr">不打开过滤窗口时设置默认过滤信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEFilterInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String)">
+            <summary>
+            设置BizDAE的过滤信息。
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="filterid">过滤ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaUtil.SetBizDAEColumnInfo(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.String)">
+            <summary>
+            设置BizDAE的过滤信息。
+            </summary>
+            <param name="list">列表元数据</param>
+            <param name="filterid">栏目ID</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager">
+            <summary>
+            U8通用列表元数据管理类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dbConnStr">元数据库联接字符串</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.Update(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta[])">
+            <summary>
+            更新函数
+            </summary>
+            <param name="metas">列表信息数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.Update(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            更新函数
+            </summary>
+            <param name="meta">通用列表元数据类</param>
+            <param name="trans">SQL事务对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.Delete(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta[])">
+            <summary>
+            删除列表元数据信息
+            </summary>
+            <param name="metas">列表元数据集合ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.Delete(System.String[])">
+            <summary>
+            删除列表元数据信息
+            </summary>
+            <param name="metaids">列表元数据id集合</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.Delete(System.Data.SqlClient.SqlTransaction,System.String[])">
+            <summary>
+            删除列表元数据
+            </summary>
+            <param name="metaids">元数据id</param>
+            <param name="trans">SQL事务</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.GetGeneralList(System.String[])">
+            <summary>
+            根据列表ID获取列表元数据
+            </summary>
+            <param name="metaids">列表id数组</param>
+            <returns>列表元数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.GetGeneralList(System.String)">
+            <summary>
+            获取通用列表元数据
+            </summary>
+            <param name="metaId">列表ID</param>
+            <returns>列表元数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.Contains(System.String)">
+            <summary>
+            判断是否存在指定的ID的列表信息
+            </summary>
+            <param name="metaid">列表ID</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMetaManager.DBConnString">
+            <summary>
+            获取或者设置数据库联接字符串
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta">
+            <summary>
+            通用列表元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="metaID">元数据ID</param>
+            <param name="name">列表名称</param>
+            <param name="projectNo">项目编号</param>
+            <param name="subNo">子产品编号</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.#ctor(System.String,System.String,System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta,System.String,System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta[],UFIDA.U8.UAP.UI.Runtime.List.Metas.EventMeta[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="metaID">元数据ID</param>
+            <param name="name">列表名称</param>
+            <param name="projectNo">项目编号</param>
+            <param name="subNo">子产品编号</param>
+            <param name="dataSource">数据源设置</param>
+            <param name="displaySet">显示格式设置</param>
+            <param name="filter">过滤设置</param>
+            <param name="baseUIEventHandler">基础开发界面事件处理类</param>
+            <param name="customUIEventHandler">二次开发界面事件处理类</param>
+            <param name="pluginUIEventHandler">插件开发界面事件处理类</param>
+            <param name="message">消息服务设置</param>
+            <param name="toolbars">工具栏设置</param>
+            <param name="disabledEvents">禁用事件设置</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.#ctor(UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.DisplaySetMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta,System.String,System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dataSource">数据源设置</param>
+            <param name="displaySet">显示格式设置</param>
+            <param name="filter">过滤设置</param>
+            <param name="column">栏目设置</param>
+            <param name="message">消息服务设置</param>
+            <param name="baseUIEventHandler">基础开发界面事件处理类</param>
+            <param name="customUIEventHandler">二次开发界面事件处理类</param>
+            <param name="pluginUIEventHandler">插件开发界面事件处理类</param>
+            <param name="toolbars">工具栏设置</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.#ctor(UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dataSource">数据源设置</param>
+            <param name="filter">过滤设置</param>
+            <param name="column">栏目设置</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.#ctor(UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta,UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dataSource">数据源设置</param>
+            <param name="filter">过滤设置</param>
+            <param name="column">栏目设置</param>
+            <param name="customUIEventHandler">二次开发界面事件处理类</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.Serialize">
+            <summary>
+            序列化：将当前对象序列化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.Deserialize(System.String)">
+            <summary>
+            反序列化：从Xml字符串中获取通用列表信息
+            </summary>
+            <param name="xml">xml字符串</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化：从Xml节点中获取通用列表信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.MetaID">
+            <summary>
+            获取或者设置列表元数据ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.Name">
+            <summary>
+            获取或者设置列表名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.ProjectNo">
+            <summary>
+            获取或者设置项目编码
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.SubNo">
+            <summary>
+            获取或者设置子产品编码
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.DataAccess">
+            <summary>
+            获取或者设置数据源信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.DisplaySet">
+            <summary>
+            获取或者设置数据显示设置信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.FilterSet">
+            <summary>
+            获取或者设置过滤器信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.ColumnSet">
+            <summary>
+            获取或者设置栏目设置信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.MessageService">
+            <summary>
+            获取或者设置消息服务元数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.Toolbars">
+            <summary>
+            获取Toolbar元数据集合信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.DisabledEvents">
+            <summary>
+            获取列表中禁用的事件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.BaseUIEventHandler">
+            <summary>
+            获取或者设置界面事件基础开发响应处理类信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.CustomUIEventHandler">
+            <summary>
+            获取或者设置界面事件二次开发响应处理类信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.PluginUIEventHandler">
+            <summary>
+            获取或者设置界面事件插件开发响应处理类信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.ExtendInfo">
+            <summary>
+            获取或者设置扩展信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta.SupportVoucherSum">
+            <summary>
+            获取或者设置是否支持单据汇总处理
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta">
+            <summary>
+            与消息服务设置相关的元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta.#ctor(System.String[],System.String[],System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="publishMessages">发布的消息类型</param>
+            <param name="subscribeMessages">订阅的消息类型</param>
+            <param name="handlerInfo">消息处理处理器信息</param>
+            <param name="detailSetting">详细设置信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta.Serialize">
+            <summary>
+            将信息转化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.MessageServiceMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            从Xml节点中获取信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.EventMeta.#ctor">
+            <summary>
+            构造函数，默认为双击事件UIEventTypeEnum.DBCLICK
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.EventMeta.#ctor(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="eventType">事件类别</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.EventMeta.Serialize">
+            <summary>
+            序列化操作,将对象转化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.EventMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化操作，从Xml节点中获取信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta">
+            <summary>
+            工具栏元数据信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">工具栏ID</param>
+            <param name="text">工具栏文本</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta.#ctor(System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">工具栏ID</param>
+            <param name="text">工具栏文本</param>
+            <param name="items">工具栏项集合</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta">
+            <summary>
+            栏目元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="columnSetID">栏目设置ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta.Serialize">
+            <summary>
+            序列化操作,将对象转化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化操作，从Xml节点中获取信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.ColumnMeta.ColumnSetID">
+            <summary>
+            获取或者设置栏目设置ID
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta">
+            <summary>
+            过滤元数据类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="filterSetID">过滤设置ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="filterSetid">过滤设置ID</param>
+            <param name="defaultFilterCondition">获取或设置不显示过滤条件设置窗口时的过滤条件，内容为xml格式
+            格式如下: <!--<FilterItems> <Item key="过滤列名称" val1="值1" val2="区间条件时值2"/>... ... </FilterItems>-->
+            </param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.Serialize">
+            <summary>
+            序列化操作,将对象转化为Xml字符串
+            </summary>
+            <returns>Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.Deserialize(System.Xml.XmlNode)">
+            <summary>
+            反序列化操作，从Xml节点中获取信息
+            </summary>
+            <param name="node">Xml节点</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.FilterSetID">
+            <summary>
+            获取或者设置过滤ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Metas.FilterMeta.DefaultFilterCondition">
+            <summary>
+            获取或设置不显示过滤条件设置窗口时的过滤条件，内容为xml格式
+            格式如下: <!--<FilterItems><Item key="过滤列名称" val1="值1" val2="区间条件时值2"/>... ...</FilterItems>-->
+            </summary>
+        </member>
+    </members>
+</doc>

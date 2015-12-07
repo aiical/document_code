@@ -1,0 +1,1450 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.UI.Runtime.Model</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.Businesses">
+            <summary>
+            实体集合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Businesses.Item(System.Int32)">
+            <summary>
+            根据索引获取Business对象
+            </summary>
+            <param name="index">索引</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Businesses.Item(System.String)">
+            <summary>
+            根据实体编号值获取Business对象
+            </summary>
+            <param name="entityID">实体编号</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Businesses.Item(System.Object)">
+            <summary>
+            根据实体编号值获取Business对象
+            </summary>
+            <param name="entityID">实体编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessData">
+            <summary>
+            业务模型数据对象类。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessManager">
+            <summary>
+            业务对象管理类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessManager.#ctor(System.String,System.Data.DataSet,UFIDA.U8.UAP.UI.Runtime.Model.Voucher)">
+            <summary>
+            生成Business对象，并管理他们的关系
+            <para>relationxml: 实体关系描述xml</para>
+            <para>ds: 实体数据（结构）</para>
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.Business">
+            <summary>
+            业务模型的实体类（小M类）。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.#ctor(System.Xml.XmlNode,System.Data.DataTable)">
+            <summary>
+            Business构造函数
+            <para>businessXML：实体描述xml</para>
+            <para>ds：业务数据（结构）</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.#ctor(System.Xml.XmlNode,System.Data.DataTable,UFIDA.U8.UAP.UI.Runtime.Model.Business,UFIDA.U8.UAP.UI.Runtime.Model.Voucher)">
+            <summary>
+            Business构造函数
+            <para>businessXML：实体描述xml</para>
+            <para>ds：业务数据（结构），一个DataSet。</para>
+            <para>parent：上级业务对象。</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.ClearCheckedPKValues">
+            <summary>
+              清空复选框被选中行的主键。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.AddChild(UFIDA.U8.UAP.UI.Runtime.Model.Business)">
+            <summary>
+              添加下级实体
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.AddObserver(UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow)">
+            <summary>
+              添加观察者，只由控制器使用。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.ClearObservers">
+            <summary>
+              清除所有观察者，只由控制器使用。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.NewTableRow">
+            <summary>
+              获得一个业务对象对应物理数据库表的行，其中的主键、外键、缺省值已经设置好了。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.AddRow(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs)">
+            <summary>
+              业务模型增加行
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.RemoveRows(System.String[])">
+            <summary>
+              业务模型删除行，支持一次删除多行，若要实现一行一行的删除也可以使用这个方法。
+            <para>rowKeys：字符串类型的主键值数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.RefreshObservers(System.String)">
+            <summary>
+              根据传入的外键（过滤当前实体的数据）刷新与当前实体对应的所有的观察者视图。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.RefreshChildrenObservers(System.String)">
+            <summary>
+              刷新所有下级实体（包括间接下级）对应的所有的观察者视图
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.SetEditWindowStyle(UFIDA.U8.UAP.UI.Runtime.Common.EditWindowStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的样式。
+                <para>styles：EditWindowStyle类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.SetRowsStyle(UFIDA.U8.UAP.UI.Runtime.Common.RowStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的行的样式，支持一次设置多行的样式。
+                <para>styles：RowStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.SetCellsStyle(UFIDA.U8.UAP.UI.Runtime.Common.CellStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的单元格的样式，支持一次设置多个单元格的样式。
+                <para>styles：CellStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.SetCotesStyle(UFIDA.U8.UAP.UI.Runtime.Common.CoteStyleUpdatePara[])">
+            <summary>
+              设置列的样式，支持一次设置多个列的样式。
+                <para>styles：CoteStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.SetToolBarButtonsStyle(UFIDA.U8.UAP.UI.Runtime.Common.ToolBarButtonStyleUpdatePara[])">
+            <summary>
+              设置工具条按钮的样式。
+                <para>styles：ToolBarButtonStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.CheckData">
+            <summary>
+              检查数据是否合法：是否满足必输条件、是否可为0等等。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.Clear">
+            <summary>
+             清除实体数据，同时清除所有下级（包括间接下级）实体的数据，相当于对所有行执行删除操作。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.Load(System.Data.DataTable)">
+            <summary>
+              加载新的数据，但不刷新视图。
+            <para>dt：DataTable类型的数据</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.Refresh(System.Data.DataTable)">
+            <summary>
+              加载新的数据，并刷新视图。
+            <para>dt：DataTable类型的数据</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.GetCheckedDataTabe">
+            <summary>
+              得到复选框被选中行的DataTable
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.ProtectUnload">
+            <summary>
+            视图状态安全检查，可在执行某些上层功能时调用，相当于原来VB的ProtectUnload方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.AddBusinessRow(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs)">
+            <summary>
+              增加BusinessRow，同时增加BusinessData的行，并把增加的行标记为新增行。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.RemoveBusinessRow(System.String)">
+            <summary>
+              除去BusinessRow并标记BusinessData的对应行为删除行。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.UpdateCellValue(UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs)">
+            <summary>
+              更新Cell的值
+            调用插件的CellChanging和CellChanged方法。
+            调用自动执行代码
+            更新Cell的Value值，并刷新观察者视图。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.RefreshObserversCellsValue(UFIDA.U8.UAP.UI.Runtime.Common.CellValueUpdatePara[])">
+            <summary>
+            刷新所有观察者的单元格的值。
+            <para>cellDatas:刷新所需要的参数</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.AttatchEventHandler(UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow)">
+            <summary>
+            ing类型需要处理，在一开始对外触发
+              ed类型只对外触发，从v中触发，在所有ing类型处理完毕后
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.GetNavigateData(System.Data.DataTable,System.String)">
+            <summary>
+            获取导航树数据
+            </summary>
+            <param name="dt">导航之前的数据，用来判断是否需要从数据库中获取</param>
+            <param name="filter">过滤条件，用于从实体当前Datatable数据中重新过滤数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Business.ExecuteUAPValueChangeEvent(System.String)">
+            <summary>
+            执行UAP中定义的值更新事件
+            </summary>
+            <param name="method">方法名称</param>
+            <returns>成功与否</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Rows">
+            <summary>
+              获取业务实体的所有行。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.LineMode">
+            <summary>
+              获取实体的行模式，0：单行模式 1：多行模式。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Observers">
+            <summary>
+              获取实体对应的观察者视图（EditWindow）集合。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Name">
+            <summary>
+              实体名称，在业务建模时指定。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.CurrentPKValue">
+            <summary>
+              获取和设置当前行主键值，设置当前行主键值时当前行发生改变。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Cells">
+            <summary>
+              获取当前行的Cell集合。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.EntityType">
+            <summary>
+             实体的类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.TreeDataManager">
+            <summary>
+             树形（包括编辑和导航）实体的编码规则对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.ReadOnly">
+            <summary>
+              获取和设置业务对象的只读状态。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.PrimaryKeyFieldType">
+            <summary>
+              获取业务对象对应物理表的主键字段类型。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.PrimaryKey">
+            <summary>
+              获取业务对象对应物理表的主键字段。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.CodeFieldName">
+            <summary>
+              获取业务对象的编号字段。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.EntityID">
+            <summary>
+              获取业务对象对应的实体编号。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Data">
+            <summary>
+              获取业务实体对象数据。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Parent">
+            <summary>
+              获取和设置业务实体对象的父实体对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Children">
+            <summary>
+              获取业务实体对象的直接下级实体对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.Columns">
+            <summary>
+              获取业务实体对象的所有列对象（BusinessColumn）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.DisplayData">
+            <summary>
+              获取观察者视图正在显示的数据（根据外键过滤出来的数据）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.CurrentFKValue">
+            <summary>
+              获取当前的外键。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.CheckedPKValues">
+            <summary>
+              获取复选框被选中行的主键数组。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.RefData">
+            <summary>
+              获取当前点击参照返回值的DataRow.其内容只在Cell的值更新期间有效。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.IsRooEntity">
+            <summary>
+              获取当前业务对象是否是根实体。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Business.IsFirstSubEntity">
+            <summary>
+              获取当前业务对象是否是第一子实体。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.DataHelper.CopyDataTableRowsToOtherDataTable(System.Data.DataTable,System.Data.DataTable)">
+            <summary>
+            把一个表的所有行复制到另一个表里，目标表的字段可以多于源表的字段，并返回目标表的新增加行
+            </summary>
+            <param name="sourceDataTable">源表</param>
+            <param name="targetDataTable">目标表</param>
+            <returns>目标表的新增加行数组</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.ReceiptNoRule">
+            <summary>
+            单据编号规则类
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.CodeRule">
+            <summary>
+            树形实体编码规则类。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeRule.GetCodeLevel(System.String)">
+            <summary>
+            返回指定编号的级次
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeRule.IsLastLevel(System.String)">
+            <summary>
+            判断给定编号是否末级编号
+            </summary>
+            <param name="code">给定编号</param>
+            <returns>布尔值，标识是否末级编号</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeRule.IsTopLevel(System.String)">
+            <summary>
+            判断给定编号是否顶级（一级）编号
+            </summary>
+            <param name="code">给定编号</param>
+            <returns>布尔值，标识是否顶级（一级）编号</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCells">
+            <summary>
+            业务模型单元格集合类。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRow">
+            <summary>
+            业务对象数据行类。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRow.PKValue">
+            <summary>
+            获取行的主键值。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRow.Cells">
+            <summary>
+            获取行的Cell集合。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRow.Index">
+            <summary>
+            获取在DataTable中的行索引。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRow.RowState">
+            <summary>
+            获取和设置行的状态。
+            0：未修改 1：新增 2：删除 3：修改过
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRow.RowData">
+            <summary>
+            获取行的DataRow对象。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy">
+            <summary>
+            Voucher的对外代理类，隐藏了Voucher类的很多内部方法和属性。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.GetData(System.Boolean)">
+            <summary>
+              返回业务数据，用于持久化等操作。
+            </summary>
+            <param name="checkValid">是否检查数据合法性</param>
+            <returns>整个表单的业务数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.RefreshView">
+            <summary>
+              刷新整个视图（包括大V和所有小V）。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.Refresh(System.Data.DataSet)">
+            <summary>
+              用一个新的DataSet刷新业务模型并刷新观察者，如果是一个空的ds则为新增。
+            </summary>
+            <param name="ds">新的DataSet</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.AddNew">
+            <summary>
+              新增一个空表单。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.SaveVoucherButton">
+            <summary>
+              表单保存按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.PrintVoucherButton">
+            <summary>
+            表单打印按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.PreviewVoucherButton">
+            <summary>
+            表单打印预览按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.ExportVoucherButton">
+            <summary>
+            表单导出按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.AddNewVoucherButton">
+            <summary>
+            表单新增按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.ModifyVoucherButton">
+            <summary>
+            表单修改按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.DeleteVoucherButton">
+            <summary>
+            表单删除按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.ApproveVoucherButton">
+            <summary>
+            表单审核按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.AbandonApproveVoucherButton">
+            <summary>
+            表单弃审按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.RefreshVoucherButton">
+            <summary>
+            表单刷新按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.MakeVoucherButton">
+            <summary>
+            表单生单按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.ProtectUnload">
+            <summary>
+            视图状态安全检查，可在执行某些上层功能时调用，相当于原来VB的ProtectUnload方法。
+            </summary>
+            <returns>
+            数据是否安全的标志：
+            true－－安全
+            fals－－不安全
+            </returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.NeedSave">
+            <summary>
+            当前是否需要保存
+            </summary>
+            <returns>true--需要保存 false--不需要保存</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.CurrentPKValue">
+            <summary>
+            获得表单的当前主键值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.VoucherState">
+            <summary>
+            获得和设置表单的状态
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.Businesses">
+            <summary>
+            获得和设置大M中的小M集合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.Name">
+            <summary>
+            获得大M的名称（标识）
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.Behaviors">
+            <summary>
+            获得行为对象集合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.VBLoginObject">
+            <summary>
+            获取当前登录对象（VB适用）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.NetLoginObject">
+            <summary>
+            获取当前登录对象（.Net适用）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.LoginInfo">
+            <summary>
+            登录信息对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.HaveReceiptNORule">
+            <summary>
+            表单是否设置了单据编号规则。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy.ReadOnly">
+            <summary>
+              获取和设置表单的只读状态。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.StateManager">
+            <summary>
+            状态管理器
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.StateManager.GetCellStyleUpdatePara(UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum,UFIDA.U8.UAP.UI.Runtime.Model.Business)">
+            <summary>
+            得到指定实体，指定状态的单元格更新数组
+            </summary>
+            <param name="state"></param>
+            <param name="business"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.StateManager.GetButtonState(System.String,System.String)">
+            <summary>
+            得到当前状态下指定按钮的状态 ：enabled\hidden\disabled
+            </summary>
+            <param name="entityID"></param>
+            <param name="buttonKey"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.Voucher">
+            <summary>
+              大M类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.#ctor(System.String,System.Data.DataSet,U8Login.clsLogin)">
+             <summary>
+               大M类的构造函数。
+            <para>logicXML：业务模型描述xml数据</para>
+            <para>ds：业务数据，当为空实体时为数据结构</para>
+             </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ResetVoucherState">
+            <summary>
+            根据当前状态重置表单布局视图中的状态，包括输入框和按钮的状态，但不包括门户按钮的状态。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Abandon">
+            <summary>
+              放弃状态改变之后的所有操作。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.GetData">
+            <summary>
+              返回全部业务数据，并检查业务数据合法性，用于持久化等操作。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.GetData(System.Boolean)">
+            <summary>
+              返回全部业务数据，用于持久化等操作。
+            <para>checkValid：是否检查数据合法性</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.GetData(System.Boolean,UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum)">
+            <summary>
+              根据参数返回业务数据，用于持久化等操作。
+            <para>checkValid：是否检查数据合法性</para>
+            <para>gde：返回数据的类型</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AddRootDataForReceipt(System.Data.DataSet)">
+            <summary>
+            如果是单据和复杂档案，并且有数据变化，就把根实体的数据加进去。
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.NeedSave">
+            <summary>
+            当前是否需要保存
+            </summary>
+            <returns>true--需要保存 false--不需要保存</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.RefreshView">
+            <summary>
+              刷新所有小V，用于刷新整个V，在表单初始化时大C要调用。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ClearObservers">
+            <summary>
+              清除所有观察者，只由控制器使用。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Refresh">
+            <summary>
+            刷新业务模型并刷新观察者。
+            如果当前是修改状态，则用表单保存的数据（修改状态切换前的数据）刷新；
+            如果当前状态是新增，则刷新为新增的初始状态。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.UpdateAfterSave(UFIDA.U8.UAP.UI.Runtime.Common.ReturnDataForSave)">
+            <summary>
+              仅供控制器保存成功后调用
+            <para>ds:新的DataSet</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Update(System.Data.DataSet)">
+            <summary>
+              用一个结构相同的DataSet更新模型的DataSet，并刷新视图。
+              每个Table按照主键和字段名称更新，更新DataSet字段数量可以少于模型DataSet的字段数量。
+            <para>ds:更新DataSet</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Refresh(System.Data.DataSet)">
+            <summary>
+              用一个新的DataSet刷新业务模型并刷新观察者，如果是一个空的ds则为新增。
+            <para>ds:新的DataSet</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AddNew">
+            <summary>
+              新增一个空表单。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AddPlugin(System.String,System.Object)">
+            <summary>
+              注册新的插件
+            <para>interfaceName:接口名称</para>
+            <para>plugin:插件对象</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.RemovePlugin(System.String)">
+            <summary>
+              注销一个插件
+            <para>interfaceName:接口名称</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.SaveVoucherButton">
+            <summary>
+              表单保存按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.PrintVoucherButton">
+            <summary>
+            表单打印按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.PreviewVoucherButton">
+            <summary>
+            表单打印预览按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ExportVoucherButton">
+            <summary>
+            表单导出按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AddNewVoucherButton">
+            <summary>
+            表单新增按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ModifyVoucherButton">
+            <summary>
+            表单修改按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.DeleteVoucherButton">
+            <summary>
+            表单删除按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ApproveVoucherButton">
+            <summary>
+            表单审核按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AbandonApproveVoucherButton">
+            <summary>
+            表单弃审按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.RefreshVoucherButton">
+            <summary>
+            表单刷新按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.MakeVoucherButton">
+            <summary>
+            表单生单按钮（在门户上）方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ProtectUnload">
+            <summary>
+            视图状态安全检查，可在执行某些上层功能时调用，相当于原来VB的ProtectUnload方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.SetBusinessChildren">
+            <summary>
+              设置每个实体的下级实体。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.GetHaveReceiptNORule">
+            <summary>
+            判断表单是否设置了单据编号规则。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.SaveVoucherButtonEvent">
+            <summary>
+            表单保存按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.PrintVoucherButtonEvent">
+            <summary>
+            表单打印按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.PreviewVoucherButtonEvent">
+            <summary>
+            表单打印预览按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ExportVoucherButtonEvent">
+            <summary>
+            表单导出按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AddNewVoucherButtonEvent">
+            <summary>
+            表单新增按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ModifyVoucherButtonEvent">
+            <summary>
+            表单修改按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.DeleteVoucherButtonEvent">
+            <summary>
+            表单删除按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ApproveVoucherButtonEvent">
+            <summary>
+            表单审核按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.AbandonApproveVoucherButtonEvent">
+            <summary>
+            表单弃审按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.RefreshVoucherButtonEvent">
+            <summary>
+            表单刷新按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.MakeVoucherButtonEvent">
+            <summary>
+            表单生单按钮事件，仅供控制器使用。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.CurrentPKValue">
+            <summary>
+            获得表单的当前主键值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.VoucherType">
+            <summary>
+            获得表单的类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.VoucherState">
+            <summary>
+            获得和设置表单的状态
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Proxy">
+            <summary>
+            获得代理对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Businesses">
+            <summary>
+            获得和设置大M中的小M集合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Name">
+            <summary>
+            获得大M的名称（标识）
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Plugins">
+            <summary>
+            获得Plugin集合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Observer">
+            <summary>
+            设置大M的观察者大V
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.VBLoginObject">
+            <summary>
+            获取当前登录对象（VB适用）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.NetLoginObject">
+            <summary>
+            获取当前登录对象（.Net适用）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.LoginInfo">
+            <summary>
+            登录信息对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.HaveReceiptNORule">
+            <summary>
+            表单是否设置了单据编号规则。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.Root">
+            <summary>
+            获得根实体。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.EventXml">
+            <summary>
+            值更新事件xml对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.EventAssembly">
+            <summary>
+            值更新事件Assembly对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ReadOnly">
+            <summary>
+              获取和设置表单的只读状态。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.ReceiptNoRule">
+            <summary>
+              获取单据编号规则对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.Voucher.VoucherDataSet">
+            <summary>
+              获取业务对象的DataSet数据。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.IButtonEventHandler">
+            <summary>
+            一个toolbar的button的二次开发实现接口，每个接口必须实现三个方法，分别对应
+            button执行前、button执行中、button执行后三种，每个函数其返回值都是xml描述
+            的格式其描述方式如下
+            <result><system result="true or false" errinfo=" null or errinfo "/><user>自己定义的错误信息</user></result>
+            如果system的result为true,则系统认为上次函数执行成功
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IButtonEventHandler.Excuting(UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            toolbar的buton的执行前的方法，主要用作数据校验
+            </summary>
+            <param name="ReceiptObject">单据对象</param>
+            <returns>返回该函数的执行信息，返回结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.GetButtonEventHandler(UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs)">
+            <summary>
+            
+            </summary>
+            <param name="ButtonArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.InitReceipt(UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            运行时表单初始化之后调用的接口，可以处理表单加载时的业务要求。
+            </summary>
+            <param name="ReceiptObject">所属表单对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.CellChanging(UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            值更新之前的接口，对值的合法性检查在这里进行
+            <param name="para">Cell的值变动参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.CellChanged(UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            值更新之后的接口，对值的后续处理（如对其他Cell值的变更）在这里进行
+            <param name="para">Cell的值变动参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.RowAdding(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            增加行之前的接口，对行的合法性检查在这里进行
+            <param name="para">新增的行参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.RowAdded(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            增加行之后的接口，对新增行的后续处理在这里进行
+            <param name="para">新增的行参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.RowsDeleting(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs[],UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            删除行之前的接口，对行的合法性检查在这里进行
+            <param name="para">RowChangeEventArgs[]类型，要删除的行参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.RowsDeleted(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs[],UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            删除行之后的接口，对删除行的后续处理在这里进行
+            <param name="para">RowChangeEventArgs[]类型，要删除的行参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.ClickToolBarButton(UFIDA.U8.UAP.UI.Runtime.Common.ToolBarActionEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            观察者视图工具条按钮单击事件的接口
+            <param name="para">被单击的按钮参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.RowSelecting(UFIDA.U8.UAP.UI.Runtime.Common.RowSelectEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            设置为当前行之前的接口
+            <param name="para">被选择的行参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.RowSelected(UFIDA.U8.UAP.UI.Runtime.Common.RowSelectEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            设置为当前行之后的接口
+            <param name="para">被选择的行参数</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.DataChecking(UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            业务数据合法性检查之前的接口
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.DataChecked(UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            业务数据合法性检查之后的接口
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.EditWindowFilling(UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow,System.Data.DataTable,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            观察者视图填充数据前的接口
+            <param name="view">观察者视图接口(IEditWindow)对象</param>
+            <param name="fillDataTable">即将要填充的数据</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.EditWindowFilled(UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow,System.Data.DataTable,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            观察者视图填充数据后的接口
+            <param name="view">观察者视图接口(IEditWindow)对象</param>
+            <param name="fillDataTable">已经填充的数据</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.ReferOpening(UFIDA.U8.UAP.UI.Runtime.Common.ReferOpenEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            参照打开前的接口
+            <param name="view">观察者视图接口(IEditWindow)对象</param>
+            <param name="para">ReferOpenEventArgs参照信息</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.ReferClosed(UFIDA.U8.UAP.UI.Runtime.Common.ReferCloseEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            参照返回（关闭）后的接口
+            <param name="view">观察者视图接口(IEditWindow)对象</param>
+            <param name="para">ReferCloseEventArgs参照信息</param>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.CreateControl(UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy,System.String)">
+            以下为871增加的接口方法和属性
+            <summary>
+            创建用户自定义控件接口，开发人员可以在这里创建用户自定义控件。运行时会把这个控件加载到布局视图中。（871版本新增）
+            </summary>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            <param name="ID">布局视图中指定的自定义控件“控件ID”</param>
+            <returns>用户自定义控件对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.StateChanging(UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateChangeEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            表单状态更新之前的接口
+            <param name="para">状态的变动参数</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt.StateChanged(UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateChangeEventArgs,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy)">
+            <summary>
+            表单状态更新之后的接口
+            <param name="para">状态的变动参数</param>
+            <param name="voucherObject">所属表单对象</param>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.IReceipt871.CreateControl(UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy,UFIDA.U8.UAP.UI.Runtime.Model.VoucherProxy,System.String)">
+            <summary>
+            创建用户自定义控件接口，开发人员可以在这里创建用户自定义控件。运行时会把这个控件加载到布局视图中。
+            </summary>
+            <param name="businessObject">所属业务对象</param>
+            <param name="voucherObject">所属表单对象</param>
+            <param name="ID">布局视图中指定的自定义控件“控件ID”</param>
+            <returns>用户自定义控件对象</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy">
+            <summary>
+            Business的对外代理类，隐藏了Business类的很多内部方法和属性。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.AddRow(UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs)">
+            <summary>
+              业务模型增加行
+            </summary>
+            <param name="args">待增行数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.RemoveRows(System.String[])">
+            <summary>
+              业务模型删除行，支持一次删除多行，若要实现一行一行的删除也可以使用这个方法。
+            </summary>
+            <param name="rowKeys">字符串类型的待删除主键值数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.RefreshObservers(System.String)">
+            <summary>
+              根据传入的外键（过滤当前实体的数据）刷新与当前实体对应的所有的观察者视图。
+            </summary>
+            <param name="foreignKey">外键</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.RefreshChildrenObservers(System.String)">
+            <summary>
+              根据传入的外键刷新所有下级实体（包括间接下级）对应的所有的观察者视图
+            </summary>
+            <param name="foreignKey">外键</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.SetEditWindowStyle(UFIDA.U8.UAP.UI.Runtime.Common.EditWindowStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的样式。
+            </summary>
+            <param name="styles">EditWindowStyleUpdatePara类型的数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.SetRowsStyle(UFIDA.U8.UAP.UI.Runtime.Common.RowStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的行的样式，支持一次设置多行的样式。
+            </summary>
+            <param name="styles">RowStyleUpdatePara类型的数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.SetCellsStyle(UFIDA.U8.UAP.UI.Runtime.Common.CellStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的单元格的样式，支持一次设置多个单元格的样式。
+            </summary>
+            <param name="styles">CellStyleUpdatePara类型的数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.SetCotesStyle(UFIDA.U8.UAP.UI.Runtime.Common.CoteStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的列的样式，支持一次设置多个列的样式。
+            </summary>
+            <param name="styles">CoteStyleUpdatePara类型的数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.SetToolBarButtonsStyle(UFIDA.U8.UAP.UI.Runtime.Common.ToolBarButtonStyleUpdatePara[])">
+            <summary>
+              设置业务模型对应所有观察者的工具条按钮的样式，支持一次设置多个按钮的多个样式。
+            </summary>
+            <param name="styles">ToolBarButtonStyleUpdatePara类型的数组</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.CheckData">
+            <summary>
+              检查数据是否合法：是否满足必输条件、是否可为0等等。
+            </summary>
+            <returns>
+            是否合法的标志：
+            true－－合法
+            false－－不合法
+            </returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Load(System.Data.DataTable)">
+            <summary>
+              加载新的数据，但不刷新视图。
+            </summary>
+            <param name="dt">DataTable类型的数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Refresh(System.Data.DataTable)">
+            <summary>
+              加载新的数据，并刷新视图。
+            </summary>
+            <para>dt：DataTable类型的数据</para>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.GetCheckedDataTabe">
+            <summary>
+              得到复选框被选中行的DataTable
+            </summary>
+            <returns>被选择行的DataTable</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.UpdateCellValue(UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs)">
+            <summary>
+              更新Cell的值
+            调用插件的CellChanging和CellChanged方法。
+            调用自动执行代码
+            更新Cell的Value值，并刷新观察者视图。
+            </summary>
+            <param name="e">单元格更新事件参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.ProtectUnload">
+            <summary>
+            视图状态安全检查，可在执行某些上层功能时调用，相当于原来VB的ProtectUnload方法。
+            </summary>
+            <returns>
+            数据是否安全的标志：
+            true－－安全
+            fals－－不安全
+            </returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Rows">
+            <summary>
+              获取业务实体的所有行。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.LineMode">
+            <summary>
+              获取实体的行模式，0：单行模式 1：多行模式。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Observers">
+            <summary>
+              获取实体对应的观察者视图（EditWindow）集合。
+              可以通过IEditWindow接口访问特定的观察者。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Name">
+            <summary>
+              实体名称，在业务建模时指定。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.CurrentPKValue">
+            <summary>
+              获取和设置当前行主键值，设置当前行主键值时当前行发生改变。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Cells">
+            <summary>
+              获取当前行的Cell集合。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.ReadOnly">
+            <summary>
+              获取和设置业务对象的只读状态。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.PrimaryKey">
+            <summary>
+              获取业务对象对应物理表的主键字段。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.EntityID">
+            <summary>
+              获取业务对象对应的实体ID。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Parent">
+            <summary>
+              获取业务实体对象的父实体对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Children">
+            <summary>
+              获取业务实体对象的直接下级实体对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.Columns">
+            <summary>
+              获取业务实体对象的所有列对象（BusinessColumn）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.DisplayData">
+            <summary>
+              获取观察者视图正在显示的数据（根据外键过滤出来的数据）。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.CurrentFKValue">
+            <summary>
+              获取当前的外键。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.CheckedPKValues">
+            <summary>
+              获取复选框被选中行的主键数组。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.RefData">
+            <summary>
+              获取当前点击参照返回值的DataRow.其内容只在Cell的值更新期间有效。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.IsRooEntity">
+            <summary>
+              获取当前业务对象是否是根实体。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.PrimaryKeyFieldType">
+            <summary>
+              获取当前业务对象的主键类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessProxy.IsFirstSubEntity">
+            <summary>
+              获取当前业务对象是否是第一子实体。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell">
+            <summary>
+            业务模型单元格类。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell.AcceptChange">
+            <summary>
+              接受值的改变，把NewValue的值赋给Value，把NewValue置为null，并刷新观察者视图的单元格显示。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell.ChangeReceiptNo">
+            <summary>
+            根据单据编号规则生成新的单据编号
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell.UpdateValue(System.String)">
+            <summary>
+              更新Cell的值
+            调用插件的CellChanging和CellChanged方法。
+            调用自动执行代码
+            更新Cell的Value值，并刷新观察者视图。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell.CheckCellValueValid">
+            <summary>
+              检查新输入值（NewValue）的合法性
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell.Value">
+            <summary>
+              获取或设置单元格的当前值。
+              设置单元格的当前值时，相当于为NewValue属性赋值，并调用AcceptChange()方法。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessCell.NewValue">
+            <summary>
+              获取或设置将要被设置的新值。
+            设置新值时，检查新值的合法性。如果为null或者和已有的新值相同则不检查合法性。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.TreeDataManager">
+            <summary>
+            树形数据管理类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.TreeDataManager.#ctor(UFIDA.U8.UAP.UI.Runtime.Model.Business,System.String)">
+            记录已经展开过的节点编码
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.TreeDataManager.ExpandTreeNode(System.String)">
+            <summary>
+            展开指定编号节点时模型响应的方法
+            </summary>
+            <param name="code">节点编号</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.TreeDataManager.ExistParentCode(System.String)">
+            <summary>
+            检查一个编码的父级（包括间接父级）编码是否存在
+            </summary>
+            <param name="code">编码</param>
+            <returns>如果父级编码都存在则返回空串，如果任一父级编码不存在，则返回不存在的父级编码</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.TreeDataManager.ExistCode(System.String)">
+            <summary>
+            判断编码是否存在？
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.TreeDataManager.ClearHistoryInfo">
+            <summary>
+            清除所有历史信息：记录已经展开过的节点编码
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScript(System.Reflection.Assembly,System.String,System.Object,System.String)">
+            <summary>
+            调用方法
+            </summary>
+            <param name="method">方法名称</param>
+            <returns>成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScript(System.Type,System.String,System.Object[])">
+            <summary>
+            调用方法
+            </summary>
+            <param name="method">方法名称</param>
+            <returns>成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScript(System.Object,System.String,System.Object[])">
+            <summary>
+            调用方法
+            </summary>
+            <param name="method">方法名称</param>
+            <returns>成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScript(System.Reflection.Assembly,System.String,System.Object)">
+            <summary>
+            调用一个assembly的方法
+            </summary>
+            <param name="assembly">assembly</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <returns>成功</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScript(System.String,System.String,System.Object,System.String)">
+            <summary>
+            调用一个assembly的方法
+            </summary>
+            <param name="path">assembly的路径</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <param name="classAndNamespace">命名空间和类名</param>
+            <returns>调用成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScriptWithMessage(System.Reflection.Assembly,System.String,System.Object,System.String)">
+            <summary>
+            调用返回字符串消息的方法
+            </summary>
+            <param name="assembly">assembly</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <param name="classAndNamespace">命名空间和类名</param>
+            <returns>返回校验错误消息 如果为空 表示没有错误信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Model.CodeDom.InvokeScriptWithMessage(System.Reflection.Assembly,System.String,System.Object)">
+            <summary>
+            调用返回字符串消息的方法
+            </summary>
+            <param name="assembly">assembly</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <returns>返回校验错误消息 如果为空 表示没有错误信息</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.RefDataRow">
+            <summary>
+            参照数据对象类
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRows">
+            <summary>
+            业务对象数据行集合类。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRows.Item(System.Int32)">
+            <summary>
+            根据索引获取BusinessRow对象
+            </summary>
+            <param name="index">索引</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRows.Item(System.String)">
+            <summary>
+            根据主键值获取BusinessRow对象
+            </summary>
+            <param name="pkValue">主键值</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Model.BusinessRows.Item(System.Object)">
+            <summary>
+            根据主键值获取BusinessRow对象
+            </summary>
+            <param name="pkValue">主键值</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

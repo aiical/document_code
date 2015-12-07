@@ -1,0 +1,395 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBACA6EC-243E-4CD9-BA86-4C9381E48785}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Base</RootNamespace>
+    <AssemblyName>Base</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.2, Version=8.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallBase.cs" />
+    <Compile Include="frmAssist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssist.Designer.cs">
+      <DependentUpon>frmAssist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarryCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarryCompany.Designer.cs">
+      <DependentUpon>frmCarryCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClient.Designer.cs">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCraftwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCraftwork.Designer.cs">
+      <DependentUpon>frmCraftwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditAssist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditAssist.Designer.cs">
+      <DependentUpon>frmEditAssist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCarryCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCarryCompany.Designer.cs">
+      <DependentUpon>frmEditCarryCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditClient.Designer.cs">
+      <DependentUpon>frmEditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCraftwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCraftwork.Designer.cs">
+      <DependentUpon>frmEditCraftwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditEmp.Designer.cs">
+      <DependentUpon>frmEditEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditFactory.Designer.cs">
+      <DependentUpon>frmEditFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditItem.Designer.cs">
+      <DependentUpon>frmEditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditOutSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditOutSupplier.Designer.cs">
+      <DependentUpon>frmEditOutSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditProcess.Designer.cs">
+      <DependentUpon>frmEditProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditProduct.Designer.cs">
+      <DependentUpon>frmEditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditStorage.Designer.cs">
+      <DependentUpon>frmEditStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSupplier.Designer.cs">
+      <DependentUpon>frmEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditWorkGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditWorkGroup.Designer.cs">
+      <DependentUpon>frmEditWorkGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmp.Designer.cs">
+      <DependentUpon>frmEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactory.Designer.cs">
+      <DependentUpon>frmFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItem.Designer.cs">
+      <DependentUpon>frmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutSupplier.Designer.cs">
+      <DependentUpon>frmOutSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPic.Designer.cs">
+      <DependentUpon>frmPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcess.Designer.cs">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductProcess.designer.cs">
+      <DependentUpon>frmProductProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductProcessList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductProcessList.Designer.cs">
+      <DependentUpon>frmProductProcessList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockPrice.Designer.cs">
+      <DependentUpon>frmStockPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStorage.Designer.cs">
+      <DependentUpon>frmStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkGroup.Designer.cs">
+      <DependentUpon>frmWorkGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{18E1B9C1-841F-4EDE-AC3E-E3E1CD82D1A9}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonData\CommonData.csproj">
+      <Project>{42954806-AAB9-4838-96D4-4A3FFEF4F965}</Project>
+      <Name>CommonData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3C2E4A70-5001-4E8E-819F-F6B2829778B4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLib\DataLib.csproj">
+      <Project>{2CAAC3EF-B033-42E7-878B-11D68647CE47}</Project>
+      <Name>DataLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myControl\myControl.csproj">
+      <Project>{4F6DE4CC-6C3D-43B4-870F-93226D24170E}</Project>
+      <Name>myControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAssist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAssist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarryCompany.resx">
+      <DependentUpon>frmCarryCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClient.resx">
+      <DependentUpon>frmClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCraftwork.resx">
+      <DependentUpon>frmCraftwork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditAssist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditAssist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCarryCompany.resx">
+      <DependentUpon>frmEditCarryCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditClient.resx">
+      <DependentUpon>frmEditClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCraftwork.resx">
+      <DependentUpon>frmEditCraftwork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditEmp.resx">
+      <DependentUpon>frmEditEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditFactory.resx">
+      <DependentUpon>frmEditFactory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditItem.resx">
+      <DependentUpon>frmEditItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditOutSupplier.resx">
+      <DependentUpon>frmEditOutSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditProcess.resx">
+      <DependentUpon>frmEditProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditProduct.resx">
+      <DependentUpon>frmEditProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditStorage.resx">
+      <DependentUpon>frmEditStorage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditSupplier.resx">
+      <DependentUpon>frmEditSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditWorkGroup.resx">
+      <DependentUpon>frmEditWorkGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmp.resx">
+      <DependentUpon>frmEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactory.resx">
+      <DependentUpon>frmFactory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItem.resx">
+      <DependentUpon>frmItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutSupplier.resx">
+      <DependentUpon>frmOutSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcess.resx">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductProcess.resx">
+      <DependentUpon>frmProductProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductProcessList.resx">
+      <DependentUpon>frmProductProcessList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockPrice.resx">
+      <DependentUpon>frmStockPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStorage.resx">
+      <DependentUpon>frmStorage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkGroup.resx">
+      <DependentUpon>frmWorkGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

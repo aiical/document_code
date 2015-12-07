@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding='gb2312'?>
+		<ufinterface>
+			
+				<header>
+					<receiveflag>bRdFlag</receiveflag>
+					<vouchtype>cVouchType</vouchtype>
+					<businesstype>cBusType</businesstype>
+					<source>cSource</source>
+					<businesscode>cBusCode</businesscode>
+					<warehousecode>cWhCode</warehousecode>
+					<date>dDate</date>
+					<code>cCode</code>
+					<receivecode>cRdCode</receivecode>
+					<departmentcode>cDepCode</departmentcode>
+					<personcode>cPersonCode</personcode>
+					<purchasetypecode>cPTCode</purchasetypecode>
+					<saletypecode>cSTCode</saletypecode>
+					<customercode>cCusCode</customercode>
+					<vendorcode>cVenCode</vendorcode>
+					<ordercode>cOrderCode</ordercode>
+					
+					<arrivecode>cARVCode</arrivecode>
+					<billcode>cDLCode</billcode>
+					
+					<serial>cProBatch</serial>
+					<handler>cHandler</handler>
+					<memory>cMemo</memory>
+					<maker>cMaker</maker>
+					<define1>cDefine1</define1>
+					<define2>cDefine2</define2>
+					<define3>cDefine3</define3>
+					<define4>cDefine4</define4>
+					<define5>cDefine5</define5>
+					<define6>cDefine6</define6>
+					<define7>cDefine7</define7>
+					<define8>cDefine8</define8>
+					<define9>cDefine9</define9>
+					<define10>cDefine10</define10>
+					
+					<auditdate>dVeriDate</auditdate>
+				</header>
+				<body>
+					
+					<id>ID</id>
+					
+					<inventorycode>cInvCode</inventorycode>
+					<free1>cFree1</free1>
+					<free2>cFree2</free2>
+					
+					<quantity>iQuantity</quantity>
+					
+					<number>iNum</number>
+					<price>iUnitCost</price>
+					<cost>iPrice</cost>
+					<planprice>iPUnitCost</planprice>
+					<cost>iPPrice</cost>
+					<serial>cBatch</serial>
+					
+					<validdate>dVDate</validdate>
+					
+					<itemclasscode>cItem_class</itemclasscode>
+					
+					<itemcode>cItemCode</itemcode>
+					
+					<define22>cDefine22</define22>
+					<define23>cDefine23</define23>
+					<define24>cDefine24</define24>
+					<define25>cDefine25</define25>
+					<define26>cDefine26</define26>
+					<define27>cDefine27</define27>
+					
+					<subconsignmentid>iDLsID</subconsignmentid>
+					<delegateconsignmentid>iEnsID</delegateconsignmentid>
+				
+				
+				</body>
+		
+		</ufinterface>

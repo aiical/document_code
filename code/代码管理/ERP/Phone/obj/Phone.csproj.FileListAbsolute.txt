@@ -1,0 +1,9 @@
+E:\EaterySolution\PhonePrinter\Phone\bin\Debug\Phone.exe
+E:\EaterySolution\PhonePrinter\Phone\bin\Debug\Phone.pdb
+E:\EaterySolution\PhonePrinter\Phone\obj\Debug\ResolveAssemblyReference.cache
+E:\EaterySolution\PhonePrinter\Phone\obj\Debug\Phone.Form1.resources
+E:\EaterySolution\PhonePrinter\Phone\obj\Debug\Phone.Properties.Resources.resources
+E:\EaterySolution\PhonePrinter\Phone\obj\Debug\Phone.csproj.GenerateResource.Cache
+E:\EaterySolution\PhonePrinter\Phone\obj\Debug\Phone.exe
+E:\EaterySolution\PhonePrinter\Phone\obj\Debug\Phone.pdb
+E:\EaterySolution\PhonePrinter\Phone\bin\Debug\Settings.xml

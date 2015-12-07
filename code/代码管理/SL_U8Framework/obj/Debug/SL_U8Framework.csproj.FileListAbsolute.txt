@@ -1,0 +1,83 @@
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\SL_U8Framework.pdb
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Donlim.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\TeeChart.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.grdesLib.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.grproLib.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\office.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\AxInterop.grproLib.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\edtFTPnetPRO.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\AxInterop.grdesLib.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\CaptureImageTool.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Donlim.pdb
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Donlim.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\SL_U8Framework.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Common.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Framework.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Proxy.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.UAPFacade.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.Common.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.UFPortalProxyMessage.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.List.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.Client.Service.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Scenario.Runtime.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.Services.BF.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.RunTime.OldVoucherDataConvert.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.MSXML2.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.EventBroker.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFSoft.U8.Framework.Login.UI.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Win7TaskBar.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.Controller.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\DotNetMagic.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.Common.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.Voucher.Elements.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.UFPortalProxy.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Framework.Error.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.View.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.List.Metas.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Option.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.UFPortalProxyInterface.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Toolbar.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.BizServices.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.BusinessObject.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Scenario.Common.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.Model.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\Interop.U8RefService.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\XPExplorerBar.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.RunTime.NewVoucherDataConvert.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.Viewers.FLowLayout.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\I_UFIDA.U8.UAP.Services.BF.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.List.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.Client.Service.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.Portal.UAPFacade.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.Controller.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.Common.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.View.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.List.Metas.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.BusinessObject.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\UFIDA.U8.UAP.UI.Runtime.Model.xml
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\en-US\UFIDA.U8.Portal.Scenario.Runtime.resources.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\zh-TW\UFIDA.U8.Portal.Scenario.Runtime.resources.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\en-US\UFIDA.U8.Portal.Option.resources.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\zh-TW\UFIDA.U8.Portal.Option.resources.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\en-US\UFIDA.U8.Portal.Framework.resources.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\bin\Debug\zh-TW\UFIDA.U8.Portal.Framework.resources.dll
+C:\U8SOFT\UAP\Runtime\SL_U8Framework.pdb
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\ResolveAssemblyReference.cache
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.FrmBanXing.resources
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.FrmNewInvClassRelation.resources
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.Properties.Resources.resources
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.csproj.GenerateResource.Cache
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.pdb
+C:\U8SOFT\UAP\Runtime\SL_U8Framework.dll
+D:\PersonalDate\Documents\mod\软件开发\胜龙项目\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.dll
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.FrmBanXing.resources
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.FrmNewInvClassRelation.resources
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.dll
+C:\Documents and Settings\Administrator\桌面\SL_U8Framework\SL_U8Framework\obj\Debug\SL_U8Framework.pdb

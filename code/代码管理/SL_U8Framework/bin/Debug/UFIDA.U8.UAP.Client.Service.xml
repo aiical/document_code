@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.Client.Service</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U8.UAP.Client.Service.Eai">
+            <summary>
+            Eai 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.Client.Service.BusinessInterFace">
+            <summary>
+            Class1 的摘要说明。
+            由于目前UAP的后台服务已经改为Remoting，这里是一个客户段转调Remoting服务的中间层，同时由于
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.BusinessInterFace.BillService(UFIDA.U8.UAP.Voucher.Elements.PersistentConfig)">
+            <summary>
+            执行存储服务入口
+            </summary>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.BusinessInterFace.ParasResult(System.Xml.XmlDocument)">
+            <summary>
+            返回Ds数据
+            </summary>
+            <param name="xmlDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.BusinessInterFace.GetReturnXml(System.Xml.XmlDocument)">
+            <summary>
+            获取返回结果的单据编号
+            </summary>
+            <param name="xmldoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.BusinessInterFace.GetMainTableName(UFIDA.U8.UAP.Voucher.Elements.Comm.ReturnVoucher)">
+            <summary>
+            获取主表名称
+            </summary>
+            <param name="rv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.BusinessInterFace.BillToOld">
+            <summary>
+            保存系统单据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.BusinessInterFace.RemoteBillService(UFIDA.U8.UAP.Voucher.Elements.PersistentConfig)">
+            <summary>
+            保存单据服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.Client.Service.VoucherCode">
+            <summary>
+            VoucherCode 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.VoucherCode.getMainTableName">
+            <summary>
+            获取主表的物理表名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.Client.Service.VoucherCode.getCardNum">
+            <summary>
+            获取单据编号
+            </summary>
+            <returns>单据编号</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.Client.Service.VoucherCode.Config">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.Client.Service.NewOldVoucherl">
+            <summary>
+            NewOldVoucherl 的摘要说明。
+            </summary>
+        </member>
+    </members>
+</doc>

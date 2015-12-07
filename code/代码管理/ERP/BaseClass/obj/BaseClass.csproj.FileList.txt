@@ -1,0 +1,12 @@
+bin\Debug\BaseClass.dll
+bin\Debug\BaseClass.pdb
+bin\Debug\DataLib.dll
+bin\Debug\CenterLib.dll
+bin\Debug\CenterLib.pdb
+bin\Debug\DataLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BaseClass.frmBase.resources
+obj\Debug\BaseClass.frmFlag.resources
+obj\Debug\BaseClass.csproj.GenerateResource.Cache
+obj\Debug\BaseClass.dll
+obj\Debug\BaseClass.pdb

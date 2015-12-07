@@ -1,0 +1,2245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.UI.Runtime.List</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService">
+            <summary>
+            U8打印服务类
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Prints.IPrintService">
+            <summary>
+            打印服务接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.IPrintService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.IPrintService.Print">
+            <summary>
+            打印当前通用列表数据
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.IPrintService.Preview">
+            <summary>
+            预览通用列表打印设置
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.IPrintService.Export">
+            <summary>
+            导出当前列表数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Prints.IPrintService.ListService">
+            <summary>
+            获取或者设置通用列表服务
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.Print">
+            <summary>
+            打印当前通用列表数据
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.Preview">
+            <summary>
+            预览通用列表打印设置
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.Export">
+            <summary>
+            导出操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetPrintStyleXml">
+            <summary>
+            获取打印格式对应的Xml字符串
+            </summary>
+            <returns>打印格式对应的Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetColumnInfo(System.String@,System.String@)">
+            <summary>
+            获取Grid列信息
+            </summary>
+            <param name="colWidthInfos">列宽信息</param>
+            <param name="colAlignInfos">列Align信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetPrintDataXml">
+            <summary>
+            获取打印数据对应的Xml字符串
+            </summary>
+            <returns>打印数据对应的Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetTableHeaderXmls">
+            <summary>
+            获取表体头信息
+            </summary>
+            <returns>标题信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetTableBodyXmls">
+            <summary>
+            获取表体信息
+            </summary>
+            <returns>表体Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetStatisticInfo">
+            <summary>
+            获取表体统计信息
+            </summary>
+            <returns>表体统计Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.IsStatisticCol(System.String)">
+            <summary>
+            是否统计列
+            </summary>
+            <param name="colName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetStatisticValue(System.String)">
+            <summary>
+            读取统计值
+            </summary>
+            <param name="colName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GridRowToTableBodyXml(Infragistics.Win.UltraWinGrid.UltraGridRow)">
+            <summary>
+            将数据行转换打印所需要的表体行Xml字符串
+            </summary>
+            <param name="row">数据行</param>
+            <returns>表体行</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetCaptionListString">
+            <summary>
+            获取标题字符串列表信息
+            </summary>
+            <returns>标题列表</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetColumnTypeInfo(System.String@,System.String@)">
+            <summary>
+            获取列类型信息字符串
+            </summary>
+            <param name="strTypeList">类型字符串列表</param>
+            <param name="strSizeList">类型长度字符串列表</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.GetColumnByDisplayOrder">
+            <summary>
+            根据显示顺序获取Grid中的所有列
+            </summary>
+            <returns>Grid列数组</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Prints.U8PrintService.ListService">
+            <summary>
+            获取或者设置通用列表服务
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC">
+            <summary>
+            数据引擎实现的数据访问类
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor">
+            <summary>
+            数据访问接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.Query(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Collections.Hashtable)">
+            <summary>
+            获取通用列表数据
+            </summary>
+            <param name="dynQuerySetting">动态查询设置信息</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.StatisticQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Collections.Hashtable)">
+            <summary>
+            获取统计查询数据
+            </summary>
+            <param name="dynQuerySetting">动态查询设置信息</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.SupportPaginate">
+            <summary>
+            获取当前数据访问接口是否支持分页
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.BeERQuery">
+            <summary>
+            是否为实体关系查询
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.NeedQueryParameter">
+            <summary>
+            获取查询器是否支持查询参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.Login">
+            <summary>
+            获取或者设置当前登陆对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.MetaInfo">
+            <summary>
+            获取或者设置元数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.IDataAccessor.ListService">
+            <summary>
+            获取或者设置当前通用列表信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.Query(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Collections.Hashtable)">
+            <summary>
+            查询数据
+            </summary>
+            <param name="dynQuerySet">动态查询设置</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.StatisticQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Collections.Hashtable)">
+            <summary>
+            查询统计数据信息
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>统计查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.Query(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean,System.Collections.Hashtable)">
+            <summary>
+            数据查询实现方法
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <param name="beStatisticQuery">是否为统计查询</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>查询结果</returns>
+        </member>
+        <!-- 对于成员“M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.ERQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean,UFIDA.U8.UAP.Services.BizDAE.DBServices.QueryServices.QueryRequest)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.SQLQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean,UFIDA.U8.UAP.Services.BizDAE.DBServices.QueryServices.QueryRequest)">
+            <summary>
+            SQL脚本查询
+            </summary>
+            <param name="dynQuerySet">动态查询设置</param>
+            <param name="beStaticQuery">是否为统计查询</param>
+            <param name="request">查询请求</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.ProcedureQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean,UFIDA.U8.UAP.Services.BizDAE.DBServices.QueryServices.QueryRequest)">
+            <summary>
+            存储过程查询
+            </summary>
+            <param name="dynQuerySet">动态查询设置</param>
+            <param name="beStatisticQuery">是否为统计查询</param>
+            <param name="request">查询请求</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.SupportPaginate">
+            <summary>
+            获取数据访问实现类是否支持分页操作
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.Login">
+            <summary>
+            获取或者设置当前登陆信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.MetaInfo">
+            <summary>
+            获取或者设置当前数据访问元数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.BeERQuery">
+            <summary>
+            是否为实体关系查询
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.NeedQueryParameter">
+            <summary>
+            获取查询器是否支持查询参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEDAC.ListService">
+            <summary>
+            获取或者设置列表元数据
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.ListUtil">
+            <summary>
+            列表工具类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.GetRegItemValue(System.String,System.String)">
+            <summary>
+            获取注册表项值
+            </summary>
+            <param name="path">注册表路径</param>
+            <param name="itemName">注册表项名称</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.SetRegItemValue(System.String,System.String,System.Object)">
+            <summary>
+            获取注册表项
+            </summary>
+            <param name="path">注册表路径</param>
+            <param name="itemName">注册表项名称</param>
+            <param name="val">具体注册表项值</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.OpenVoucher(System.String,System.String,System.String,System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            在门户中打开单据信息
+            </summary>
+            <param name="menuID">菜单ID</param>
+            <param name="subSysID">子系统ID</param>
+            <param name="authID">权限ID</param>
+            <param name="voucherName">单据名称</param>
+            <param name="cmdLine">命令行信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.PixelToMM(System.Int32,System.Boolean)">
+            <summary>
+            将象素宽度转换为毫米数
+            </summary>
+            <param name="width">象素宽度</param>
+            <param name="beHorizontal">是否为水平坐标</param>
+            <returns>毫米数</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.MMToPixel(System.Int32,System.Boolean)">
+            <summary>
+            将毫米数转化为象素宽度
+            </summary>
+            <param name="width">毫米为单位宽度</param>
+            <param name="beHorizontal">是否为水平坐标</param>
+            <returns>象素宽度</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.VbTwipsToPixel(System.Int32,System.Boolean)">
+            <summary>
+            VB中宽度单位Twips转化为象素宽度
+            </summary>
+            <param name="width">以VbTwips为单位的宽度</param>
+            <param name="beHorizontal">是否为水平坐标</param>
+            <returns>象素宽度</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.CreateIMessage(System.String,System.Collections.Hashtable[])">
+            <summary>
+            根据配置信息创建门户消息对象
+            </summary>
+            <param name="type">消息类型</param>
+            <param name="elements">消息包含内容</param>
+            <returns>消息信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.ParseListDesignConfig(System.String,System.String@,System.String@)">
+            <summary>
+            解析通用列表设计时配置Xml
+            </summary>
+            <param name="xml">Xml字符串</param>
+            <param name="listID">列表ID</param>
+            <param name="extendInfo">扩展信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.CreateListDesignConfig(System.String,System.String)">
+            <summary>
+            创建通用列表设计时配置Xml
+            </summary>
+            <param name="listID">列表ID</param>
+            <param name="extendInfo">扩展信息</param>
+            <returns>设计时XMl字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.GetImage(System.String)">
+            <summary>
+            根据名称获取图片信息
+            </summary>
+            <param name="name">图片名称</param>
+            <returns>图片信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.BeFile(System.String)">
+            <summary>
+            指定名称是否为文件
+            </summary>
+            <param name="name">资源名称</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.CreateInstance(System.String)">
+            <summary>
+            根据消息名称创建指定的对象
+            </summary>
+            <param name="typeName">类型名称</param>
+            <returns>类型实例</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.ReleaseComObj(System.Object)">
+            <summary>
+            析放指定的Com组件对象
+            </summary>
+            <param name="comObj">Com对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.IsNumberKey(System.Windows.Forms.Keys)">
+            <summary>
+            指定输入键是否数字输入键
+            </summary>
+            <param name="key">输入编码</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.GetNetConnString(System.String)">
+            <summary>
+            获取SQL连接字符串
+            </summary>
+            <param name="oledbConnStr">OLEDB连接字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.GetMetaDBConnStr(UFSoft.U8.Framework.LoginContext.UserData)">
+            <summary>
+            获取元数据库联接字符串
+            </summary>
+            <param name="userData">用户登录数据</param>
+            <returns>元数据库联接字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.GetDataDBConnStr(UFSoft.U8.Framework.LoginContext.UserData)">
+            <summary>
+            获取元数据库联接字符串
+            </summary>
+            <param name="userData">用户登录数据</param>
+            <returns>元数据库联接字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.UpdateAction(UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel,UFIDA.U8.UAP.UI.Runtime.List.UI.ListAction)">
+            <summary>
+            更新指定的Action属性
+            </summary>
+            <param name="listPanel">列表控件</param>
+            <param name="action">Action</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.EncodeXmlStr(System.String)">
+            <summary>
+            对Xml字符串进行编码
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.ListUtil.DecodeXmlStr(System.String)">
+            <summary>
+            对Xml字符串进行解码
+            </summary>
+            <param name="str">Xml字符串</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil">
+            <summary>
+            SQL查询设置工具类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetSelectPartInfo(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取选择部分配置信息
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>选择部分配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetFromPartInfo(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取From部分配置信息
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>From部分配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetWherePartInfo(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取条件部分配置信息
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>条件部分配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetOrderPartInfo(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取排序部分配置信息
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>排序部分配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetGroupPartInfo(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取分组部分配置信息
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>分组部分配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetHavingPartInfo(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取Having部分配置信息
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>Having部分配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetProcedureName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取存储过程名称
+            </summary>
+            <param name="qs">SQL查询配置信息</param>
+            <returns>存储过程名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.WhereToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取查询条件转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.SelectToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取选择部分转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.OrderToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取排序部分转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GroupToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting)">
+            <summary>
+            获取分组部分转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.GetQuerySetting(UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta)">
+            <summary>
+            从数据访问配置元数据获取具体的配置信息
+            </summary>
+            <param name="meta">数据访问元数据</param>
+            <returns>SQL查询配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.ParseSQLSetting(System.Xml.XmlNode)">
+            <summary>
+            解析SQL脚本配置信息
+            </summary>
+            <param name="node">配置信息所在的Xml节点</param>
+            <returns>SQL查询配置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySettingUtil.ParseProcedureSetting(System.Xml.XmlNode)">
+            <summary>
+            解析存储过程具体的配置信息
+            </summary>
+            <param name="node">Xml节点</param>
+            <returns>SQL查询配置信息</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo">
+            <summary>
+            Grid列定义信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Key">
+            <summary>
+            获取或者设置Grid列对应绑定数据名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Caption">
+            <summary>
+            获取或者设置列显示信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Width">
+            <summary>
+            获取或者设置列宽度
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Align">
+            <summary>
+            获取或者设置列Align
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Order">
+            <summary>
+            获取或者设置该列是否需要排序
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.NeedStatistic">
+            <summary>
+            获取或者设置该列是否需要统计计算
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.StatisticType">
+            <summary>
+            获取或者设置该列统计类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Visible">
+            <summary>
+            获取或者设置该列是否显示
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Format">
+            <summary>
+            获取或者设置该列的表达式
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Position">
+            <summary>
+            获取或者设置该列位置
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.Fixed">
+            <summary>
+            获取或者设置当前列是否固定
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.EnumTypeString">
+            <summary>
+            获取或设置当前列的枚举字符串
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Columns.GridColumnInfo.ColumnAlignEnum">
+            <summary>
+            列对齐方式
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListAction.TypeName">
+            <summary>
+            获取或者设置当前Action所在的组信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListAction.Delegate">
+            <summary>
+            获取当前Action对应的Delegate执行对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListAction.EditInput">
+            <summary>
+            获取或者设置当前Action对应的EditInput
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService">
+            <summary>
+            栏目服务接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.SetListGrid(System.Object)">
+            <summary>
+            设置列表显示控件
+            </summary>
+            <param name="grid">列表显示控件</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.GetGridColumns">
+            <summary>
+            获取显示列设置信息
+            </summary>
+            <returns>显示列设置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.ChangeColumns">
+            <summary>
+            改变显示列设置信息
+            </summary>
+            <returns>显示列设置信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.RefreshGridColumns">
+            <summary>
+            刷新列表显示
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.Login">
+            <summary>
+            获取或者设置当前登陆对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.MetaInfo">
+            <summary>
+            获取或者设置栏目元数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.IColumnService.ListService">
+            <summary>
+            获取或者设置通用列表信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.SetListGrid(System.Object)">
+            <summary>
+            设置显示控件
+            </summary>
+            <param name="ctrl">显示控件</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.SetSqlScript">
+            <summary>
+            初始化SQL脚本信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.GetGridColumns">
+            <summary>
+            获取显示列设置信息
+            </summary>
+            <returns>显示列信息列表</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.ChangeColumns">
+            <summary>
+            改变显示列设置
+            </summary>
+            <returns>新的显示列设置信息列表</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.RefreshGridColumns">
+            <summary>
+            刷新Grid显示列
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.SetGridColumns">
+            <summary>
+            设置Grid的显示列信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.ChangeVoucherSumState">
+            <summary>
+            改变列表汇总状态信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.Login">
+            <summary>
+            获取或者设置当前登录对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.MetaInfo">
+            <summary>
+            获取或者设置显示设置元数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.ListService">
+            <summary>
+            获取或者设置通用列表信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColumnService.InSumState">
+            <summary>
+            获取或者设置当前列表是否处于汇总状态
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.TotalSummaryCalculator.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.TotalSummaryCalculator.#ctor(UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="listService">通用列表服务</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Columns.TotalSummaryCalculator.ListService">
+            <summary>
+            获取或者设置通用列表服务类
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.UIEventHandlerFace">
+            <summary>
+            UI事件处理外观类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UIEventHandlerFace.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UIEventHandlerFace.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UIEventHandlerFace.ProcessEvent(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,System.Object,System.Object)">
+            <summary>
+            处理UI事件
+            </summary>
+            <param name="eventType">事件类型</param>
+            <param name="sender">事件发送者</param>
+            <param name="args">事件参数</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UIEventHandlerFace.ForbidEvents">
+            <summary>
+            获取禁用事件列表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UIEventHandlerFace.ListService">
+            <summary>
+            获取或者设置通用列表服务
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel">
+            <summary>
+            显示通用列表信息的控件
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.GetKeyState(System.Int32)">
+            <summary>
+            Win32 API，获取指定键状态
+            </summary>
+            <param name="nVirtKey">虚拟键值</param>
+            <returns>返回16位有符整数，最高位为1(负数)时键被按下</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.#ctor(UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            默认构造函数
+            </summary>
+            <param name="listService">当前参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.InitializePaginatePanel">
+            <summary>
+            初始化分页Panel状态
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.GetCurrentPageIndex">
+            <summary>
+            获取当前页位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.OnQueryResultChanged">
+            <summary>
+            查询结果改变事件响应
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.SetPaginatePanelVisible(System.Boolean)">
+            <summary>
+            设置分页按钮的显示状态
+            </summary>
+            <param name="visible">是否显示</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.SetPaginateInfo(UFIDA.U8.UAP.UI.Runtime.List.QueryResult)">
+            <summary>
+            设置分页设置数据
+            </summary>
+            <param name="qr">查询结果</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.GetSelectedListData">
+            <summary>
+            获取所有选中的列表数据
+            </summary>
+            <returns>选择的列表数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.SetAllListDataSelState(System.Boolean)">
+            <summary>
+            设置所有的列表数据选择状态
+            </summary>
+            <param name="selState">是否选中</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.SetGridRowSelState">
+            <summary>
+            设置Grid列的选中状态
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.SetTitleVisible(System.Boolean)">
+            <summary>
+            设置标题栏是否显示
+            </summary>
+            <param name="visible">是否显示</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>
+            键盘预览消息处理
+            </summary>
+            <param name="m">键盘消息</param>
+            <returns></returns>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.ListService">
+            <summary>
+            获取或者设置通用数据列表信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.Title">
+            <summary>
+            获取或者设置列表标题
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListPanel.TitleVisible">
+            <summary>
+            获取或者设置列表标题是否显示
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageHandler">
+            <summary>
+            消息处理器接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageHandler.OnReceiveMessage(System.Object)">
+            <summary>
+            接受消息处理函数
+            </summary>
+            <param name="msg">消息信息</param>
+            <returns>处理结果</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageHandler.ListService">
+            <summary>
+            获取或者设置消息服务类
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting">
+            <summary>
+            SQL查询配置信息类
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.ScriptType">
+            <summary>
+            获取或者设置当前脚本类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.SqlScriptItems">
+            <summary>
+            获取具体的SQL脚本项信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.ProcedureInfo">
+            <summary>
+            获取具体的存储过程设置信息
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.SQLScriptItem">
+            <summary>
+            SQL脚本具体配置信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.SQLScriptItem.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.SQLScriptItem.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="script">具体的脚本字符串</param>
+            <param name="supportChange">是否支持改变</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.SQLScriptItem.Script">
+            <summary>
+            获取或者设置具体的脚本信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQuerySetting.SQLScriptItem.SupportChange">
+            <summary>
+            是否支持改变
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.List.UI.PrintTemplate.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.PrintTemplate.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.PrintTemplate.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting">
+            <summary>
+            查询设置类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.GetAllWhereScript">
+            <summary>
+            获取所有的条件部分脚本：Filter+Where
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.Clone">
+            <summary>
+            复制查询设置信息
+            </summary>
+            <returns>查询设置信息</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.SelectPart">
+            <summary>
+            获取或者设置查询中选择部分信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.FromPart">
+            <summary>
+            获取或者设置排序中From部分信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.FilterWherePart">
+            <summary>
+            获取或者设置查询的过滤条件部分信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.WherePart">
+            <summary>
+            获取或者设置条件脚本部分
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.OrderbyPart">
+            <summary>
+            获取或者设置查询中的排序部分信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.GroupbyPart">
+            <summary>
+            获取或者设置查询中的GroupBy部分信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.HavingPart">
+            <summary>
+            获取或者设置查询中的Having部分信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.NeedPaginate">
+            <summary>
+            获取或者设置是否需要分页
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.PageSize">
+            <summary>
+            分页的页数据量
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.CurrentPageIndex">
+            <summary>
+            当前选择页
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.OnlyPaginateChange">
+            <summary>
+            获取或者设置当前查询是否仅仅分页改变
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.ExtendInfo">
+            <summary>
+            获取扩展信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QuerySetting.Parameters">
+            <summary>
+            获取当前查询所使用的参数信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.ShowListTypes">
+            <summary>
+            显示通用消息列表信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.ShowConfigInfo">
+            <summary>
+            消息配置信息
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Designtime.List.UFGeneralListDesignCtrl.ListPart">
+            <summary>
+            获取或者设置列表所在门户Part
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC">
+            <summary>
+            SQL脚本数据获取器
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.Query(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Collections.Hashtable)">
+            <summary>
+            查询操作
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.StatisticQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Collections.Hashtable)">
+            <summary>
+            获取统计查询信息
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <param name="extendInfos">扩展属性</param>
+            <returns>统计查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.Query(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean,System.Collections.Hashtable)">
+            <summary>
+            查询实现方法
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <param name="beStaticQuery">是否为统计查询</param>
+            <param name="extendInfos">扩展信息</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.SQLQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean)">
+            <summary>
+            SQL脚本查询处理
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.ProcedureQuery(UFIDA.U8.UAP.UI.Runtime.List.QuerySetting,System.Boolean)">
+            <summary>
+            存储过程查询
+            </summary>
+            <param name="dynQuerySetting">动态查询设置</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.Query(System.String,System.Boolean,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            执行查询操作
+            </summary>
+            <param name="sql">SQL脚本</param>
+            <param name="beProcedure">是否为存储过程</param>
+            <param name="parameters">参数数组</param>
+            <returns>查询结果信息</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.SupportPaginate">
+            <summary>
+            获取当前数据访问器是否支持分页
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.BeERQuery">
+            <summary>
+            获取是否为实体关系查询
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.NeedQueryParameter">
+            <summary>
+            是否需要参数数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.Login">
+            <summary>
+            获取或者设置当前登录对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.MetaInfo">
+            <summary>
+            获取或者设置数据访问元数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.SQLQuery.SQLQueryDAC.ListService">
+            <summary>
+            获取或者设置列表服务
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService">
+            <summary>
+            获取条件管理接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.ChangeFilterInfo">
+            <summary>
+            改变过滤信息
+            </summary>
+            <returns>过滤元数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.ChangeFilterInfo(System.Boolean)">
+            <summary>
+            改变过滤信息
+            </summary>
+            <returns>过滤元数据</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.VBLogin">
+            <summary>
+            获取或者设置VB登录对象信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.Login">
+            <summary>
+            获取或者设置当前登陆对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.MetaInfo">
+            <summary>
+            获取或者设置过滤信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.IFilterService.ListService">
+            <summary>
+            获取或者设置通用列表信息
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor">
+            <summary>
+            设置列表视图对应ActionBarAdvisor实现类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.ActionListToHashtable">
+            <summary>
+            将Action列表转化为Hashtable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.InitializeActions">
+            <summary>
+            初始化Action信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.ToolbarItemToAction(UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta)">
+            <summary>
+            将工具栏项转化为Action
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.GetImage(System.String)">
+            <summary>
+            根据名称获取图片信息
+            </summary>
+            <param name="name">图片名称</param>
+            <returns>图片信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.BeFile(System.String)">
+            <summary>
+            指定名称是否为文件
+            </summary>
+            <param name="name">资源名称</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.InitVoucherConvertItem(UFIDA.U8.UAP.UI.Runtime.List.Metas.ToolbarItemMeta)">
+            <summary>
+            初始化单据升单Toolbar信息
+            </summary>
+            <param name="item">单据升单按钮元数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.ChangeVoucherSumState(System.Boolean)">
+            <summary>
+            改变汇总按钮状态
+            </summary>
+            <param name="beSumState">是否为汇总状态</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.BeEditView">
+            <summary>
+            获取或者设置是否为编辑视图
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.ListService">
+            <summary>
+            获取或者设置通用列表服务信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.ActionList">
+            <summary>
+            获取Action列表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.Actions">
+            <summary>
+            获取Action集合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionBarAdvisor.EditInput">
+            <summary>
+            获取或者设置当前Action对应的EditInput
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService">
+            <summary>
+            通用列表服务类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="listID">通用列表ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.#ctor(UFIDA.U8.UAP.UI.Runtime.List.Metas.UFGeneralListMeta)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="listMeta">列表元数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.InitUIEventHandler">
+            <summary>
+            构建界面事件处理类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.InitDataAccessor">
+            <summary>
+            初始化数据访问接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.InitColumnService">
+            <summary>
+            初始化显示设置管理类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.InitFilterService">
+            <summary>
+            初始化过滤管理器
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.InitMessageService">
+            <summary>
+            初始化消息服务器
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ShowListData">
+            <summary>
+            显示列表数据
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ShowListData(System.Boolean)">
+            <summary>
+            显示列表数据,此方法不能随便使用，在二次开发销售订单的查看订单的报价单时添加
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.RefreshListData">
+            <summary>
+            刷新列表数据
+            </summary>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.GetAllListData">
+            <summary>
+            获取所有的列表数据
+            </summary>
+            <returns>列表数据</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ChangeVoucherSumState(System.Boolean)">
+            <summary>
+            改变单据汇总状态
+            </summary>
+            <param name="beSumState">是否处于汇总状态</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.GetSelectedListData">
+            <summary>
+            获取当前选中的列表数据
+            </summary>
+            <returns>列表数据</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.Query">
+            <summary>
+            获取通用数据查询信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.StatisticQuery">
+            <summary>
+            获取统计数据查询信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.QueryResult">
+            <summary>
+            获取查询结果数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.StatisticQueryResult">
+            <summary>
+            获取查询结果数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.UIEventHandler">
+            <summary>
+            获取或者设置外部事件处理类
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.VbLogin">
+            <summary>
+            获取或者设置VB登录对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.Login">
+            <summary>
+            获取或者设置当前登录对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ListID">
+            <summary>
+            获取或者设置当前登陆对象ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ListMeta">
+            <summary>
+            获取当前列表元数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.DataAccessor">
+            <summary>
+            获取当前的数据访问器
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ColumnService">
+            <summary>
+            获取显示设置管理器
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.FilterService">
+            <summary>
+            获取过滤管理器
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.MessageService">
+            <summary>
+            获取当前的消息处理器
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ListPanel">
+            <summary>
+            获取当前列表显示控件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ListPortalPart">
+            <summary>
+            获取当前列表所在的门户视图
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.ExtendInfos">
+            <summary>
+            获取扩展信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.Title">
+            <summary>
+            获取或者设置列表标题
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.TitleVisible">
+            <summary>
+            获取或者设置列表标题是否显示
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService.MetaDBConnStr">
+            <summary>
+            获取当前源数据库联接字符串
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.VoucherConvert.VoucherConvertHelper">
+            <summary>
+            升单帮助类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.VoucherConvert.VoucherConvertHelper.Convert(System.String,System.String,UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            单据转换
+            </summary>
+            <param name="ruleID">转换规则ID</param>
+            <param name="voucherTypeID">单据类型ID</param>
+            <param name="listService">列表服务</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.VoucherConvert.VoucherConvertHelper.GetVoucherConvertRuleName(System.String,System.String)">
+            <summary>
+            根据规则ID获取单据转换规则名称
+            </summary>
+            <param name="metaDBConnStr">元数据库联接字符串</param>
+            <param name="ruleID">规则ID</param>
+            <returns>单据转换规则名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.VoucherConvert.VoucherConvertHelper.GetListVoucherConvertRuleNames(System.String,System.String)">
+            <summary>
+            获取通用列表对应的单据转换规则名称
+            </summary>
+            <param name="metaDBConnStr">元数据库联接字符串</param>
+            <param name="voucherTypeID">单据类型ID</param>
+            <param name="voucherType">单据类型</param>
+            <param name="beSourceVoucher">是否为源单据</param>
+            <returns>单据转换规则名称列表,key：单据规则ID,value:单据规则名称</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart">
+            <summary>
+            通用列表对应的ViewPart
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="id">ViewPart ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart.CreatePartControl">
+            <summary>
+            创建控件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart.ReceiveMessage(UFIDA.U8.Portal.Common.Communication.IMessage)">
+            <summary>
+            接收消息
+            </summary>
+            <param name="message">U8门户消息</param>
+            <returns>消息信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart.Focus">
+            <summary>
+            设置焦点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListViewPart.GetListConfig">
+            <summary>
+            获取配置信息
+            </summary>
+            <returns>配置信息</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting">
+            <summary>
+            BizDAE查询设置类
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting.BoID">
+            <summary>
+            获取或者设置业务对象ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting.FunctionName">
+            <summary>
+            获取或者设置功能名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting.QueryType">
+            <summary>
+            获取或者设置查询类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting.ExtendInfos">
+            <summary>
+            获取其它设置信息
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService">
+            <summary>
+            消息服务接口
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.SubscribeMessage(System.String)">
+            <summary>
+            订阅消息信息
+            </summary>
+            <param name="msgType">消息类型</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.PublishMessage(System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="msgType">消息类型</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.SendMessage(System.Object)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="msg">消息信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.SetMessageHandler(UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageHandler)">
+            <summary>
+            设置消息处理器
+            </summary>
+            <param name="msgHandler">消息处理器</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.MetaInfo">
+            <summary>
+            获取或者设置消息服务元数据配置信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.Login">
+            <summary>
+            获取或者设置当前登陆对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageService.ListService">
+            <summary>
+            获取或者设置通用列表信息
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper">
+            <summary>
+            UAP单据列表帮助类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.#ctor(UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="listService">列表服务</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetFirstVoucherID">
+            <summary>
+            获取第一个单据ID
+            </summary>
+            <returns>第一个单据ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetLastVoucherID">
+            <summary>
+            获取最后一个单据ID
+            </summary>
+            <returns>最后一个单据ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetNextVoucherID(System.String)">
+            <summary>
+            获取下一个单据ID
+            </summary>
+            <param name="curVoucherID">当前单据ID</param>
+            <returns>下一个单据ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetPreVoucherID(System.String)">
+            <summary>
+            获取上一个单据ID
+            </summary>
+            <param name="curVoucherID">当前单据ID</param>
+            <returns>上一个单据ID</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.IsFirstVoucher(System.String)">
+            <summary>
+            判断指定的单据ID是否为第一个单据ID
+            </summary>
+            <param name="voucherID">单据ID</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.IsLastVoucher(System.String)">
+            <summary>
+            判断指定的单据ID是否为最后一个单据ID
+            </summary>
+            <param name="voucherID">单据ID</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetAllVoucherIDs">
+            <summary>
+            获取单据ID列表
+            </summary>
+            <returns>单据ID列表</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetVoucherIDColName">
+            <summary>
+            获取单据ID列名称
+            </summary>
+            <returns>单据ID列名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetUAPVoucherInfos(UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            获取UAP单据信息,其配置Xml字符串格式如下所示：
+            <UAPVoucher menuID="" subSysID="" authID="" voucherName=""
+                        voucherIDCol="" voucherDetailIDCol="" cardNum=""/>
+            </summary>
+            <param name="listService">列表服务类</param>
+            <returns>信息集合，Key/Value</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetUAPVoucherIDColName(UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            获取UAP单据ID列名称
+            </summary>
+            <param name="uapExtendInfos">UAP扩展配置信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.GetUAPVoucherDetailIDColName(UFIDA.U8.UAP.UI.Runtime.List.UFGeneralListService)">
+            <summary>
+            获取UAP单据明细ID列名称
+            </summary>
+            <param name="uapExtendInfos">UAP扩展配置信息</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UAPVoucherHelper.ListService">
+            <summary>
+            获取列表服务
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.PaginateUtil">
+            <summary>
+            分页工具类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.PaginateUtil.ParseQueryResult(UFIDA.U8.UAP.UI.Runtime.List.QueryResult)">
+            <summary>
+            解析查询结果类
+            </summary>
+            <param name="result">查询结果类</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.PaginateUtil.SetDisplayColumn(System.Data.DataTable)">
+            <summary>
+            设置是否需要显示列
+            </summary>
+            <param name="table">查询结果表</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.IUIEventHandler">
+            <summary>
+            UI事件响应类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.IUIEventHandler.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.IUIEventHandler.Support(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,System.Object,System.Object)">
+            <summary>
+            是否支持指定的事件处理
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="args">事件对应的参数</param>
+            <param name="sender">事件发送者</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.IUIEventHandler.ProcessEvent(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,System.Object,System.Object)">
+            <summary>
+            处理指定的界面事件
+            </summary>
+            <param name="sender">消息发送者</param>
+            <param name="args">相关信息</param>
+            <param name="eventType">事件类型</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.IUIEventHandler.ListService">
+            <summary>
+            获取或者设置当前通用列表信息
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService">
+            <summary>
+            U8门户消息服务
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.PublishMessage">
+            <summary>
+            发布消息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.SubscribeMessage">
+            <summary>
+            订阅消息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.SubscribeMessage(System.String)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="msgType">消息类型</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.PublishMessage(System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="msgType">消息类型</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.SendMessage(System.Object)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="msg">消息信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.SetMessageHandler(UFIDA.U8.UAP.UI.Runtime.List.Message.IMessageHandler)">
+            <summary>
+            设置消息处理器
+            </summary>
+            <param name="msgHandler">消息处理器</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.MessageHandler">
+            <summary>
+            获取消息处理器
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.Login">
+            <summary>
+            获取或者设置当前登陆信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.MetaInfo">
+            <summary>
+            获取或者设置元消息服务员数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.ListService">
+            <summary>
+            获取或者设置当前通用列表信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Message.U8PortMessage.U8PortalMessageService.PortalPart">
+            <summary>
+            获取或者设置当前列表所在的门户Part
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Utils.VoucherTypeEnum">
+            <summary>
+            单据类型枚举
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService">
+            <summary>
+            U8过滤服务管理器
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.ChangeFilterInfo">
+            <summary>
+            改变过滤信息
+            </summary>
+            <returns>过滤结果字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.ChangeFilterInfo(System.Boolean)">
+            <summary>
+            改变过滤信息
+            </summary>
+            <param name="beHidden">是否隐藏过滤对话框</param>
+            <returns>过滤结果字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.SetFilterInfo(System.Boolean)">
+            <summary>
+            设置过滤信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.ClearParameters">
+            <summary>
+            清空参数信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.VBLogin">
+            <summary>
+            获取或者设置VB登录对象信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.Login">
+            <summary>
+            获取或者设置当前登陆对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.MetaInfo">
+            <summary>
+            获取或者设置过滤元数据信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.ListService">
+            <summary>
+            获取或者设置通用列表信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.Filter.U8FilterService.DefaultFilterCondition">
+            <summary>
+            获取或设置在Filter设置窗口不打开时默认的过滤条件
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEventHandler">
+            <summary>
+            列表事件代理类
+            </summary>
+            <param name="sender">消息发送者</param>
+            <param name="args">列表事件消息参数</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEventArgs">
+            <summary>
+            列表事件参数类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEventArgs.#ctor(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,System.Object,System.Object)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="eventType">事件类型</param>
+            <param name="sender">消息触发者</param>
+            <param name="extendInfos">扩展信息</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEventArgs.EventType">
+            <summary>
+            获取事件类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEventArgs.Sender">
+            <summary>
+            获取事件发起者
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEventArgs.ExtendInfos">
+            <summary>
+            获取事件附带信息
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.UFGeneralListEditPartUtil.CreatePartControl(UFIDA.U8.Portal.Framework.MainFrames.IEditorPart,UFIDA.U8.Portal.Framework.MainFrames.IEditorInput,System.String)">
+            <summary>
+            创建通用列表控件
+            </summary>
+            <param name="part">通用列表对应门户EditPart</param>
+            <param name="input">当前输入信息</param>
+            <param name="xml">xml配置信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.DataAccessorFactory">
+            <summary>
+            数据访问工厂类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.DataAccessorFactory.CreateInstance(System.String)">
+            <summary>
+            根据类型创建数据访问对象
+            </summary>
+            <param name="type">对象类型</param>
+            <returns>数据访问对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionDelegate.HasPopedom(System.String)">
+            <summary>
+            判断制定的操作是否具有权限
+            </summary>
+            <param name="authID">权限ID</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.ListActionDelegate.ListService">
+            <summary>
+            获取或者设置通用列表服务
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler">
+            <summary>
+            基础事件处理器
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.Initialize">
+            <summary>
+            初始化操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.Support(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,System.Object,System.Object)">
+            <summary>
+            是否支持指定的事件处理
+            </summary>
+            <param name="type">事件类型</param>
+            <param name="args">事件对应的参数</param>
+            <param name="sender">事件发送者</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessEvent(UFIDA.U8.UAP.UI.Runtime.List.UIEventTypeEnum,System.Object,System.Object)">
+            <summary>
+            处理界面相关事件
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="eventType">事件类型</param>
+            <param name="args">与事件有关的参数信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessExportEvent(System.Object,System.Object)">
+            <summary>
+            处理导出事件函数
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">导出事件对应的参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessPreviewEvent(System.Object,System.Object)">
+            <summary>
+            处理预览事件函数
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">预览事件对应的参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessPrintEvent(System.Object,System.Object)">
+            <summary>
+            处理打印事件函数
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">打印事件对应的参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessFilterEvent(System.Object,System.Object)">
+            <summary>
+            过滤处理事件
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">过滤处理相关的参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessColumnSetEvent(System.Object,System.Object)">
+            <summary>
+            处理列显示设置信息
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">列显示设置相关参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessDBClickEvent(System.Object,System.Object)">
+            <summary>
+            处理双击事件
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.CheckVoucherBrowserAuth(System.String,System.String)">
+            <summary>
+            检查当前用户是否有浏览单据权限
+            </summary>
+            <param name="voucherName">单据名称</param>
+            <param name="authID">单据浏览权限ID</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessVoucherCopy(System.Object,System.Object)">
+            <summary>
+            单据复制
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.CheckAddVoucherAuth(System.String,System.String)">
+            <summary>
+            检查当前用户是否有新增单据的权限
+            </summary>
+            <param name="voucherName">单据名称</param>
+            <param name="cardNum">单据编码</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessVoucherSumEvent(System.Object,System.Object)">
+            <summary>
+            处理列表汇总事件
+            </summary>
+            <param name="sender">消息触发者</param>
+            <param name="args">参数信息</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessRefreshEvent(System.Object,System.Object)">
+            <summary>
+            处理刷新按钮事件
+            </summary>
+            <param name="sender">消息发送者</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ProcessVoucherConvertEvent(System.Object,System.Object)">
+            <summary>
+            处理升单按钮事件
+            </summary>
+            <param name="sender">消息发送者</param>
+            <param name="args">消息参数</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.UI.BaseUIEventHandler.ListService">
+            <summary>
+            获取或者设置通用列表服务
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.QueryResult">
+            <summary>
+            查询结果类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.ListData">
+            <summary>
+            获取查询结果列数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.NeedPaginate">
+            <summary>
+            获取当前查询结果是否启用了分页
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.PageSize">
+            <summary>
+            获取当前查询分页大小
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.PageCount">
+            <summary>
+            获取当前查询所有的页数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.DataCount">
+            <summary>
+            获取当前查询所有的列表数据个数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.List.QueryResult.CurrentPageIndex">
+            <summary>
+            获取当前查询所取得页个数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Utils.QueryResultUtil.GetEnumDisplayContent(System.Object,System.String)">
+            <summary>
+            获得单据列表空间中的枚举列上的一个单元格的显示信息
+            </summary>
+            <param name="currentValue">原单元格内容</param>
+            <param name="enumTypeString">该列的枚举字符串</param>
+            <returns>单元格的显示值</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil">
+            <summary>
+            实体关系设置工具类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.SupportChangeSelectPart(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting,System.Boolean)">
+            <summary>
+            获取是否支持改变Select部分脚本
+            </summary>
+            <param name="qs">BizDAE查询设置类</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.SupportChangeWherePart(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting,System.Boolean)">
+            <summary>
+            获取是否支持改变条件部分脚本
+            </summary>
+            <param name="qs">BizDAE查询设置类</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.SupportChangeOrderPart(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting,System.Boolean)">
+            <summary>
+            获取是否支持改变排序部分脚本
+            </summary>
+            <param name="qs">BizDAE查询设置类</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.SupportChangeGroupPart(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting,System.Boolean)">
+            <summary>
+            获取是否支持改变分组部分脚本
+            </summary>
+            <param name="qs">BizDAE查询设置类</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.WhereToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting)">
+            <summary>
+            获取查询条件转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.SelectToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting)">
+            <summary>
+            获取选择部分转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.OrderToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting)">
+            <summary>
+            获取排序部分转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.GroupToParameterName(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting)">
+            <summary>
+            获取分组部分转化为参数名称
+            </summary>
+            <param name="qs">查询设置</param>
+            <returns>参数名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.GetBizDAESetting(UFIDA.U8.UAP.UI.Runtime.List.Metas.DataAccessMeta)">
+            <summary>
+            获取BizDAE设置信息
+            </summary>
+            <param name="meta">数据访问元数据信息</param>
+            <param name="boID">业务对象ID</param>
+            <param name="functionName">功能名称</param>
+            <param name="type">具体的查询类型：ER/StoreProcedure/Custom</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAESettingUtil.GetValueFromQuerySetting(UFIDA.U8.UAP.UI.Runtime.List.DataAccess.BizDAE.BizDAEQuerySetting,System.String)">
+            <summary>
+            根据关键字获取对应查询扩展设置值
+            </summary>
+            <param name="qs">BizDAE查询设置</param>
+            <param name="key">关键字名称</param>
+            <returns>扩展设置值</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColSetInfoUtil">
+            <summary>
+            U8列设置信息工具类
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.List.Columns.U8ColSetInfoUtil.Parse(System.String,System.String@,System.Boolean@)">
+            <summary>
+            解析U8列显示配置信息
+            </summary>
+            <param name="xml">显示配置Xml字符串</param>
+            <param name="listCaption">列表标题</param>
+            <param name="locked">是否锁定</param>
+            <returns>显示列数组</returns>
+        </member>
+    </members>
+</doc>

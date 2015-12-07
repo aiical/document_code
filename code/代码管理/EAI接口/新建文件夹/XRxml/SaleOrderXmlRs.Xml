@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='gb2312'?>
+<ufinterface>
+	<header>
+		<typecode>cSTCode</typecode>
+		<date>dDate</date>	<!--受订日期-->
+		<code>cSOCode</code>	<!--销售订单号	主表唯一标识	主表关联项-->
+		<custcode>cCusCode</custcode>	<!--客户编码		Customer.cCusCode-->
+		<deptcode>cDepCode</deptcode>	<!--部门编码		Department.cDepCode-->
+		<personcode>cPersonCode</personcode>	<!--职员编码		Person.cPersonCode-->
+		<sendcode>cSCCode</sendcode>	<!--发运方式编码		ShippingChoice.cSCCode-->
+		<sendaddress>cCusOAddress</sendaddress>	<!--发货地址-->
+		<paycondition_code>cPayCode</paycondition_code>	<!--付款条件编码		PayCondition.cPayCode-->
+		<currency>cexch_name</currency>	<!--币种	缺省为本位币	foreigncurrency.cexch_name-->
+		<currencyrate>iExchRate</currencyrate>	<!--汇率	若币种为本币，则汇率=1-->
+		<taxrate>iTaxRate</taxrate>	<!--税率-->
+		<earnest>iMoney</earnest>	<!--定金-->
+		<memo>cMemo</memo>	<!--备注-->
+		<status>iStatus</status>	<!--状态	0_输入 1_审核执行 2_关闭-->
+		<maker>cMaker</maker>	<!--制单人-->
+		<verifier>cVerifier</verifier>	<!--审核人-->
+		<closer>cCloser</closer>	<!--关闭人-->
+		<disflag>bDisFlag</disflag>	<!--是否整单打折-->
+		<define1>cDefine1</define1>	<!--自定义字段1-->
+		<define2>cDefine2</define2>	<!--自定义字段2-->
+		<define3>cDefine3</define3>	<!--自定义字段3-->
+		<cusname>cCusName</cusname>	<!--客户名称		Customer.cCusName-->
+		<ordertoplan>bOrder</ordertoplan><!--销售订单是否生成采购计划-->
+	</header>
+	<body>
+		<code>cSOCode</code>
+		<inventorycode>cInvCode</inventorycode>
+		<preparedate>dPreDate</preparedate>
+		<quantity>iQuantity</quantity>
+		<num>iNum</num>
+		<quotedprice>iQuotedPrice</quotedprice>
+		<taxquotedprice></taxquotedprice>
+		<unitprice>iUnitPrice</unitprice>
+		<taxunitprice>iTaxUnitPrice</taxunitprice>
+		<money>iMoney</money>
+		<tax>iTax</tax>
+		<sum>iSum</sum>
+		<discount>iDisCount</discount>
+		<natunitprice>iNatUnitPrice</natunitprice>
+		<natmoney>iNatMoney</natmoney>
+		<nattax>iNatTax</nattax>
+		<natsum>iNatSum</natsum>
+		<natdiscount>iNatDisCount</natdiscount>
+		<memo>cMemo</memo>
+		<cfree1>cFree1</cfree1>
+		<cfree2>cFree2</cfree2>
+		<mid></mid>
+		<discountrate>KL</discountrate>
+		<discountrate2>KL2</discountrate2>
+		<taxrate>iTaxRate</taxrate>
+		<define22>cDefine22</define22>
+		<define23>cDefine23</define23>
+		<define24>cDefine24</define24>
+		<define25>cDefine25</define25>
+		<define26>cDefine26</define26>
+		<define27>cDefine27</define27>
+		<itemcode>cItemCode</itemcode>
+		<item_class>cItem_class</item_class>
+		<itemname>cItemName</itemname>
+		<itemclass_name>cItem_CName</itemclass_name>
+	</body>
+	
+</ufinterface>
+
+

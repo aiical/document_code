@@ -1,0 +1,876 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.UI.Runtime.Controller</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateManager">
+            <summary>
+            单据状态管理
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateManager.paras">
+            <summary>
+            单据元数据参数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateManager.#ctor(UFIDA.U8.UAP.UI.Runtime.Model.Voucher,UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas,UFIDA.U8.UAP.UI.Runtime.Controller.handleVoucherStateChanged,UFIDA.U8.UAP.Common.LoginInfo)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="voucher">单据对象</param>
+            <param name="Paras">单据参数</param>
+            <param name="EventStateChanged">状态管理事件</param>
+            <param name="loginInfo">登陆对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateManager.SetVoucherState(UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum,System.Boolean)">
+            <summary>
+            设置单据状态
+            </summary>
+            <param name="VoucherState">状态信息</param>
+            <param name="bAudit">是否审核过</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs">
+            <summary>
+            单据状态事件参数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs.#ctor(System.String,UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum,System.Boolean)">
+            <summary>
+            单据状态事件参数
+            </summary>
+            <param name="ToolBarStates">toolbar xml 描述</param>
+            <param name="VoucherState">单据状态</param>
+            <param name="bAudit">是否审核过</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs.ToolBarState">
+            <summary>
+            单据状态描述xml
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs.State">
+            <summary>
+            单据状态枚举
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs.IsAudit">
+            <summary>
+            是否审核完毕
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands">
+            <summary>
+            单据toolbar执行对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.voucher">
+            <summary>
+            表单对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.paras">
+            <summary>
+            单据参数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.#ctor(UFIDA.U8.UAP.UI.Runtime.View.FormWindow,UFIDA.U8.UAP.UI.Runtime.Model.Voucher,UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas,UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateManager,U8Login.clsLogin,UFSoft.U8.Framework.Login.UI.clsLogin,UFIDA.U8.UAP.UI.Runtime.Controller.DelegateNavigateList)">
+            <summary>
+            初始化
+            </summary>
+            <param name="voucherView"></param>
+            <param name="voucher"></param>
+            <param name="paras"></param>
+            <param name="StateManager"></param>
+            <param name="u8login"></param>
+            <param name="delegateNavigate"></param>
+            <param name="netLogin">u8 dotnet登录对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.RunVoucherCommand(UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs)">
+            <summary>
+            执行命令
+            </summary>
+            <param name="command">事件参数</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.FireButtonCheckedChanged(UFIDA.U8.UAP.UI.Runtime.Common.Parameters.ButtonCheckedEventArgs)">
+            <summary>
+            触发菜单的CheckedChanged事件
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Init_Plug">
+            <summary>
+            初始化Plug in
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.PrintVoucher(System.Int32)">
+            <summary>
+            打印(包括打印、打印预览、输出三个功能
+            </summary>
+            <param name="printStyle">打印选项</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.AddVoucher">
+            <summary>
+            增加
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.EditVoucher">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.SaveVoucher(UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum)">
+            <summary>
+            保存
+            </summary>
+            <param name="voucherState">单据状态</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Abandon">
+            <summary>
+            放弃单据
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.AbandonApprove">
+            <summary>
+            弃审
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Approve">
+            <summary>
+            审核
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.CheckApprove">
+            <summary>
+            查审
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Refresh">
+            <summary>
+            刷新
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Navigate(System.String)">
+            <summary>
+            浏览功能
+            </summary>
+            <param name="action">命令</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Help">
+            <summary>
+            帮助
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Exit">
+            <summary>
+            退出
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.VoucherMaker(UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs)">
+            <summary>
+            生单
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.ClearVoucherInfo(System.Data.DataSet)">
+            <summary>
+            清除掉制单人、制单时间、审核人、审核时间、修改时间、单据编号等字段的值 hgs 2007-9-29
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.CopyVoucher">
+            <summary>
+            单据复制
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.XmlConvertToDataSet(System.String[],System.String[])">
+            <summary>
+            将recordset描述格式的xml转换为dataset
+            </summary>
+            <param name="XmlData"></param>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.ReadExcuteState(System.String)">
+            <summary>
+            解析二次开发函数的执行结果
+            </summary>
+            <param name="xml">执行结果</param>
+            <returns>执行成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.MakeExcuteState(System.Boolean)">
+            <summary>
+            创建一个系统函数的执行结果
+            </summary>
+            <param name="success">执行成功与否标志</param>
+            <returns>执行结果的xml描述</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.MakeExcuteState(System.Boolean,System.String)">
+            <summary>
+            创建一个系统函数的执行结
+            </summary>
+            <param name="success">执行成功与否标志</param>
+            <param name="errinfo">如果执行错误，该参数为其其错误描述信息</param>
+            <returns>执行结果的xml描述</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.CreateReceipNo(System.Data.DataSet)">
+            <summary>
+            根据单据编号规则
+            </summary>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.InvokeInterface(System.Object,System.String,System.Object[])">
+            <summary>
+            反射调用对象的方法
+            </summary>
+            <param name="instance">对象</param>
+            <param name="method">方法</param>
+            <param name="paras">参数</param>
+            <returns>方法执行结果</returns>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.ButtonCheckedChangedHandler">
+            <summary>
+            菜单Checked事件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.VoucherSrv">
+            <summary>
+            单据元数据对象服务
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Voucher">
+            <summary>
+            单据数据模型对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.Paras">
+            <summary>
+            单据参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands.StateManager">
+            <summary>
+            单据状态管理对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.SecondDevData.Path">
+            <summary>
+            文件所在路径
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.SecondDevData.ClassName">
+            <summary>
+            命名空间和类名
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.SecondDevData.Key">
+            <summary>
+            执行顺序
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl">
+            <summary>
+            PrintControl 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl.#ctor(System.String,System.String,UFIDA.U8.UAP.Common.LoginInfo)">
+            <summary>
+            打印单据
+            </summary>
+            <param name="cardNum">单据编号</param>
+            <param name="templateID">模版ID</param>
+            <param name="LoginInfo">登录对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl.PrintVoucher(System.Int32,MSXML2.DOMDocument,MSXML2.DOMDocument)">
+            <summary>
+            打印功能
+            </summary>
+            <param name="nFlag">打印选项（ 0:打印预览 1 打印 2 输出）</param>
+            <param name="xmlHead">表头数据</param>
+            <param name="xmlBody">表体数据</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl.PrintVoucher(System.Int32,MSXML2.DOMDocument[],MSXML2.DOMDocument[])">
+            <summary>
+            
+            </summary>
+            <param name="nFlag"></param>
+            <param name="xmlHead"></param>
+            <param name="xmlBody"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.PrintControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime">
+            <summary>
+            dll调用
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.#ctor">
+            <summary>
+            dll调用
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.InvokeScript(System.Reflection.Assembly,System.String,System.Object,System.String)">
+            <summary>
+            调用方法
+            </summary>
+            <param name="assembly">asembly</param>
+            <param name="method">方法名称</param>
+            <param name="obj">对象名</param>
+            <param name="classAndNamespace">命名空间</param>
+            <returns>成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.InvokeScript(System.Reflection.Assembly,System.String,System.Object)">
+            <summary>
+            调用一个assembly的方法
+            </summary>
+            <param name="assembly">assembly</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <returns>成功</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.InvokeScript(System.String,System.String,System.Object,System.String)">
+            <summary>
+            调用一个assembly的方法
+            </summary>
+            <param name="path">assembly的路径</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <param name="classAndNamespace">命名空间和类名</param>
+            <returns>调用成功与否</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.InvokeScriptWithMessage(System.Reflection.Assembly,System.String,System.Object,System.String)">
+            <summary>
+            调用返回字符串消息的方法
+            </summary>
+            <param name="assembly">assembly</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <param name="classAndNamespace">命名空间和类名</param>
+            <returns>返回校验错误消息 如果为空 表示没有错误信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.InvokeScriptWithMessage(System.Reflection.Assembly,System.String,System.Object)">
+            <summary>
+            调用返回字符串消息的方法
+            </summary>
+            <param name="assembly">assembly</param>
+            <param name="method">方法名</param>
+            <param name="obj">参数</param>
+            <returns>返回校验错误消息 如果为空 表示没有错误信息</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.objRunTime.CreateInstance(System.String,System.String)">
+            <summary>
+            用反射创建一个构造函数参数为空的类的实例
+            </summary>
+            <param name="path">dll路径</param>
+            <param name="nsAndClass">类名和命名空间</param>
+            <returns>创建对象</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier">
+            <summary>
+            代码编译和调用帮助类
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.compiler">
+            <summary>
+            //编译生成的Assembly
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.CreateCompiler">
+            <summary>
+            创建编译对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.CreateCompilerScriptParameters(System.String)">
+            <summary>
+            创建编译器参数
+            </summary>
+            <param name="assemblyName">编译器</param>
+            <returns>返回编译器参数对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.ComplierObject(System.String,System.String)">
+            <summary>
+            编译源代码
+            </summary>
+            <param name="sourceCode">源代码</param>
+            <param name="assemblyName">程序集名称</param>
+            <returns>程序集对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.ComplierObject(System.String)">
+            <summary>
+            返回编译的对象
+            </summary>
+            <param name="sourceCode">编译的代码</param>
+            <returns>返回编译assembly</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.EncapsulatFunction(System.String,System.String,System.Int32)">
+            <summary>
+            组装代码
+            </summary>
+            <param name="functonName">函数</param>
+            <param name="functon">函数</param>
+            <param name="type">类型</param>
+            <returns>代码</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.MOComplier.AddRefs(System.String[])">
+            <summary>
+            添加引用的dll
+            </summary>
+            <param name="strRefs">引用dll</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.CsharpMOComplier.#ctor">
+            <summary>
+            构造函数 初始化引用对象 和命名空间
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.CsharpMOComplier.#ctor(System.String[])">
+            <summary>
+            构造函数 初始化引用对象 和命名空间
+            </summary>
+            <param name="refrence">引用dll</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.CsharpMOComplier.CreateCompiler">
+            <summary>
+            建立编译对象
+            </summary>
+            <returns>编译对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.CsharpMOComplier.EncapsulatFunction(System.String,System.String,System.Int32)">
+            <summary>
+            封装一个函数
+            </summary>
+            <param name="functonName">函数名</param>
+            <param name="functon">函数内容</param>
+            <param name="type">是否有返回类型</param>
+            <returns>封装好的函数</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.CsharpMOComplier.EncapsulatNameSapce(System.String)">
+            <summary>
+            封装一个类
+            </summary>
+            <param name="codes">需要封装的函数集合</param>
+            <returns>返回封装好的代码</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.LinkTable.CreateEvents(UFIDA.U8.UAP.UI.Runtime.Model.Business,UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow)">
+            <summary>
+            
+            </summary>
+            <param name="buseness"></param>
+            <param name="editWidow"></param>
+            <remarks>chenhy 20070802 更改:
+                     修改UFIDA.U8.UAP.UI.Runtime.View.EditWindow类引用为UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow接口
+            </remarks>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.LinkTable.window_GridLayoutCustomed(System.Object,UFIDA.U8.UAP.UI.Runtime.Common.GridLayoutEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.LinkTable.ClearEvent(UFIDA.U8.UAP.UI.Runtime.View.FormWindow)">
+            <summary>
+            注销事件
+            </summary>
+            <param name="view"></param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.Logic">
+            <summary>
+            单据控件的控制类
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.login">
+            <summary>
+            ｖｂ登陆对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.netLogin">
+            <summary>
+            .net登陆对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.loginInfo">
+            <summary>
+            登陆对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.voucher">
+            <summary>
+            model数据对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.view">
+            <summary>
+            视图对象
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.cardNum">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.command">
+            <summary>
+            toolbar命令对象
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.#ctor(System.Object,UFSoft.U8.Framework.Login.UI.clsLogin,System.String)">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.OpenVoucher">
+            <summary>
+            打开默认单据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.CreateVoucher">
+            <summary>
+            创建单据控件对象
+            </summary>
+            <returns>创建的单据控件</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.OpenVoucher(System.String)">
+            <summary>
+            创建单据控件
+            </summary>
+            <param name="VoucherID">要打开的单据的ID</param>
+            <returns>单据控件</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.CopyVoucher(System.String)">
+            <summary>
+            复制一张单据
+            </summary>
+            <param name="VoucherID">单据ID</param>
+            <returns>单据控件</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.PatchPrint(System.Int32,System.String,System.String)">
+            <summary>
+            批处理打印
+            </summary>
+            <param name="cardnum"></param>
+            <param name="voucherIDList"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.Init(U8Login.clsLogin,UFSoft.U8.Framework.Login.UI.clsLogin,System.String,System.Data.DataSet,UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum)">
+            <summary>
+            初始化
+            </summary>
+            <param name="login"></param>
+            <param name="netLogin"></param>
+            <param name="Cardnumber"></param>
+            <param name="ds"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.voucherControl_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            快捷键处理方式
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.GetVoucherName(System.String,System.String)">
+            <summary>
+            返回单据名称
+            </summary>
+            <param name="voucherMeta">元数据</param>
+            <param name="language">语言</param>
+            <returns>单据名称</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.RunLoadEventScript(UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas,System.Reflection.Assembly)">
+            <summary>
+            执行装载更新事件
+            </summary>
+            <param name="paras">事件描述</param>
+            <param name="eventAssembly">事件Assemlby</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.CreateInstance(System.String,System.String)">
+            <summary>
+            用反射创建一个构造函数参数为空的类的实例
+            </summary>
+            <param name="path">路径</param>
+            <param name="nsAndClass">类和命名空间</param>
+            <returns>实例化的对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.CreateLogin(U8Login.clsLogin)">
+            <summary>
+            登陆对象的创建
+            </summary>
+            <param name="u8login">u8登陆对象</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.Command">
+            <summary>
+            命令行
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.Paras">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.VoucherName">
+            <summary>
+            单据名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.StateManager">
+            <summary>
+            状态管理
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.eventCreateToolBar">
+            <summary>
+            toolbar创建事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.eventVoucherStateChanged">
+            <summary>
+            状态改变事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Controller.Logic.eventNavigateList">
+            <summary>
+            浏览事件
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ShortCutHelper.CreateButtonArgs(System.String)">
+            <summary>
+            根据buttonkey创建命令参数
+            </summary>
+            <param name="buttonKey">button key</param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.handleVoucherStateChanged">
+            <summary>
+            单据状态代理
+            </summary>
+            <param name="sender">发起对象</param>
+            <param name="args">状态参数</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.DelegateCreateToolBar">
+            <summary>
+            创建toolbar对象的代理
+            </summary>
+            <param name="sender">发起对象</param>
+            <param name="args">toolbar参数</param>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.DelegateNavigateList">
+            <summary>
+            浏览单据的代理
+            </summary>
+            <param name="action">命令（上一条下一条）</param>
+            <param name="voucherid">单据ID</param>
+            <returns>列表ID</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.ToolBarEventArgs">
+            <summary>
+            toolbar的事件参数，包括单据数据描述
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ToolBarEventArgs.#ctor(UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas,UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands)">
+            <summary>
+            toolbar创建参数的实例化
+            </summary>
+            <param name="Paras">单据数据描述</param>
+            <param name="Command">单据toolbar执行对象</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.ToolBarEventArgs.Paras">
+            <summary>
+            单据数据描述
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.ToolBarEventArgs.Command">
+            <summary>
+            单据toolbar执行对象
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ConfigManager.IsUseCache">
+            <summary>
+            是否使用缓存
+            </summary>
+            <returns>结果</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ConfigManager.GetSecondDevPath">
+            <summary>
+            读取二次开发DLL存储路径,最好用相对于u8soft的相对路径
+            </summary>
+            <returns>路径</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ConfigManager.GetSaveTipInfo(System.String)">
+            <summary>
+            toolbar提示语言的种类
+            </summary>
+            <param name="languageID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu">
+            <summary>
+            单据右键菜单的管理
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.#ctor(System.String,UFIDA.U8.UAP.UI.Runtime.Controller.VoucherCommands)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="toolbar">toolbar对象</param>
+            <param name="command">命令对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.CreateMenuStrip">
+            <summary>
+            创建右键菜单对象
+            </summary>
+            <returns>右键菜单对象</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.CreateButtons">
+            <summary>
+            创建VoucherButtonArgs对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.CreateVoucherButtonArgs(System.Xml.XmlNode)">
+            <summary>
+            创建一个VoucherButtonArgs对象
+            </summary>
+            <param name="node">toolbarbutton描述</param>
+            <returns>VoucherButtonArgs</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.ContextMenuClick(System.Object,System.EventArgs)">
+            <summary>
+            事件处理函数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.SetDefaultViewChecked">
+            <summary>
+            设置默认视图菜单被选中
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.GetDefaultLayoutID(UFIDA.U8.UAP.UI.Runtime.BusinessObject.MetaData)">
+            <summary>
+            获取默认视图编号
+            </summary>
+            <param name="meta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.VoucherStateChanged(UFIDA.U8.UAP.UI.Runtime.Controller.VoucherStateEventArgs)">
+            <summary>
+            单据状态处理函数
+            </summary>
+            <param name="args">状态参数</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.GetNameByKey(System.String)">
+            <summary>
+            根据键值找到名称
+            </summary>
+            <param name="key">键值</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.GetViewNameByKey(System.String)">
+            <summary>
+            根据键值找到名称
+            </summary>
+            <param name="key">键值</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.GetNameByKey(System.Collections.Generic.List{UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs},System.String)">
+            <summary>
+            根据键值找到名称
+            父子级菜单关系：子菜单ID用父菜单的ID，其ID存储在Buttonparas属性中
+            </summary>
+            <param name="list"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.ViewContexMenu.Control">
+            <summary>
+            菜单所在的控件对象，如果菜单显示延迟，可以用来刷新显示
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService">
+            <summary>
+            u8 单据控件打印服务
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.#ctor(System.String,AxPRINTCONTROLLib.AxPrintControl,UFIDA.U8.UAP.Common.LoginInfo)">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.Print">
+            <summary>
+            打印当前通用列表数据
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.Preview">
+            <summary>
+            预览通用列表打印设置
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.Export">
+            <summary>
+            导出操作
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.GetPrintStyleXml">
+            <summary>
+            获取打印格式对应的Xml字符串
+            </summary>
+            <returns>打印格式对应的Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.GetPrintDataXml">
+            <summary>
+            获取打印数据对应的Xml字符串
+            </summary>
+            <returns>打印数据对应的Xml字符串</returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.DefaultPrintDataXml">
+            <summary>
+            缺省打印数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Controller.U8PrintService.DefaultPrintStyleXml">
+            <summary>
+            缺省打印风格
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Controller.CodeDom.ComplierFactory.CreateComplier(System.Int32)">
+            <summary>
+            建立b编译器帮助类
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,159 @@
+namespace Finance
+{
+    partial class frmFProfitReport
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.cbBegin = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.spRefresh = new DevExpress.XtraEditors.SimpleButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.spYear = new DevExpress.XtraEditors.SpinEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.rgOption.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbBegin.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spYear.Properties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // ucDate
+            // 
+            this.ucDate.Visible = false;
+            // 
+            // rgOption
+            // 
+            this.rgOption.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.rgOption.Properties.Appearance.Options.UseBackColor = true;
+            this.rgOption.Visible = false;
+            // 
+            // lbTitle
+            // 
+            this.lbTitle.Size = new System.Drawing.Size(101, 24);
+            this.lbTitle.Text = "frmBase";
+            // 
+            // cbBegin
+            // 
+            this.cbBegin.Location = new System.Drawing.Point(376, 39);
+            this.cbBegin.Name = "cbBegin";
+            this.cbBegin.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbBegin.Properties.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cbBegin.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbBegin.Size = new System.Drawing.Size(68, 21);
+            this.cbBegin.TabIndex = 31;
+            this.cbBegin.Visible = false;
+            // 
+            // spRefresh
+            // 
+            this.spRefresh.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spRefresh.Appearance.Options.UseFont = true;
+            this.spRefresh.Location = new System.Drawing.Point(313, 37);
+            this.spRefresh.Name = "spRefresh";
+            this.spRefresh.Size = new System.Drawing.Size(61, 23);
+            this.spRefresh.TabIndex = 30;
+            this.spRefresh.Text = "刷新(&R)";
+            this.spRefresh.Click += new System.EventHandler(this.spRefresh_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(311, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 12);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "会计期间:";
+            this.label2.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(146, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "会计年度:";
+            // 
+            // spYear
+            // 
+            this.spYear.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.spYear.Location = new System.Drawing.Point(211, 39);
+            this.spYear.Name = "spYear";
+            this.spYear.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.spYear.Properties.IsFloatValue = false;
+            this.spYear.Properties.Mask.EditMask = "N00";
+            this.spYear.Size = new System.Drawing.Size(68, 21);
+            this.spYear.TabIndex = 27;
+            // 
+            // frmFProfitReport
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.ClientSize = new System.Drawing.Size(748, 501);
+            this.Controls.Add(this.cbBegin);
+            this.Controls.Add(this.spRefresh);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.spYear);
+            this.Name = "frmFProfitReport";
+            this.Text = "损益表";
+            this.Load += new System.EventHandler(this.frmFDayReport_Load);
+            this.Controls.SetChildIndex(this.spYear, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.spRefresh, 0);
+            this.Controls.SetChildIndex(this.cbBegin, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.rgOption.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbBegin.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spYear.Properties)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraEditors.ComboBoxEdit cbBegin;
+        private DevExpress.XtraEditors.SimpleButton spRefresh;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.SpinEdit spYear;
+    }
+}

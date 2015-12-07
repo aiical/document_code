@@ -1,0 +1,1201 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U8.UAP.UI.Runtime.Common</name>
+    </assembly>
+    <members>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.CardNumber">
+            <summary>
+              编号= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.CardName">
+            <summary>
+              档案名称= 1
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Int">
+            <summary>
+              整数= 2
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.PositiveInt">
+            <summary>
+              正整数= 3
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Double">
+            <summary>
+              小数= 4
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.PositiveDouble">
+            <summary>
+              正小数= 5
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.String">
+            <summary>
+              字符串= 6
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.DateTime">
+            <summary>
+              日期= 7
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.LongDateTime">
+            <summary>
+              长日期= 8
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Enum">
+            <summary>
+              枚举= 9
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.BaseInfo">
+            <summary>
+              基础资料= 10
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.BaseInfoProperty">
+            <summary>
+              基础资料属性= 11
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Maker">
+            <summary>
+              制单人= 12
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Auditor">
+            <summary>
+              审核人= 13
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.AuditDate">
+            <summary>
+              审核日期= 14
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Count">
+            <summary>
+              数量= 15
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Price">
+            <summary>
+              价格= 16
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Money">
+            <summary>
+              金额= 17 
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.Chose">
+            <summary>
+              复选框= 22 
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.MakeDate">
+            <summary>
+              制单日期= 23 
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherItemTypeEnum.ModifyDate">
+            <summary>
+              修改日期= 24
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CellValueUpdateCollection">
+            <summary>
+              定义参数的结构
+            </summary>
+            
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CellValueUpdatePara">
+            <summary>
+              单元格更新参数结构
+            </summary>
+            
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowValueUpdatePara">
+            <summary>
+              行更新参数结构
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.EditWindowStyleUpdatePara">
+            <summary>
+              EditWindow样式更新参数结构
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.EditWindowStyle">
+            <summary>
+              枚举EditWindow支持的样式
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowStyleUpdatePara">
+            <summary>
+              行样式更新参数结构
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowStyle">
+            <summary>
+              枚举行支持的样式
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CellStyleUpdatePara">
+            <summary>
+              单元格样式更新参数结构
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CellStyle">
+            <summary>
+              枚举单元格支持的样式
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CoteStyleUpdatePara">
+            <summary>
+              列样式更新参数结构
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CoteStyle">
+            <summary>
+              枚举列支持的样式
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ToolBarButtonStyleUpdatePara">
+            <summary>
+              ToolBarButton样式更新参数结构
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ToolBarButtonStyle">
+            <summary>
+              枚举ToolBarButton支持的样式
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas.CardNum">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas.TableStruct">
+            <summary>
+            单据的实体结构信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas.EventParse">
+            <summary>
+            值更新事件和加载更新时间的XML描述文件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas.StateXml">
+            <summary>
+            状态描述XML
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherParas.ToolBar">
+            <summary>
+            菜单描述信息
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.EntityLineModeEnum">
+            <summary>
+              实体的行模式枚举
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.EntityLineModeEnum.SingleLine">
+            <summary>
+              单行模式= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.EntityLineModeEnum.MultiLine">
+            <summary>
+              多行模式= 1
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReturnDataForSave.ReturnXML">
+            <summary>
+              获取和设置返回XML字符串
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReturnDataForSave.ReturnDataSet">
+            <summary>
+              获取和设置返回的DataSet
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.PublicFunction.Redim(System.Array,System.Int32)">
+            <summary>
+              重新调整数组长度
+            <para>origArray：原数组</para>
+            <para>desiredsize：新的数组长度</para>
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum.New">
+            <summary>
+              新增状态
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum.Navigate">
+            <summary>
+              浏览（查看）状态
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum.Edit">
+            <summary>
+              编辑状态
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum.Approve">
+            <summary>
+              审核状态
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum.Save">
+            <summary>
+              保存状态
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateEnum.AbdonApprove">
+            <summary>
+              弃审状态
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow">
+            <summary>
+            IBusiness接口，所有要用于小V的控件必须要实现该接口。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.FillData(System.Data.DataTable)">
+            <summary>
+              填充EditWindow
+            <para>dataTable：填充的数据</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ClearData">
+            <summary>
+              清空EditWindow
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.UpdateRows(UFIDA.U8.UAP.UI.Runtime.Common.RowValueUpdatePara[])">
+            <summary>
+            更新EditWindow行的值，支持更新多个行。
+            <para>datas：CellValueUpdateStruct的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.UpdateCells(UFIDA.U8.UAP.UI.Runtime.Common.CellValueUpdatePara[])">
+            <summary>
+            更新EditWindow单元格的值，支持更新多个单元格。
+            <para>datas：CellValueUpdateStruct的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.AddRow(System.Data.DataRow)">
+            <summary>
+              EditWindow增加行
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.RemoveRows(System.String[])">
+            <summary>
+              删除EditWindow的行，支持一次删除多行。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.SetEditWindowStyle(UFIDA.U8.UAP.UI.Runtime.Common.EditWindowStyleUpdatePara[])">
+            <summary>
+              设置EditWindow的样式。
+                <para>styles：EditWindowStyle类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.SetRowsStyle(UFIDA.U8.UAP.UI.Runtime.Common.RowStyleUpdatePara[])">
+            <summary>
+              设置行的样式，支持一次设置多行的样式。
+                <para>styles：RowStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.SetCellsStyle(UFIDA.U8.UAP.UI.Runtime.Common.CellStyleUpdatePara[])">
+            <summary>
+              设置单元格的样式，支持一次设置多个单元格的样式。
+                <para>styles：CellStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.SetCotesStyle(UFIDA.U8.UAP.UI.Runtime.Common.CoteStyleUpdatePara[])">
+            <summary>
+              设置列的样式，支持一次设置多个列的样式。
+                <para>styles：CoteStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.SetCurrentRow(System.String)">
+            <summary>
+              设置当前行。
+                <para>RowKey：行的主键值</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.GetColumnInfo(UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns)">
+            <summary>
+              得到列信息。由M给观察者提供列信息。对于可见性要在本方法中实现，其他信息可以在点击单元格时实现。
+                <para>columns：一个Hashtable类型的值，Key是列名（ColumnName），值是BusinessColumn类型的对象</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.SetToolBarButtonsStyle(UFIDA.U8.UAP.UI.Runtime.Common.ToolBarButtonStyleUpdatePara[])">
+            <summary>
+              设置工具条按钮的样式。
+                <para>styles：ToolBarButtonStyleUpdatePara类型的数组</para>
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ProtectUnload">
+            <summary>
+            视图状态安全检查，可在执行某些上层功能时调用，相当于原来VB的ProtectUnload方法。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.AddRows(System.Data.DataRow[])">
+            <summary>
+              EditWindow增加多行
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.CheckRow(System.String,System.Boolean)">
+            <summary>
+              根据主键选中或者取消选中复选框。
+                <para>RowKeys：行的主键数组</para>
+                <para>bChecked：是否选中复选框，true：选中，false：不选中</para>
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.Entity">
+            <summary>
+              获得EditWindow对应的实体
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ID">
+            <summary>
+              获得EditWindow的ID（唯一标识）
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.InnerControl">
+            <summary>
+            获取对象内部实现IEditWindow接口的控件
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.CodeRule">
+            <summary>
+            获取或者设置树形实体的编码规则，
+            设置只能由Model在绑定视图时使用，
+            以便为EditWindow传递编码规则。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.EntityType">
+            <summary>
+            获取或者设置IEditWindow对应实体的实体类型，
+            设置只能由Model在绑定视图时使用，
+            以便为EditWindow传递实体类型。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.VoucherType">
+            <summary>
+            获取或者设置表单类型，
+            设置只能由Model在绑定视图时使用，
+            以便为EditWindow传递表单类型。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.EntityLineMode">
+            <summary>
+            获取或者设置实体的行模式，
+            设置只能由Model在绑定视图时使用，
+            以便为EditWindow传递实体的行模式。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.Type">
+            <summary>
+            获取EditWindow的类型，比如树形、列表、卡片、自定义控件等等。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.RowAdding">
+            <summary>
+              为EditWindow增加行时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.RowDeleting">
+            <summary>
+              为EditWindow删除行时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.RowChanging">
+            <summary>
+              为EditWindow修改行时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.CellChanging">
+            <summary>
+              EditWindow的单元格的值发生变更时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.RowSelecting">
+            <summary>
+              选中EditWindow的当前行时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.CellSelecting">
+            <summary>
+              选中EditWindow的单元格时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.MouseClick">
+            <summary>
+              鼠标点击EditWindow时触发的事件
+            </summary>
+            <summary>
+              鼠标左健单击EditWindow时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.MouseDoubleClick">
+            <summary>
+              鼠标左健双击EditWindow时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.MouseRightClick">
+            <summary>
+              鼠标右健单击EditWindow时触发的事件，主要是处理右键菜单。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ToolBarButtonClick">
+            <summary>
+              单击工具条按钮或工具条菜单时触发的事件。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ReferOpening">
+            <summary>
+              参照打看之前的事件。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ReferClosed">
+            <summary>
+              参照返回（关闭）之后的事件。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.GridLayoutCustomed">
+            <summary>
+             GridWindow格式保存事件，由控制器直接保存
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ClearCustomLayout">
+            <summary>
+            GridWindow格式清除事件，由控制器直接清除，并返回系统布局
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.ExpandTreeNode">
+            <summary>
+              树形节点展开事件，Grid控件暂时不触发。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.RowChecked">
+            <summary>
+              选中一行的复选框时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.DataClearing">
+            <summary>
+              清空按钮触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IEditWindow.GetBizInfo">
+            <summary>
+            用于视图向模型索取信息的事件，返回值是object类型
+            当参数GetBizInfoEventArgs.GetInfoType == ButtonState时，返回值是枚举类型ButtonStateEnum
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.ICustomControlContainer.LoadCustomControl(System.Windows.Forms.Control)">
+            <summary>
+            加载自定义控件
+            </summary>
+            <param name="customControl">自定义控件对象</param>
+            <returns>是否加载成功</returns>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.ICustomControlContainer.LoadCompleted">
+            <summary>
+            加载事件，当ICustomControl对象被创建并初始化完毕后触发，
+            控制模块应在该事件发生后调用LoadCustomControl方法加载自定义控件。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum">
+            <summary>
+              模型(表单)的类型和建模时（新建表单时）选择的类型一一对应
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum.Voucher">
+            <summary>
+              单据= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum.Archive">
+            <summary>
+              档案= 1
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum.ListArchive">
+            <summary>
+              列表档案= 2
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum.TreeEditArchive">
+            <summary>
+              树形编辑档案= 3
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum.TreeNavigationArchive">
+            <summary>
+              树形导航档案= 4
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.VoucherTypeEnum.InterfaceModel">
+            <summary>
+              UI模型= 5
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum">
+            <summary>
+              返回值枚举
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum.ALL">
+            <summary>
+              所有数据= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum.NEW">
+            <summary>
+              新增的数据= 1
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum.DELETE">
+            <summary>
+              删除的数据= 2
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum.MODIFY">
+            <summary>
+              修改的数据= 3
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Model.GetDataEnum.CHANGE">
+            <summary>
+              变化的数据，包括新增的数据、修改的数据、删除的数据= 4
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns">
+            <summary>
+            业务对象属性列集合类。
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns.AddBusinessColumn(System.String,UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn)">
+            <summary>
+            添加BusinessColumn对象
+            </summary>
+            <param name="columnName">列名称</param>
+            <param name="BusinessColumn">BusinessColumn对象</param>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns.RemoveBusinessColumn(System.String)">
+            <summary>
+            除去BusinessColumn对象
+            </summary>
+            <param name="columnName">列名称</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns.Item(System.Int32)">
+            <summary>
+            根据索引获取BusinessColumn对象
+            </summary>
+            <param name="index">索引</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns.Item(System.String)">
+            <summary>
+            根据列名称获取BusinessColumn对象
+            </summary>
+            <param name="columnName">列名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumns.Item(System.Object)">
+            <summary>
+            根据列名称获取BusinessColumn对象
+            </summary>
+            <param name="columnName">列名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U8.UAP.UI.Runtime.Common.Parameters.ButtonCheckedEventArgs.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="buttonKey"></param>
+            <param name="buttonName"></param>
+            <param name="parentKey"></param>
+            <param name="parentName"></param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.Parameters.ButtonCheckedEventArgs.ButtonKey">
+            <summary>
+            当前节点编码
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.Parameters.ButtonCheckedEventArgs.ButtonName">
+            <summary>
+            当前节点名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.Parameters.ButtonCheckedEventArgs.ParentKey">
+            <summary>
+            父节点编号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.Parameters.ButtonCheckedEventArgs.ParentName">
+            <summary>
+            父节点名称
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ButtonStateEnum">
+            <summary>
+              实体类型枚举
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.ButtonStateEnum.Enabled">
+            <summary>
+              活动的、可点击的= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.ButtonStateEnum.Disabled">
+            <summary>
+              置灰的、不可点击的= 1
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.ButtonStateEnum.Hidden">
+            <summary>
+              隐藏的= 2
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowStateEnum">
+            <summary>
+            行状态枚举：0：未修改1：新增2：删除3：修改过 
+            状态转化规则：
+            1、未修改可以转化为删除和修改过
+            2、新增可以转化为删除
+            3、修改过可以转化为删除
+            4、以上未列举情形不能互相转化
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.RowStateEnum.UnChanged">
+            <summary>
+              未改动= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.RowStateEnum.New">
+            <summary>
+              新增= 1
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.RowStateEnum.Deleted">
+            <summary>
+              删除= 2
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.RowStateEnum.Modified">
+            <summary>
+              被修改= 3
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.IFormWindow">
+            <summary>
+            大V要实现的接口，主要是处理大V和大M的通讯。
+            在大C中绑定大M的委托方法给大V：如V.MouseRightClick = M.MouseRightClick
+            对于接口中的方法也可以这样处理，在大M中定义一个ILogic类型的对象，在必要的时候调用。
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IFormWindow.MouseClick">
+            <summary>
+              鼠标左健单击大V时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IFormWindow.MouseDoubleClick">
+            <summary>
+              鼠标左健双击大V时触发的事件
+            </summary>
+        </member>
+        <member name="E:UFIDA.U8.UAP.UI.Runtime.Common.IFormWindow.MouseRightClick">
+            <summary>
+              鼠标右健单击大V时触发的事件，主要是处理右键菜单。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.UAPMessage">
+            <summary>
+              公共消息处理类
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.UAPMessage.Text">
+            <summary>
+              消息文本信息。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.UAPMessage.Module">
+            <summary>
+              消息发生的模块，如采购管理、管理会计等等。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.UAPMessage.Caption">
+            <summary>
+              消息提示的标题。
+            这里提供给特殊开发者修改消息提示标题的能力，一般开发者不必设置，缺省标题为“UFIDA ERP-U8”
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.UAPMessage.Level">
+            <summary>
+              消息提示的等级，如通知、警告、禁止等等。缺省等级为通知。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn">
+            <summary>
+              业务模型的列
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.VoucherItemType">
+            <summary>
+              输入类型。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.ColumnName">
+            <summary>
+              列名、列标识、列对应的字段名，此名称和实体物理表的列名称对应。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.ReadOnly">
+            <summary>
+              只读属性。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.IsEnum">
+            <summary>
+              是否枚举列。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.EnumTypeString">
+            <summary>
+              枚举串。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.MaxLength">
+            <summary>
+              可输入的最大长度。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.NumPoint">
+            <summary>
+              小数点位数。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.UseDefaultValue">
+            <summary>
+              是否使用缺省值。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.DefaultValue">
+            <summary>
+              缺省值。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.ReferReturnField">
+            <summary>
+              基础资料属性返回字段。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.MaxValue">
+            <summary>
+              最大值。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.MinValue">
+            <summary>
+              最小值。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.RefObject">
+            <summary>
+              参照对象，指明参照的内容，如商品、部门等等。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.RefObjectName">
+            <summary>
+              参照名称，在设计时显示的名称。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.RefDisplayValue">
+            <summary>
+              参照显示名称。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.EntityID">
+            <summary>
+              参照对应的模型实体。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.EntityPrimaryKey">
+            <summary>
+              参照对应的数据引擎实体的主键，参照选取值的主键，用于持久化保存。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.DBEntityID">
+            <summary>
+              参照对应的数据引擎实体。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.SelectType">
+            <summary>
+              参照选择方式。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.FormatString">
+            <summary>
+              格式化小数位数的字符串。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.FormatData">
+            <summary>
+              格式化日期时间的字符串。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.NullAllowable">
+            <summary>
+              是否允许为空。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.ZeroAllowable">
+            <summary>
+              是否允许为0。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.ColumnTitle">
+            <summary>
+              列标题。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.IsDigitalColumn">
+            <summary>
+              获取该列是不是数字类型。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.IsStringColumn">
+            <summary>
+              获取该列是不是字符串类型。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.Visible">
+            <summary>
+              是否可见列，由状态控制。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.Enabled">
+            <summary>
+              是否激活列（置灰），由状态控制。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.NeedSum">
+            <summary>
+              是否需要合计，数值型有效。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.BusinessColumn.AutoCheck">
+            <summary>
+              是否自动检验，基础资料类型有效。
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.ReferSelectType.ReferDefault">
+            <summary>
+              参照定义中指定的选择方式
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.ReferSelectType.SingleSelect">
+            <summary>
+            单选
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.ReferSelectType.MultiSelect">
+            <summary>
+            多选
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.UniqueTypeEnum.None">
+            <summary>
+              无约束
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.UniqueTypeEnum.PhysicalTable">
+            <summary>
+            物理表内约束
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.UniqueTypeEnum.Form">
+            <summary>
+            表单内约束
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.GetBizInfoEventHandler">
+            <summary>
+            用于视图向模型索取信息的代理方法
+            </summary>
+            <param name="sender"></param>
+            <param name="e">索取的信息类型，初始只支持实体工具条按钮是否可用</param>
+            <returns>根据索取的信息类型的不同返回不同的对象类型</returns>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.GridLayoutCustomEventHandler">
+            <summary>
+            保存GridLayout的布局信息
+            </summary>
+            <param name="sender"></param>
+            <param name="e">数据参数</param>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs.RowKey">
+            <summary>
+              获取和设置行的主键值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.RowChangeEventArgs.RowData">
+            <summary>
+              获取和设置行数据
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs.NewValue">
+            <summary>
+              获取和设置单元格的新值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs.OldValue">
+            <summary>
+              获取和设置单元格的旧值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs.RowKey">
+            <summary>
+              获取和设置行的主键值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs.ColumnName">
+            <summary>
+              获取和设置列的字段名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellChangeEventArgs.RefReturnData">
+            <summary>
+              参照返回的行数据，在更新参照列时才有这个属性。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowSelectEventArgs">
+            <summary>
+              当前行选择事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.RowSelectEventArgs.RowKey">
+            <summary>
+              获取和设置行的主键值
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowCheckEventArgs">
+            <summary>
+              复选框选择事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.RowCheckEventArgs.RowKey">
+            <summary>
+              获取和设置行的主键值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.RowCheckEventArgs.Checked">
+            <summary>
+              获取和设置复选框是否被选中
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.RowsSelectEventArgs">
+            <summary>
+              多选行事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.RowsSelectEventArgs.RowKeys">
+            <summary>
+              当前被选中的所有行的主键值数组
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ExpandTreeNodeEventArgs">
+            <summary>
+              树形节点展开事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ExpandTreeNodeEventArgs.CurrentNodeCode">
+            <summary>
+              当前要展开的节点编号
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.CellSelectEventArgs">
+            <summary>
+              单元格选择事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellSelectEventArgs.ColumnName">
+            <summary>
+              获取和设置列的字段名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.CellSelectEventArgs.RowKey">
+            <summary>
+              获取和设置行的主键值
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ToolBarActionEventArgs">
+            <summary>
+              Toolbar行为事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ToolBarActionEventArgs.Key">
+            <summary>
+              获取和设置Toolbar按钮的Key值
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ReferOpenEventArgs">
+            <summary>
+              打开参照的行为事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferOpenEventArgs.View">
+            <summary>
+              触发事件的观察者视图
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferOpenEventArgs.RefService">
+            <summary>
+              参照服务对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferOpenEventArgs.Column">
+            <summary>
+              参照对应的BusinessColumn对象。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.ReferCloseEventArgs">
+            <summary>
+              关闭参照的行为事件参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferCloseEventArgs.View">
+            <summary>
+              触发事件的观察者视图
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferCloseEventArgs.RefService">
+            <summary>
+              参照服务对象
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferCloseEventArgs.Column">
+            <summary>
+              参照对应的BusinessColumn对象。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.ReferCloseEventArgs.ReturnData">
+            <summary>
+              参照返回的数据。
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.GridLayoutEventArgs">
+            <summary>
+            EditWindow的layout保存参数
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateChangeEventArgs">
+            <summary>
+            表单状态改变参数类
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateChangeEventArgs.NewState">
+            <summary>
+              获取和设置新状态值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherStateChangeEventArgs.OldState">
+            <summary>
+              获取和设置旧状态值
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.GetBizInfoEventArgs">
+            <summary>
+              视图向模型索取信息的类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.GetBizInfoEventArgs.GetInfoType">
+            <summary>
+              获取和设置行的主键值
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.GetBizInfoEventArgs.Para1">
+            <summary>
+              参数一，根据GetInfoType不同要传递不同类型的值。
+                GetInfoType == ButtonAvailable时， Para1为工具条按钮的功能ID。
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.GetBizInfoTypeEnum.ButtonState">
+            <summary>
+             实体工具条按钮状态信息，代理方法返回ButtonStateEnum枚举值。
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs.ButtonKey">
+            <summary>
+            button的唯一标志
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs.Buttonparas">
+            <summary>
+            button的附加参数
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs.IsHavePopedom">
+            <summary>
+            是否需要权限控制
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U8.UAP.UI.Runtime.Common.VoucherButtonArgs.Image">
+            <summary>
+            图标对象
+            </summary>
+        </member>
+        <member name="T:UFIDA.U8.UAP.UI.Runtime.Common.EntityTypeEnum">
+            <summary>
+              实体类型枚举
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.EntityTypeEnum.List">
+            <summary>
+              列表型实体= 0
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.EntityTypeEnum.TreeNavigation">
+            <summary>
+              树形导航实体= 1
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.EntityTypeEnum.TreeEditAble">
+            <summary>
+              树形编辑实体= 2
+            </summary>
+        </member>
+        <member name="F:UFIDA.U8.UAP.UI.Runtime.Common.EntityTypeEnum.Query">
+            <summary>
+              条件查询实体= 3
+            </summary>
+        </member>
+    </members>
+</doc>

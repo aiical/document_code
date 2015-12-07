@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding='gb2312'?>
+<ufinterface roottag="storeinout" billtype='' docid='' receiver='' sender='' proc='query' codeexchanged='' exportneedexch='' >
+<!--name:字段名 operaton:操作符 value:值 logic:逻辑符-->
+	<storeinout>
+	    <field name='brdflag' operation="=" value='1' logic="and"/>
+            <field name='id' operation="=" value='100105790' logic="and"/>
+            <field name='cwhcode' operation="=" value='3' logic=""/>
+	</storeinout>
+</ufinterface>
