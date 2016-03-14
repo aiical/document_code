@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB861372-BF17-4357-AAD8-DCA0211DD1AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UFIDA.Retail.VIPCardControl</RootNamespace>
+    <AssemblyName>UFIDA.Retail.VIPCardControl</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFIDA.Retail.Common, Version=8.72.3861.18016, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Components, Version=8.72.3861.30918, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.DataAccess, Version=8.72.3861.26539, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Discount, Version=8.72.3895.24595, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.Discount.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.GatheringReceipt, Version=8.72.3869.30341, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.GatheringReceipt.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Interfaces, Version=8.72.3783.18699, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.NewComponents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.NewComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.ReadCardEquipment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.ReadCardEquipment.DLL</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Report, Version=8.72.3832.30012, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.RetailReceipt, Version=8.72.3861.38322, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>E:\RetailFront\Bin\UFIDA.Retail.RetailReceipt.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.TouchKeys, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.TouchKeys.exe</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.UserControls, Version=8.72.3815.19264, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Utility, Version=8.72.3841.26647, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\UFIDA\Retail\RetailFront\Bin\UFIDA.Retail.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.VipDoWith, Version=8.72.3849.19683, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\RetailFront\Bin\UFIDA.Retail.VipDoWith.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonNormal.cs" />
+    <Compile Include="frmVipCardCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIPConsumerInfoModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIPConsumerInfoModify.designer.cs">
+      <DependentUpon>frmVIPConsumerInfoModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVipInfoApllyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVipInfoApllyDetail.Designer.cs">
+      <DependentUpon>frmVipInfoApllyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIPCardControl.cs" />
+    <Compile Include="VIPDiscount.cs" />
+    <Compile Include="VIPDoWithEx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmVipCardCode.resx">
+      <DependentUpon>frmVipCardCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIPConsumerInfoModify.resx">
+      <DependentUpon>frmVIPConsumerInfoModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVipInfoApllyDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVipInfoApllyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

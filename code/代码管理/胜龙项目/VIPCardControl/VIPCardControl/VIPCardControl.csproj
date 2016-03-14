@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB861372-BF17-4357-AAD8-DCA0211DD1AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UFIDA.Retail.VIPCardControl</RootNamespace>
+    <AssemblyName>UFIDA.Retail.VIPCardControl</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.1.20031.104, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DataSetSurrogate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\DataSetSurrogate.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetMagicLocal, Version=3.0.2.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\FSHHRetail\FSHHRetail\bin\Debug\DotNetMagicLocal.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="LinsControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\LinsControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Lixtech.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Lixtech.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Lixtech.Resources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Lixtech.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Lixtech.UserControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Lixtech.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Lixtech.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Lixtech.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Lixtech.WebService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\U8CurrentStocks\U8CurrentStocks\U8CurrentStocks\bin\Debug\Lixtech.WebService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFIDA.Retail.Barcode, Version=8.72.4441.33945, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\UFIDA.Retail.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Business.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\UFIDA.Retail.Business.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Common, Version=8.72.4209.27423, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\UFIDA.Retail.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Components, Version=8.72.4209.24902, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\UFIDA.Retail.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.DataAccess, Version=8.72.3861.26539, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFIDA.Retail.Discount, Version=8.72.5170.18455, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\UFIDA.Retail.Discount.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.GatheringReceipt, Version=8.72.4437.16897, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\UFIDA.Retail.GatheringReceipt\bin\Debug\UFIDA.Retail.GatheringReceipt.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.Interfaces, Version=8.72.3783.18699, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFIDA.Retail.NewComponents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFIDA.Retail.ReadCardEquipment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFIDA.Retail.RetailPrint, Version=8.72.3754.30450, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\UFIDA\Retail\RetailFront_MDSCQBBB\Bin\UFIDA.Retail.RetailPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.RetailReceipt, Version=8.72.4223.25744, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Framework\UFIDA.Retail.ControlPanel\bin\Debug\UFIDA.Retail.RetailReceipt.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.Retail.TouchKeys, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="UFIDA.Retail.UserControls, Version=8.72.3815.19264, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFIDA.Retail.Utility, Version=8.72.4002.36019, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFIDA.Retail.VipDoWith, Version=8.72.3849.19683, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonNormal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BarCode\CheckDoWith.cs" />
+    <Compile Include="Controls\BarCode\CheckUtility.cs" />
+    <Compile Include="Controls\BarCode\frmAddDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BarCode\frmAddDetail.designer.cs">
+      <DependentUpon>frmAddDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BarCode\InOutBarCode.cs" />
+    <Compile Include="Controls\frmAddItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmAddItemForm.Designer.cs">
+      <DependentUpon>frmAddItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmCustomerAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmCustomerAddForm.Designer.cs">
+      <DependentUpon>frmCustomerAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmItemListRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmItemListRef.Designer.cs">
+      <DependentUpon>frmItemListRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmPrint.designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmPrintType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmPrintType.designer.cs">
+      <DependentUpon>frmPrintType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmQueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmQueryForm.Designer.cs">
+      <DependentUpon>frmQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmRefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmRefForm.Designer.cs">
+      <DependentUpon>frmRefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmScanBarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmScanBarCode.Designer.cs">
+      <DependentUpon>frmScanBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmZTReturnQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmZTReturnQuery.Designer.cs">
+      <DependentUpon>frmZTReturnQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmZTSaleControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmZTSaleControlForm.Designer.cs">
+      <DependentUpon>frmZTSaleControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemInfoClass.cs" />
+    <Compile Include="Controls\ShowFreeQuantityRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowFreeQuantityRef.designer.cs">
+      <DependentUpon>ShowFreeQuantityRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TabPagesUtility.cs" />
+    <Compile Include="DataExport.cs" />
+    <Compile Include="DisplayHall\frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayHall\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayHall\frmLoanVouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayHall\frmLoanVouch.Designer.cs">
+      <DependentUpon>frmLoanVouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayHall\frmLoanVouchList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayHall\frmLoanVouchList.Designer.cs">
+      <DependentUpon>frmLoanVouchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayHall\frmReturnVouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayHall\frmReturnVouch.Designer.cs">
+      <DependentUpon>frmReturnVouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayHall\frmReturnVouchList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayHall\frmReturnVouchList.Designer.cs">
+      <DependentUpon>frmReturnVouchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmCustomerQueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmCustomerQueryForm.Designer.cs">
+      <DependentUpon>frmCustomerQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNoSalesSubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNoSalesSubmit.Designer.cs">
+      <DependentUpon>FrmNoSalesSubmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoUsedVIPConsumerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoUsedVIPConsumerList.Designer.cs">
+      <DependentUpon>frmNoUsedVIPConsumerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPromotionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromotionForm.Designer.cs">
+      <DependentUpon>frmPromotionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetailVouchToSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetailVouchToSD.Designer.cs">
+      <DependentUpon>frmRetailVouchToSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVipCardCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIPChangeCardRecordList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIPChangeCardRecordList.Designer.cs">
+      <DependentUpon>frmVIPChangeCardRecordList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIPConsumerInfoModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIPConsumerInfoModify.designer.cs">
+      <DependentUpon>frmVIPConsumerInfoModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVIPConsumerPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVIPConsumerPromotion.Designer.cs">
+      <DependentUpon>frmVIPConsumerPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVipInfoApllyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVipInfoApllyDetail.Designer.cs">
+      <DependentUpon>frmVipInfoApllyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmZTReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmZTReturnForm.Designer.cs">
+      <DependentUpon>frmZTReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDevice.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="sl_RetailCommom.cs" />
+    <Compile Include="Styles\ButtonNormal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VIPCardControl.cs" />
+    <Compile Include="VIPDiscount.cs" />
+    <Compile Include="VIPDoWithEx.cs" />
+    <Compile Include="VoucherControl.cs">
+    </Compile>
+    <Compile Include="Web References\WebTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\BarCode\frmAddDetail.resx">
+      <DependentUpon>frmAddDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmAddItemForm.resx">
+      <DependentUpon>frmAddItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmCustomerAddForm.resx">
+      <DependentUpon>frmCustomerAddForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmItemListRef.resx">
+      <DependentUpon>frmItemListRef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmPrintType.resx">
+      <DependentUpon>frmPrintType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmQueryForm.resx">
+      <DependentUpon>frmQueryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmRefForm.resx">
+      <DependentUpon>frmRefForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmScanBarCode.resx">
+      <DependentUpon>frmScanBarCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmZTReturnQuery.resx">
+      <DependentUpon>frmZTReturnQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmZTSaleControlForm.resx">
+      <DependentUpon>frmZTSaleControlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ShowFreeQuantityRef.resx">
+      <DependentUpon>ShowFreeQuantityRef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayHall\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayHall\frmLoanVouch.resx">
+      <DependentUpon>frmLoanVouch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayHall\frmLoanVouchList.resx">
+      <DependentUpon>frmLoanVouchList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayHall\frmReturnVouch.resx">
+      <DependentUpon>frmReturnVouch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayHall\frmReturnVouchList.resx">
+      <DependentUpon>frmReturnVouchList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmCustomerQueryForm.resx">
+      <DependentUpon>frmCustomerQueryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNoSalesSubmit.resx">
+      <DependentUpon>FrmNoSalesSubmit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoUsedVIPConsumerList.resx">
+      <DependentUpon>frmNoUsedVIPConsumerList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromotionForm.resx">
+      <DependentUpon>frmPromotionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetailVouchToSD.resx">
+      <DependentUpon>frmRetailVouchToSD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVipCardCode.resx">
+      <DependentUpon>frmVipCardCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIPChangeCardRecordList.resx">
+      <DependentUpon>frmVIPChangeCardRecordList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIPConsumerInfoModify.resx">
+      <DependentUpon>frmVIPConsumerInfoModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVIPConsumerPromotion.resx">
+      <DependentUpon>frmVIPConsumerPromotion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVipInfoApllyDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVipInfoApllyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmZTReturnForm.resx">
+      <DependentUpon>frmZTReturnForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlcTemplate\RdVouchPrintTemplate.rdlc" />
+    <EmbeddedResource Include="rdlcTemplate\rpTranVouch.rdlc" />
+    <EmbeddedResource Include="rdlcTemplate\TemplateInvForGH.rdlc" />
+    <EmbeddedResource Include="rdlcTemplate\TemplateInvForIn.rdlc" />
+    <EmbeddedResource Include="rdlcTemplate\TemplateInvForJC.rdlc" />
+    <EmbeddedResource Include="rdlcTemplate\TemplateInvForOut.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.0.212/WebTest/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebTest\</RelPath>
+      <UpdateFromURL>http://192.168.0.212/WebTest/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>UFIDA_Retail_VIPCardControl_WebTest_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WebTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebTest\Service.disco" />
+    <None Include="Web References\WebTest\Service.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

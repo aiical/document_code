@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("微软中国")]
 [assembly: AssemblyProduct("AutoEntity")]
-[assembly: AssemblyCopyright("Copyright © 微软中国 2011")]
+[assembly: AssemblyCopyright("Copyright © 微软中国 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

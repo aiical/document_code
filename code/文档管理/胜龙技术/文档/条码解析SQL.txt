@@ -1,0 +1,204 @@
+--商品信息
+
+ALTER PROCEDURE [dbo].[g_sp_GetItemInfoByBarcode]   
+   @BarCode varchar(50)=''
+AS      
+      
+set nocount on      
+declare @ItemNo varchar(20)      
+declare @ItemName varchar(50)      
+declare @MeasureUnit  varchar(20)    
+declare @Size varchar(10)      
+declare @interalcode varchar(50)      
+declare @KXC varchar(10)      
+      
+declare @brand char(1),@Listcode varchar(20),@Memorycode varchar(20),@position1 int,@position2 int,@position3 int      
+declare @string varchar(50),@measuremethod varchar(10),@propcode varchar(20),@sizecode varchar(20)      
+declare @PropCode7 varchar(20),@PropValue7 varchar(50)      
+declare @sBarCode varchar(50)    
+    
+set @brand=''      
+set @Listcode=''      
+set @Memorycode=''      
+set @BarCode=isnull(@BarCode,'')          
+set @ItemNo=''      
+set @ItemName=''      
+set @MeasureUnit=''      
+set @Size=''   
+set @KXC=''     
+      
+if @BarCode<>''      
+  begin   
+----第3代条码   
+      if charindex(' ',@BarCode,1)>0     
+        begin      
+            set @position1=charindex(' ',@BarCode,1)      
+            set @brand=substring(@BarCode,1,1)         --品牌码      
+            set @Listcode=substring(@BarCode,2,@position1-2)  --版型码       
+            set @string=substring(@BarCode,@position1+1,len(@BarCode)-@position1)        
+            set @position2=charindex(' ',@string,1)      
+            set @Memorycode=substring(@string,1,@position2-1) --助记码      
+            set @String = SubString(@String,@position2+1,len(@String)-@position2)      
+            set @position3 = charindex(' ',@String,1)      
+               
+            --取货号，品名    
+
+           select @ItemNo=I.fchrItemCode
+          from item I 
+           where  U_item2=@Memorycode and U_item1 in (select editionmodelcode from pub_editionmodel where listcode=@Listcode)      
+end
+
+
+
+    if left(@BarCode,2)='69' 
+        begin
+ Select
+fchrBarCode AS 条码, fbitFree1 as 启用自由项1, fbitFree2 as 启用自由项2, fbitFree3 as 启用自由项3, fbitFree4, fbitFree5, fbitFree6, 
+      fbitFree7, fbitFree8, fbitfree9, fbitfree10, fchrItemID AS 存货id, 
+      fchrItemName AS 存货名称, fchrAddCode AS 助记码, fchrItemCode AS 存货编码, 
+      fchrUnitName AS 计量单位, flotQuotePrice AS 零售价, flotVipPrice1, flotVipPrice2, 
+      flotVipPrice3, flotVipPrice4, flotVipPrice5, flotVipPrice6, fbitSpecial AS 是否特殊商品,ftinItemModel as 商品模式,
+      Cast(1 as bit) as 启用自由项,fbitBatch as 是否批次管理 
+From Item 
+where fchritemid in (select fchritemid from BarCodeRuleCollateDetail where fchrbarcodeno=@BarCode)
+return 123
+        end  
+       else  
+        begin      
+            set @brand=substring(@BarCode,2,1)               --旧品牌码             
+            set @Listcode=substring(@BarCode,3,3)           --旧版型码      
+            set @Memorycode=substring(@BarCode,6,5)    --旧助记码       
+            set @sizecode=substring(@BarCode,11,2)                --尺码代码      
+      
+       
+        --取货号，品名      
+            select @ItemNo=I.fchrItemCode      
+            from item I 
+            where  U_item2=@Memorycode and U_item1 in (select editionmodelcode from pub_editionmodel where oldlistcode=@Listcode)      
+         end      
+  end      
+    
+ Select
+fchrBarCode AS 条码, fbitFree1 as 启用自由项1, fbitFree2 as 启用自由项2, fbitFree3 as 启用自由项3, fbitFree4, fbitFree5, fbitFree6, 
+      fbitFree7, fbitFree8, fbitfree9, fbitfree10, fchrItemID AS 存货id, 
+      fchrItemName AS 存货名称, fchrAddCode AS 助记码, fchrItemCode AS 存货编码, 
+      fchrUnitName AS 计量单位, flotQuotePrice AS 零售价, flotVipPrice1, flotVipPrice2, 
+      flotVipPrice3, flotVipPrice4, flotVipPrice5, flotVipPrice6, fbitSpecial AS 是否特殊商品,ftinItemModel as 商品模式,
+      Cast(1 as bit) as 启用自由项,fbitBatch as 是否批次管理 
+From Item 
+where fchrItemCode=@ItemNo
+
+
+
+set nocount off      
+      
+      
+      
+
+
+----------自由项
+
+ALTER  PROCEDURE [dbo].[g_sp_GetItemFreeByBarcode]   
+   @BarCode varchar(50)=''    
+         
+AS      
+      
+set nocount on      
+declare @ItemNo varchar(20)      
+declare @ItemName varchar(50)      
+declare @MeasureUnit  varchar(20)    
+declare @Size varchar(10)      
+declare @interalcode varchar(50)      
+declare @KXC varchar(10)      
+      
+declare @brand char(1),@Listcode varchar(20),@Memorycode varchar(20),@position1 int,@position2 int,@position3 int      
+declare @string varchar(50),@measuremethod varchar(10),@propcode varchar(20),@sizecode varchar(20)      
+declare @PropCode7 varchar(20),@PropValue7 varchar(50)      
+declare @sBarCode varchar(50)    
+    
+set @brand=''      
+set @Listcode=''      
+set @Memorycode=''      
+set @BarCode=isnull(@BarCode,'')      
+set @ItemNo=''      
+set @ItemName=''      
+set @MeasureUnit=''      
+set @Size=''   
+set @KXC=''     
+
+if @BarCode<>''
+  begin   
+----第3代条码   
+      if charindex(' ',@BarCode,1)>0     
+        begin      
+            set @position1=charindex(' ',@BarCode,1)      
+            set @brand=substring(@BarCode,1,1)         --品牌码      
+            set @Listcode=substring(@BarCode,2,@position1-2)  --版型码       
+            set @string=substring(@BarCode,@position1+1,len(@BarCode)-@position1)        
+            set @position2=charindex(' ',@string,1)      
+            set @Memorycode=substring(@string,1,@position2-1) --助记码      
+            set @String = SubString(@String,@position2+1,len(@String)-@position2)      
+            set @position3 = charindex(' ',@String,1)      
+            if @position3 = 0      
+            begin      
+              set @Size=@String         --尺码      
+              set @KXC=''        
+            end      
+            else      
+            begin      
+              set @Size=substring(@String,1,@position3-1)     --尺码      
+              set @KXC=substring(@string,@position3+1,len(@string)-@position3) --属性7      
+            end      
+              
+            --取货号，品名    
+
+           select @ItemNo=I.fchrItemCode
+          from item I 
+           where  U_item2=@Memorycode and U_item1 in (select editionmodelcode from pub_editionmodel where listcode=@Listcode)      
+
+end
+    else 
+    if left(@BarCode,2)='69' 
+        begin
+			  select @ItemNo=I.fchrItemCode,@Size=isnull(B.fchrFree1,''),@KXC=isnull(B.fchrFree2,'')
+               from BarCodeRuleCollateDetail B,item I
+           where  B.fchritemid=I.fchritemid
+               and B.fchrbarcodeno=@BarCode
+        end
+	else    
+        begin      
+            set @brand=substring(@BarCode,2,1)               --旧品牌码             
+            set @Listcode=substring(@BarCode,3,3)           --旧版型码      
+            set @Memorycode=substring(@BarCode,6,5)    --旧助记码       
+            set @sizecode=substring(@BarCode,11,2)                --尺码代码      
+      
+       
+        --取货号，品名      
+            select @ItemNo=I.fchrItemCode,@ItemName=I.fchrItemname,@measuremethod=I.fchrUnitname       
+            from item I 
+            where  U_item2=@Memorycode and U_item1 in (select editionmodelcode from pub_editionmodel where oldlistcode=@Listcode)      
+
+
+select @Size=propValue
+from pub_itemproperty 
+where propcode like '%'+@sizecode+'%'      
+
+select top 1 @KXC=fchrvalue  
+from ItemAllotAnalysis
+where fchritemID in (select fchritemID from item where fchrItemCode= @ItemNo)
+and fchrcode like '5%'
+order by fchrcode
+
+
+         end      
+  end      
+
+if (isnull(@KXC,'')<>'' or  isnull(@Size,'')<>'' )
+begin
+--Select isnull(@Size,'') as  自由项1, isnull(@KXC,'') as 自由项2, '' as 自由项3 , '2010-12-31' as fdtmproducedate,1 as fchrbatchcode
+Select isnull(@Size,'') as  fchrfree1, isnull(@KXC,'') as fchrfree2, '' as fchrfree3 , '2010-12-31' as fdtmproducedate,1 as fchrbatchcode
+end
+
+--set nocount off      
+      
+      

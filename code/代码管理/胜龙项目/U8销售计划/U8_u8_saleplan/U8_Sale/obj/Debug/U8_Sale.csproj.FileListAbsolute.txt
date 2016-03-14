@@ -1,0 +1,88 @@
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\U8_Sale.exe
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\U8_Sale.pdb
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmDeptRef.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmRefset.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.exe.licenses
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.exe
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.pdb
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Form1.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlan.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlans.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlanSdaily.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlanShop.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\Interop.UFPortalProxyInterface.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Common.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Framework.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Proxy.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFSoft.U8.Framework.Login.UI.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\Interop.UFPortalProxyMessage.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Toolbar.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Scenario.Runtime.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\Interop.UFPortalProxy.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFSoft.U8.Framework.LoginControlLib.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\Win7TaskBar.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\SecurityLib.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\XPExplorerBar.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.EventBroker.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Viewers.FLowLayout.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFSoft.U8.Framework.DateTimePicker.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Option.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Framework.LoginPlugInterface.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFSoft.U8.Framework.Login.BO.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Spus.SpInfo.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.BizServices.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\TokenManage.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\UFIDA.U8.Portal.Scenario.Common.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\DotNetMagic.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\I_UFSoft.U8.Framework.Login.BO.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\securityAndCreditIdentity.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\en-US\UFIDA.U8.Portal.Framework.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-TW\UFIDA.U8.Portal.Framework.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\en-US\UFIDA.U8.Portal.Scenario.Runtime.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-TW\UFIDA.U8.Portal.Scenario.Runtime.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\en-US\UFSoft.U8.Framework.DateTimePicker.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-CN\UFSoft.U8.Framework.DateTimePicker.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-TW\UFSoft.U8.Framework.DateTimePicker.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\en-US\UFIDA.U8.Portal.Option.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-TW\UFIDA.U8.Portal.Option.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\en-US\UFSoft.U8.Framework.Login.UI.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-CN\UFSoft.U8.Framework.Login.UI.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\zh-TW\UFSoft.U8.Framework.Login.UI.resources.dll
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSale_Plans.resources
+C:\Documents and Settings\Administrator\桌面\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Form2.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.pdb
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\U8_Sale.pdb
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\ResolveAssemblyReference.cache
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Form1.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmDeptRef.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmRefset.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlan.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlans.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlanSdaily.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlanShop.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSale_Plans.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Properties.Resources.resources
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.csproj.GenerateResource.Cache
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\bin\Debug\U8_Sale.exe
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.exe.licenses
+Z:\U8Project源码\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.exe
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.exe
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.pdb
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.csprojResolveAssemblyReference.cache
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Form1.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmDeptRef.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmRefset.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlan.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlans.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlanSdaily.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSalePlanShop.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.frmSale_Plans.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.Properties.Resources.resources
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.csproj.GenerateResource.Cache
+E:\U8销售计划\U8_u8_saleplan\U8_Sale\obj\Debug\U8_Sale.exe.licenses

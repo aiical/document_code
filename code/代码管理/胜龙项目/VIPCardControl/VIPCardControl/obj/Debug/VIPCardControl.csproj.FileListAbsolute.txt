@@ -1,0 +1,329 @@
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Users\Administrator\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+F:\公司资料\胜龙项目开发\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+C:\Documents and Settings\Administrator\桌面\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.pdb
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\panjin\桌面\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceLibrary.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.pdb
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceLibrary.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.pdb
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceLibrary.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\待打包文件（最新）\备份\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailReceipt.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinCalcManager.v5.3.FormulaBuilder.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.NPos.DeviceManager.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Report.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinGrid.v5.3.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.v5.3.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Shared.v5.3.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceLibrary.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.NPos.Interfaces.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinCalcManager.v5.3.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.Misc.v5.3.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Npos.StandardLineDisplay.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DotNetMagicLocal.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailReceipt.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.GatheringReceipt.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.GatheringReceipt.pdb
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceGrid2.dll
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRetailVouchToSD.resources
+C:\Documents and Settings\Administrator\桌面\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.WebService.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRetailVouchToSD.resources
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.WebService.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.GatheringReceipt.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailReceipt.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceGrid2.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinCalcManager.v5.3.FormulaBuilder.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.NPos.DeviceManager.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Report.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinGrid.v5.3.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.v5.3.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Shared.v5.3.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceLibrary.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.NPos.Interfaces.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinCalcManager.v5.3.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.Misc.v5.3.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Npos.StandardLineDisplay.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DotNetMagicLocal.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.pdb
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailReceipt.pdb
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.GatheringReceipt.pdb
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+E:\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.FrmNoSalesSubmit.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll.config
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\C1.Common.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\C1.Win.C1FlexGrid.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DataSetSurrogate.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DotNetMagicLocal.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Interop.Excel.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\LinsControls.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.Common.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.Resources.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.UserControls.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.Utility.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Lixtech.WebService.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Barcode.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Business.Common.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Common.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Components.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Discount.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.GatheringReceipt.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailPrint.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailReceipt.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Interop.UFPOSPrintCtl.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceGrid2.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Report.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.NPos.DeviceManager.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Services.Client.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinGrid.v5.3.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.PosPrint.DataSource.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinCalcManager.v5.3.FormulaBuilder.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Interop.PRINTCONTROLLib.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.PosPrint.Interfaces.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.XtraGrid.v7.1.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Shared.v5.3.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.WebServiceAgent.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.BonusSkins.v7.1.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.SourceLibrary.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.NPos.Interfaces.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.OfficeSkins.v7.1.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\AxInterop.UFPOSPrintCtl.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.UltraWinCalcManager.v5.3.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.Data.v7.1.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.LocalizationCHS.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.Misc.v5.3.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\AxInterop.PRINTCONTROLLib.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Npos.StandardLineDisplay.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.Utils.v7.1.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Promotion.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.Services.Common.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\Infragistics.Win.v5.3.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\DevExpress.XtraEditors.v7.1.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.RetailReceipt.pdb
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.GatheringReceipt.pdb
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmAddDetail.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmAddItemForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomerAddForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmItemListRef.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPrint.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPrintType.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmQueryForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRefForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmScanBarCode.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTReturnQuery.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTSaleControlForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.ShowFreeQuantityRef.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomer.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmLoanVouch.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmLoanVouchList.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmReturnVouch.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmReturnVouchList.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomerQueryForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.FrmNoSalesSubmit.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmNoUsedVIPConsumerList.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPromotionForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRetailVouchToSD.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPChangeCardRecordList.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerPromotion.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTReturnForm.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.Properties.Resources.resources
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll.licenses
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\RdlCompile.cache
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\RdlCompile.compiled
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+Z:\SELON-U8RM\最新\虚拟机备份(最新)\客户端相关类库\客户端源码\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmAddDetail.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmAddItemForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomerAddForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmItemListRef.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPrint.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPrintType.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmQueryForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRefForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmScanBarCode.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTReturnQuery.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTSaleControlForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.ShowFreeQuantityRef.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomer.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmLoanVouch.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmLoanVouchList.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmReturnVouch.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmReturnVouchList.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomerQueryForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.FrmNoSalesSubmit.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmNoUsedVIPConsumerList.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPromotionForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRetailVouchToSD.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPChangeCardRecordList.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerPromotion.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTReturnForm.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll.licenses
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\RdlCompile.cache
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\RdlCompile.compiled
+C:\Documents and Settings\Administrator\桌面\tt\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csprojResolveAssemblyReference.cache
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmAddDetail.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmAddItemForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomerAddForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmItemListRef.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPrint.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPrintType.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmQueryForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRefForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmScanBarCode.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTReturnQuery.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTSaleControlForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.ShowFreeQuantityRef.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomer.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmLoanVouch.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmLoanVouchList.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmReturnVouch.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmReturnVouchList.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmCustomerQueryForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.FrmNoSalesSubmit.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmNoUsedVIPConsumerList.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmPromotionForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmRetailVouchToSD.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPChangeCardRecordList.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerPromotion.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmZTReturnForm.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.Properties.Resources.resources
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll.licenses
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\RdlCompile.cache
+C:\Users\mac\Desktop\VIPCardControl\VIPCardControl\obj\Debug\RdlCompile.compiled

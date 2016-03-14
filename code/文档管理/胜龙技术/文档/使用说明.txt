@@ -1,0 +1,5 @@
+1、把编译好的条码解析接口程序(UFIDA.Retail.Barcode_SL\UFIDA.Retail.Barcode_SL\bin\Debug\UFIDA.Retail.Barcode.dll)放到
+   POS门店程序所在的目录下C:\Program Files\UFIDA\Retail\RetailFront\Bin，替换原来的UFIDA.Retail.Barcode.dll即可
+
+2、登录POS门店即可使用
+   

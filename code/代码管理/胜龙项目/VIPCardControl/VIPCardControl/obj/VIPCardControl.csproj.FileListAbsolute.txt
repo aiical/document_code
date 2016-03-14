@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\bin\Debug\UFIDA.Retail.VIPCardControl.pdb
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipCardCode.resources
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVIPConsumerInfoModify.resources
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.frmVipInfoApllyDetail.resources
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\VIPCardControl.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.dll
+C:\Users\Administrator\Desktop\用友项目\VIP模块补丁相关\VIPCardControl\VIPCardControl\VIPCardControl\obj\Debug\UFIDA.Retail.VIPCardControl.pdb

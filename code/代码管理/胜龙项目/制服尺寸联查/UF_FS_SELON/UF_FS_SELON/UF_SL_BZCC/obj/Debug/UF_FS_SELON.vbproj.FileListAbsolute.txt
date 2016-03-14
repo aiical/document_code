@@ -1,0 +1,123 @@
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.pdb
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.xml
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\C1.Common.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\C1.Win.C1FlexGrid.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.Excel.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.Office.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.UAPVoucherControl85.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.MSHierarchicalFlexGridLib.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.UAPUfToolKit85.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBA.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VSFlex8N.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.MSXML2.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBRUN.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.EDITLib.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBIDE.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBScript_RegExp_55.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VoucherControl85.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\ResolveAssemblyReference.cache
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.MSXML2.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBA.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBScript_RegExp_55.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VoucherControl85.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.ResolveComReference.cache
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormWait.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FrmSelonGrid.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.Resources.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.ReturnSelectStr.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.SetGridSortType.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.VoucherQueryForm.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormPrintSignCard.resources
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.GenerateResource.Cache
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll.licenses
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.xml
+E:\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.pdb
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\ResolveAssemblyReference.cache
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.MSXML2.dll
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBA.dll
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBScript_RegExp_55.dll
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VoucherControl85.dll
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.ResolveComReference.cache
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormWait.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FrmSelonGrid.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.Resources.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.ReturnSelectStr.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.SetGridSortType.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.VoucherQueryForm.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormPrintSignCard.resources
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.GenerateResource.Cache
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll.licenses
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.xml
+Z:\u8Project\U8制服模块\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.pdb
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.MSXML2.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBA.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBScript_RegExp_55.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VoucherControl85.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormWait.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FrmSelonGrid.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.Resources.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.ReturnSelectStr.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.SetGridSortType.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.VoucherQueryForm.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormPrintSignCard.resources
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll.licenses
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.xml
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.pdb
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.dll.config
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.pdb
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.xml
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.tlb
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\C1.Common.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\C1.Win.C1FlexGrid.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.Excel.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.Office.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.UAPVoucherControl85.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.MSHierarchicalFlexGridLib.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.UAPUfToolKit85.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBA.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VSFlex8N.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.MSXML2.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBRUN.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.EDITLib.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBIDE.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBScript_RegExp_55.dll
+C:\Documents and Settings\Administrator\桌面\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VoucherControl85.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.dll.config
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.pdb
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\UF_FS_SELON.xml
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.UAPVoucherControl85.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBIDE.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBA.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.MSXML2.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.UAPUfToolKit85.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.EDITLib.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBRUN.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VSFlex8N.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.MSHierarchicalFlexGridLib.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\bin\Interop.VBScript_RegExp_55.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbprojResolveAssemblyReference.cache
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.MSXML2.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBA.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\Interop.VBScript_RegExp_55.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.ResolveComReference.cache
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormWait.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FrmSelonGrid.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.Resources.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.ReturnSelectStr.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.SetGridSortType.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.VoucherQueryForm.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.FormPrintSignCard.resources
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.vbproj.GenerateResource.Cache
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll.licenses
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.dll
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.xml
+C:\Users\mac\Desktop\制服尺寸联查\UF_FS_SELON\UF_FS_SELON\UF_SL_BZCC\obj\Debug\UF_FS_SELON.pdb

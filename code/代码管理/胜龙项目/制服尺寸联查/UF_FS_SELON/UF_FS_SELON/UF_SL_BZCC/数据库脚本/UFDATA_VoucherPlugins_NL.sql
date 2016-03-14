@@ -1,0 +1,2 @@
+--delete VoucherPlugins where subid='st' and cardnum='0411' and classname='UF_FS_SELON.clsEFSLVouch'
+--INSERT INTO VoucherPlugins (id,subid,cardnum,classname) values (NEWID(),'st','0411','UF_FS_SELON.clsEFSLVouch')
